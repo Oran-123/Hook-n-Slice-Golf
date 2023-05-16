@@ -47,20 +47,17 @@
 ## UX
 
 ### Wireframes<hr>
+I utilized Balsamic (<https://balsamiq.com/wireframes/>) to design the wireframes for my website. I began by creating the wireframes for the desktop version and subsequently adapted the homepage diagram for tablet and mobile devices to display the concept.
 
 <details>
   <summary>Desktop Wireframes</summary>
-<img src="static/wireframes/home-page-desktop.pdf"><br>
+[Home Page](static/wireframes/home-page-desktop.pdf "Home Page")
 </details>
 
 <details>
-  <summary>Mobile Concept Wireframes</summary>
-<img src="static/wireframes/tablet-concept-home-page.pdf"><br>
-</details>
-
-<details>
-  <summary>Tablet Concept Wireframes</summary>
-<img src="static/wireframes/mobile-concept-home-page.pdf"><br>
+  <summary>Mobile and Tablet Concept Wireframes</summary>
+[Phone Wireframe](static/wireframes/mobile-concept-home-page.pdf"Mobile Concept")
+[Tablet Wireframe](static/wireframes/tablet-concept-home-page.pdf "Tablet Concept")
 </details>
 
 ### Database Schema<hr>
