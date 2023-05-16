@@ -48,6 +48,21 @@
 
 ### Wireframes<hr>
 
+<details>
+  <summary>Desktop Wireframes</summary>
+<img src="static/wireframes/home-page-desktop.pdf"><br>
+</details>
+
+<details>
+  <summary>Mobile Concept Wireframes</summary>
+<img src="static/wireframes/tablet-concept-home-page.pdf"><br>
+</details>
+
+<details>
+  <summary>Tablet Concept Wireframes</summary>
+<img src="static/wireframes/mobile-concept-home-page.pdf"><br>
+</details>
+
 ### Database Schema<hr>
 
 ### Site Map<hr>
@@ -97,7 +112,9 @@
 ## Credits
 
 ### Content<hr>
+
 ### Media<hr>
+
 ### Code<hr>
 
 ## Acknowledgements
