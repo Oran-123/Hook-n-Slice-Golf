@@ -52,7 +52,7 @@ I utilized Balsamic (<https://balsamiq.com/wireframes/>) to design the wireframe
 <details>
   <summary>Desktop Wireframes</summary>
   
-* [Home Page](static/wireframes/home-page-desktop.pdf "Home Page")
+* [Home Page](static/wireframes/desktop/home-page-desktop.pdf "Home Page")
 * [Booking Form](static/wireframes/desktop/booking-form.pdf "Booking Form")
 * [Leaderboard](static/wireframes/desktop/leaderboard.pdf "Leaderboard")
 * [The Course](static/wireframes/desktop/the-course.pdf "The Course")
