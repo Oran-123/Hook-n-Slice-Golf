@@ -51,13 +51,19 @@ I utilized Balsamic (<https://balsamiq.com/wireframes/>) to design the wireframe
 
 <details>
   <summary>Desktop Wireframes</summary>
-[Home Page](static/wireframes/home-page-desktop.pdf "Home Page")
+  
+* [Home Page](static/wireframes/home-page-desktop.pdf "Home Page")
+* [Booking Form](static/wireframes/desktop/booking-form.pdf "Booking Form")
+* [Leaderboard](static/wireframes/desktop/leaderboard.pdf "Leaderboard")
+* [The Course](static/wireframes/desktop/the-course.pdf "The Course")
+* [User Profile](static/wireframes/desktop/user-profile.pdf "User Profile")
 </details>
 
 <details>
   <summary>Mobile and Tablet Concept Wireframes</summary>
-[Phone Wireframe](static/wireframes/mobile-concept-home-page.pdf"Mobile Concept")
-[Tablet Wireframe](static/wireframes/tablet-concept-home-page.pdf "Tablet Concept")
+  
+* [Phone Wireframe](static/wireframes/mobile-concept-home-page.pdf "Mobile Concept")
+* [Tablet Wireframe](static/wireframes/tablet-concept-home-page.pdf "Tablet Concept")
 </details>
 
 ### Database Schema<hr>
