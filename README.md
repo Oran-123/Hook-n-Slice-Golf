@@ -72,6 +72,8 @@ I utilized Balsamic (<https://balsamiq.com/wireframes/>) to design the wireframe
 
 ### Branding<hr>
 
+Hook 'n' Slice Goal is a welcoming brand that fosters a friendly environment specifically designed for new golfers. With a commitment to supporting beginners throughout their golfing journey, we provide a supportive and inclusive space where individuals can learn, grow, and enjoy the game of golf to the fullest.
+
 #### Logo
 
 #### Colour Scheme
