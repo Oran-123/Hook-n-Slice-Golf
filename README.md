@@ -125,9 +125,9 @@ I have used google fonts to select a font type that best supports the goals of t
 
 Reasons for choosing the fonts:
 
-  *  <strong>Open Sans:</strong> is chosen for the body text due to its exceptional readability and versatility. With a clean and modern appearance, it ensures clear communication of information to beginner golfers, aligning with the brand's focus on simplicity and clarity.
+  *  <strong>Open Sans:</strong> is chosen for the body text due to its readability. With a clean and modern appearance, it ensures clear communication of information to beginner golfers, aligning with the brand's focus on simplicity and clarity.
 
-  *  <strong>Fredoka</strong>  is selected as the title font to bring a playful and friendly element to the brand. With its rounded and inviting design, it adds a touch of excitement and light-heartedness to the headings, perfectly capturing the brand's fun nature while maintaining legibility.
+  *  <strong>Fredoka</strong>  is selected as the title font to bring a playful and friendly element to the brand. With its rounded and inviting design, it adds a touch of excitement and light-heartedness to the headings, perfectly capturing the brand's aim to provide a freindly open environment for beginer golfers to play golf.
 
 ## Agile Methodology 
 
