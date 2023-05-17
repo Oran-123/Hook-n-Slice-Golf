@@ -121,6 +121,14 @@ Purpose of each colour:
 
 ### Fonts<hr>
 
+I have used google fonts to select a font type that best supports the goals of the website, to provide a course for beginers to start their golfing journey. For the main text I have selected [Open Sans](https://fonts.google.com/specimen/Open+Sans?preview.text=Open%20Sans&preview.text_type=custom&query=Open+Sans "Open Sans"). To make the headers and the navigation bar stand out form the text, I decided to use [Fredoka](https://fonts.google.com/specimen/Fredoka?preview.text=Open%20Sans&preview.text_type=custom&query=Fredok "Fredoka").
+
+Reasons for choosing the fonts:
+
+  *  <strong>Open Sans:</strong> is chosen for the body text due to its exceptional readability and versatility. With a clean and modern appearance, it ensures clear communication of information to beginner golfers, aligning with the brand's focus on simplicity and clarity.
+
+  *  <strong>Fredoka</strong>  is selected as the title font to bring a playful and friendly element to the brand. With its rounded and inviting design, it adds a touch of excitement and light-heartedness to the headings, perfectly capturing the brand's fun nature while maintaining legibility.
+
 ## Agile Methodology 
 
 ### Prioritisation<hr>
