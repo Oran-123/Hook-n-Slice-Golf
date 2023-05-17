@@ -11,12 +11,15 @@
   - [Site Objectives](#site-objectives)
   - [UX](#ux)
     - [Wireframes](#wireframes)
-    - [Database Schema](#database-schema)
     - [Site Map](#site-map)
-    - [Branding](#branding)
-      - [Logo](#logo)
-      - [Colour Scheme](#colour-scheme)
-      - [Fonts](#fonts)
+    - [User Journey](#user-journey)
+    - [Structure](#structure)
+  - [Database](#database)
+    - [Database Schema](#database-schema)
+  - [Branding](#branding)
+    - [Logo ](#logo-)
+    - [Colour Scheme](#colour-scheme)
+    - [Fonts](#fonts)
   - [Agile Methodology](#agile-methodology)
     - [Prioritisation](#prioritisation)
     - [Sprints](#sprints)
@@ -66,15 +69,21 @@ I utilized Balsamic (<https://balsamiq.com/wireframes/>) to design the wireframe
 * [Tablet Wireframe](static/wireframes/tablet-concept-home-page.pdf "Tablet Concept")
 </details>
 
-### Database Schema<hr>
-
 ### Site Map<hr>
 
-### Branding<hr>
+### User Journey<hr>
+
+### Structure<hr>
+
+## Database 
+
+### Database Schema<hr>
+
+## Branding 
 
 Hook 'n' Slice Goal is a welcoming brand that fosters a friendly environment specifically designed for new golfers. With a commitment to supporting beginners throughout their golfing journey, we provide a supportive and inclusive space where individuals can learn, grow, and enjoy the game of golf to the fullest.
 
-#### Logo
+### Logo <hr>
 
 The logo for Hook 'n' Slice Golf is thoughtfully designed to attract beginner golfers by visually communicating a welcoming and supportive atmosphere, encouraging progression, and evoking a sense of accomplishment in their golfing journey.
 
@@ -84,7 +93,7 @@ The logo for Hook 'n' Slice Golf is thoughtfully designed to attract beginner go
 
 <img src="static/media/hook-n-slice-logo.svg" style="max-width: 50%;"></img>
 
-#### Colour Scheme
+### Colour Scheme<hr>
 
 The colour scheme for the website is focused on simplicity, trust and calmness all concepts which we hope will attract beginner golfers. The pallete consists of three colours in total; White, a dark green called <strong>Fun Green</strong>and a dark blue called <strong>St Tropaz</strong>.
 
@@ -100,7 +109,7 @@ Purpose of each colour:
 
 <img src="static/media/colormind-pp4-color-scheme1.png"></img>
 
-#### Fonts
+### Fonts<hr>
 
 ## Agile Methodology 
 
