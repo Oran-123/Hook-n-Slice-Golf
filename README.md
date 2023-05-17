@@ -76,7 +76,13 @@ Hook 'n' Slice Goal is a welcoming brand that fosters a friendly environment spe
 
 #### Logo
 
-<img src="static/media/hook-n-slice-logo.svg"></img>
+The logo for Hook 'n' Slice Golf is thoughtfully designed to attract beginner golfers by visually communicating a welcoming and supportive atmosphere, encouraging progression, and evoking a sense of accomplishment in their golfing journey.
+
+  * The two stripes, represent the journey of beginner golfers. The blue represents the initial stages of learning and improvement, while the green symbolizes progress and advancement, this links in with the colour palette of the website. This logo emphasises the purpose of the brand and website which is to inspire beginners by showcasing a path of growth and development in their golfing skills.
+
+  * The golf hole with a flag within the logo emphasizes the feeling of achievement associated with the game of golf. This visual element aims to motivate beginner golfers by showcasing the exciting milestones and accomplishments they can strive for as they progress in their golfing journey.
+
+<img src="static/media/hook-n-slice-logo.svg" style="max-width: 50%;"></img>
 
 #### Colour Scheme
 
