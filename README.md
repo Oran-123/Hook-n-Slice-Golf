@@ -88,7 +88,7 @@ Purpose of each colour:
 
   * White - #ffffff - Background - Creates a clean and simple canvas which will allow other elements such as the text, images and icons to stand out prominently. The fresh look will be particular appealing to beginner golfers who will appreciate a clear and uncluttered background (they already have enough to handle figuring out how to play golf let alone trying to book a tee time)
 
-<img src="static/media/colormind-pp4-color-scheme.png"></img>
+<img src="static/media/colormind-pp4-color-scheme1.png"></img>
 
 #### Fonts
 
