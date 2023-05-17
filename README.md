@@ -76,6 +76,8 @@ Hook 'n' Slice Goal is a welcoming brand that fosters a friendly environment spe
 
 #### Logo
 
+<img src="static/media/hook-n-slice-logo.svg"></img>
+
 #### Colour Scheme
 
 The colour scheme for the website is focused on simplicity, trust and calmness all concepts which we hope will attract beginner golfers. The pallete consists of three colours in total; White, a dark green called <strong>Fun Green</strong>and a dark blue called <strong>St Tropaz</strong>.
