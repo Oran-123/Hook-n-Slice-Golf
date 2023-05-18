@@ -167,6 +167,32 @@ Reasons for choosing the fonts:
 
 ### Deploy on heroku<hr>
 
+1. Generate pipfile 
+
+   * Open the terminal and execute the command "pip3 freeze > requirements.txt" to generate a file containing all the necessary requirements.
+
+2. Heroku Setup
+
+   * Access the [Heroku website](https://www.heroku.com/ "Heroku Website").
+   * Log in to your Heroku account and select <strong>Create an App</strong>.
+   * Click on the <strong>New button</strong> and create an <strong>app</strong>.
+   * Select a suitable name and choose your location.
+   * Proceed to the <strong>Resources tab</strong>.
+   * From the list of resources, pick <strong>Heroku Postgres</strong>.
+   * Go to the <strong>Deploy tab</strong>.
+   * Click on <strong>Connect to Github</strong> and find your repository.
+   * Open the <strong>Settings</strong> tab.
+   * Reveal Config Vars and include your Cloudinary, Database URL (from Heroku-Postgres), and Secret Key.
+
+3. Heroku Deployment
+
+   * Visit the <strong>Deploy tab</strong>.
+   * Choose the <strong>main branch</strong> for deployment and activate <strong>automatic deployment</strong>.
+   * Opt for <strong>manual deployment</strong> to build the application.
+
+
+
+
 ### FORK THE REPOSITORY<hr>
 
 ### CLONE THE REPOSITORY<hr>
