@@ -201,6 +201,15 @@ To create a duplicate of the repository on your account and make modifications w
 
 ### CLONE THE REPOSITORY<hr>
 
+To create a replica of the repository on your local machine, follow these steps using the Clone feature:
+
+   * Access the [repository page](https://github.com/Oran-123/Hook-n-Slice-Golf "repository page") on your account.
+   * Locate the green <strong>Code</strong> button above the code window and click on it.
+   * Choose your preferred format from <strong>HTTPS, SSH</strong>, or <strong>GitClub CLI</strong>, and copy the provided URL (preferably HTTPS).
+   * Open your Integrated Development Environment (IDE) and launch Git Bash.
+   * Enter the command <strong>git clone</strong> followed by the copied URL in the Git Bash terminal.
+   * The repository will be cloned, and a local copy will be created on your machine.
+
 ## Credits
 
 ### Content<hr>
