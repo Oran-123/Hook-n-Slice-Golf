@@ -87,6 +87,17 @@ My website development approach will prioritize mobile devices, adopting a mobil
 
 ## Database 
 
+The project will use the PostgreSQL database for storing data. Two diagramgs were created to show the difference between the initial schema created during the design iteration prior to any development and the final schema created after development was completed. 
+
+
+<details>
+  <summary>Initial Schema</summary>
+  
+- [Database Schema](static/media/erd/ERD_Hook_n_Slice_Golf.png "Database Schema")
+
+
+</details>
+
 ### Database Schema<hr>
 
 ## Branding 
