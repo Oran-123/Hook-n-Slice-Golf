@@ -91,11 +91,8 @@ The project will use the PostgreSQL database for storing data. Two diagramgs wer
 
 
 <details>
-  <summary>Initial Schema</summary>
-  
-- [Database Schema](static/media/erd/ERD_Hook_n_Slice_Golf.png "Database Schema")
-
-
+  <summary>Initial Schema</summary> 
+<img src="static/media/erd/ERD_Hook_n_Slice_Golf.png"></img>
 </details>
 
 ### Database Schema<hr>
