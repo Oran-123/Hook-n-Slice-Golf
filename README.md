@@ -191,9 +191,13 @@ Reasons for choosing the fonts:
    * Opt for <strong>manual deployment</strong> to build the application.
 
 
-
-
 ### FORK THE REPOSITORY<hr>
+
+To create a duplicate of the repository on your account and make modifications without impacting the original project, follow these steps using the Fork feature on GitHub:
+
+   * Access the [repository page](https://github.com/Oran-123/Hook-n-Slice-Golf "repository page") on your account.
+   * In the top right corner of the page, click on the Fork button.
+   * A forked version of the project will be created and added to your repository.
 
 ### CLONE THE REPOSITORY<hr>
 
