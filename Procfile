@@ -1,0 +1,1 @@
+web: gunicorn django_hook_n_slice_golf.wsgi
