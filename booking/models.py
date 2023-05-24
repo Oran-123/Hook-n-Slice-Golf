@@ -38,9 +38,9 @@ class Booking(models.Model):
         ]
     )
     booking_date = models.ForeignKey(
-        TeeTime, on_delete=models.CASCADE, to_field='date')
+        TeeTime, on_delete=models.CASCADE, to_field='date', related_name='bookings_date')
     booking_time = models.ForeignKey(
-        TeeTime, on_delete=models.CASCADE, to_field='time')
+        TeeTime, on_delete=models.CASCADE, to_field='time', related_name='bookings_time')
     buggy = models.BooleanField()
 
     # method only saves the booking if there is enough spaces on the tee time
