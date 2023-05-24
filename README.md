@@ -92,7 +92,7 @@ The project will use the PostgreSQL database for storing data. Two diagramgs wer
 
 <details>
   <summary>Initial Schema</summary> 
-<img src="static/media/erd/ERD_Hook_n_Slice_Golf.png"></img>
+<img src="media/erd/ERD_Hook_n_Slice_Golf.png"></img>
 </details>
 
 ### Database Schema<hr>
@@ -109,7 +109,7 @@ The logo for Hook 'n' Slice Golf is thoughtfully designed to attract beginner go
 
   * The golf hole with a flag within the logo emphasizes the feeling of achievement associated with the game of golf. This visual element aims to motivate beginner golfers by showcasing the exciting milestones and accomplishments they can strive for as they progress in their golfing journey.
 
-<img src="static/media/hook-n-slice-logo.svg" style="max-width: 50%;"></img>
+<img src="media/hook-n-slice-logo.svg" style="max-width: 50%;"></img>
 
 ### Colour Scheme<hr>
 
@@ -125,7 +125,7 @@ Purpose of each colour:
 
   * White - #ffffff - Background - Creates a clean and simple canvas which will allow other elements such as the text, images and icons to stand out prominently. The fresh look will be particular appealing to beginner golfers who will appreciate a clear and uncluttered background (they already have enough to handle figuring out how to play golf let alone trying to book a tee time)
 
-<img src="static/media/colormind-pp4-color-scheme1.png"></img>
+<img src="media/colormind-pp4-color-scheme1.png"></img>
 
 ### Fonts<hr>
 
