@@ -22,7 +22,7 @@ class TeeTime(models.Model):
         return self.max_players - booked_players
 
     def __str__(self):
-        return f"{self.date} - {self.time}"
+        return f"{self.tee_datetime}"
 
 
 class Booking(models.Model):
