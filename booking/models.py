@@ -9,14 +9,13 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 class TeeTime(models.Model):
     """Model for tee times"""
     objects = models.Manager()
-    date = models.DateField()
-    time = models.TimeField()
+    tee_datetime = models.DateTimeField(unique=True)
     max_players = models.IntegerField(default=4)
     available = models.BooleanField(default=True)
 
     def available_slots(self):
         booked_players = Booking.objects.filter(
-            booking_date=self.date, booking_time=self.time).aggregate(
+            booking_datetime=self.tee_datetime).aggregate(
             total_players=models.Sum('players'))['total_players']
         if booked_players is None:
             booked_players = 0
@@ -37,10 +36,8 @@ class Booking(models.Model):
             MinValueValidator(1)
         ]
     )
-    booking_date = models.ForeignKey(
-        TeeTime, on_delete=models.CASCADE, to_field='date', related_name='bookings_date')
-    booking_time = models.ForeignKey(
-        TeeTime, on_delete=models.CASCADE, to_field='time', related_name='bookings_time')
+    booking_datetime = models.ForeignKey(
+        TeeTime, on_delete=models.CASCADE, to_field='tee_datetime', related_name='booking_datetime')
     buggy = models.BooleanField()
 
     # method only saves the booking if there is enough spaces on the tee time
@@ -49,7 +46,7 @@ class Booking(models.Model):
 
     def save(self, *args, **kwargs):
         tee_time = TeeTime.objects.get(
-            date=self.booking_date, time=self.booking_time)
+            tee_datetime=self.booking_datetime)
         available_slots = tee_time.available_slots()
         if available_slots < self.players:
             raise ValueError(
