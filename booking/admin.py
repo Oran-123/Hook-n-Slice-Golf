@@ -1,6 +1,8 @@
 from django.contrib import admin
-from .models import TeeTime, Booking
+from .models import Booking, TeeTime
 
 # Register your models here.
 
-admin.site.register(TeeTime, Booking)
+admin.site.register(Booking)
+admin.site.register(TeeTime)
+
