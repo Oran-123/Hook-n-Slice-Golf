@@ -46,7 +46,7 @@ class Booking(models.Model):
 
     def save(self, *args, **kwargs):
         tee_time = TeeTime.objects.get(
-            tee_datetime=self.booking_datetime)
+            tee_datetime=self.booking_datetime.tee_datetime)
         available_slots = tee_time.available_slots()
         if available_slots < self.players:
             raise ValueError(
