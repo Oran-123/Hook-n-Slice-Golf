@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '8000-oran-123-hook-n-slice-go-1p7u49ph0h.us2.codeanyapp.com', 'hook-n-slice-golf.herokuapp.com', 'localhost']
+    '8000-oran-123-hook-n-slice-go-vugxwly2mq.us2.codeanyapp.com', 'hook-n-slice-golf.herokuapp.com', 'localhost']
 
 
 # Application definition
