@@ -1,6 +1,9 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.core.validators import MaxValueValidator, MinValueValidator
+from django.db.models.signals import post_save
+from django.dispatch import receiver
+import datetime
 
 
 # Create your models here.
@@ -20,6 +23,32 @@ class TeeTime(models.Model):
         if booked_players is None:
             booked_players = 0
         return self.max_players - booked_players
+
+    # class method creates tee times for the next 7 days when called by signal
+    @classmethod
+    def create_tee_times(cls):
+        start_date = datetime.date.today()
+        # Generate tee times for the next 7 days
+        end_date = start_date + datetime.timedelta(days=7)
+
+        start_time = datetime.time(9)  # Start generating tee times from 9am
+        end_time = datetime.time(17)  # Generate tee times until 5pm
+
+        current_date = start_date
+
+        while current_date <= end_date:
+            current_datetime = datetime.datetime.combine(
+                current_date, start_time)
+
+            while current_datetime.time() <= end_time:
+                tee_time, created = cls.objects.get_or_create(
+                    tee_datetime=current_datetime)
+                if created:
+                    tee_time.save()
+
+                current_datetime += datetime.timedelta(hours=1)
+
+            current_date += datetime.timedelta(days=1)
 
     def __str__(self):
         return f"{self.tee_datetime}"
@@ -54,3 +83,10 @@ class Booking(models.Model):
         super().save(*args, **kwargs)
         tee_time.available = available_slots > 0
         tee_time.save()
+
+
+# signal creates teetimes everytime a booking is made 
+@receiver(post_save, sender=Booking)
+def generate_tee_times(sender, instance, created, **kwargs):
+    if created:
+        TeeTime.create_tee_times()
