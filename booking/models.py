@@ -85,7 +85,7 @@ class Booking(models.Model):
         tee_time.save()
 
 
-# signal creates teetimes everytime a booking is made 
+# signal creates teetimes everytime a booking is made
 @receiver(post_save, sender=Booking)
 def generate_tee_times(sender, instance, created, **kwargs):
     if created:
