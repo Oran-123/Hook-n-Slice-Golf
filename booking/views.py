@@ -5,4 +5,4 @@ from .models import TeeTime
 # Create your views here.
 
 def booking (request):
-    return render(request, "templates/booking.html") 
+    return render(request, "booking.html") 
