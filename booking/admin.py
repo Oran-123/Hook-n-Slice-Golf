@@ -13,8 +13,7 @@ class BookingAdmin(admin.ModelAdmin):
 @admin.register(TeeTime)
 class TeeTimeAdmin(admin.ModelAdmin):
     list_display = ('tee_datetime', 'available', 'booked_players')
-    list_filter = ('available',)
-    search_fields = ("tee_datetime", DateRangeFilterBuilder())
+    list_filter = ('available',("tee_datetime", DateRangeFilterBuilder()))
 
     def booked_players(self, obj):
         return obj.available_slots()
