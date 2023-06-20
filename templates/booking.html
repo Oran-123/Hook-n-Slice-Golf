@@ -2,24 +2,26 @@
 {% load static %}
 
 {% block content %}
-    <form method="POST">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-success btn-lg btn-block">Submit</button>
+</form>
 
-    {% if available_tee_times %}
-        <h2>Available Tee Times:</h2>
-        {% for tee_time in available_tee_times %}
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">{{ tee_time.tee_datetime }}</h5>
-                    <p class="card-text">Number of Available Slots: {{ tee_time.num_booked_players }}</p>
-                </div>
-            </div>
-        {% endfor %}
-    {% else %}
-        <p>No available tee times.</p>
-    {% endif %}
+{% if form.is_bound and not available_tee_times %}
+<p>No available tee times.</p>
+{% elif available_tee_times %}
+<h2>Available Tee Times:</h2>
+{% for tee_time in available_tee_times %}
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">{{ tee_time.tee_datetime }}</h5>
+        <p class="card-text">Number of Available Slots: {{ tee_time.num_booked_players }}</p>
+        <a href="#" class="btn btn-primary">Book Now</a>
+    </div>
+</div>
+
+{% endfor %}
+{% endif %}
 {% endblock %}
-
