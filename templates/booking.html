@@ -1,12 +1,34 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-<div class="container mt-5">
-    <h1>Select a Date for Tee Time Booking</h1>
-    <div class="row">
-        <div class="col">
-            <div id="calendar"></div>
-        </div>
+<h1>Select a day</h1>
+<form method="POST">
+    {% csrf_token %}
+    <input type="date" name="selected_day" required>
+    <button type="submit">Select</button>
+</form>
+
+{% if error_message %}
+<div class="alert alert-danger">{{ error_message }}</div>
+{% endif %}
+
+{% if teetimes %}
+<h2>Select a tee time</h2>
+{% for teetime in teetimes %}
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">{{ teetime.tee_datetime|date:"F d, Y" }}</h5>
+        <p class="card-text">Available slots: {{ teetime.available_slots }}</p>
+        <form method="POST" action="{% url 'select_teetime' teetime.id %}">
+            {% csrf_token %}
+            <input type="hidden" name="selected_date" value="{{ selected_day|date: Y-m-d }}">
+            <input type="number" name="players" min="1" max="{{ teetime.available_slots }}" value="1" required>
+            <label for="buggy">Need a buggy?</label>
+            <input type="checkbox" name="buggy">
+            <button type="submit">Book</button>
+        </form>
     </div>
 </div>
+{% endfor %}
+{% endif %}
 {% endblock %}
