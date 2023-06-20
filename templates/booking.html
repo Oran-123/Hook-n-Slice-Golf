@@ -1,34 +1,24 @@
 {% extends "base.html" %}
 {% load static %}
+
 {% block content %}
-<h1>Select a day</h1>
-<form method="POST">
-    {% csrf_token %}
-    <input type="date" name="selected_day" required>
-    <button type="submit">Select</button>
-</form>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
 
-{% if error_message %}
-<div class="alert alert-danger">{{ error_message }}</div>
-{% endif %}
-
-{% if teetimes %}
-<h2>Select a tee time</h2>
-{% for teetime in teetimes %}
-<div class="card">
-    <div class="card-body">
-        <h5 class="card-title">{{ teetime.tee_datetime|date:"F d, Y" }}</h5>
-        <p class="card-text">Available slots: {{ teetime.available_slots }}</p>
-        <form method="POST" action="{% url 'select_teetime' teetime.id %}">
-            {% csrf_token %}
-            <input type="hidden" name="selected_date" value="{{ selected_day|date: Y-m-d }}">
-            <input type="number" name="players" min="1" max="{{ teetime.available_slots }}" value="1" required>
-            <label for="buggy">Need a buggy?</label>
-            <input type="checkbox" name="buggy">
-            <button type="submit">Book</button>
-        </form>
-    </div>
-</div>
-{% endfor %}
-{% endif %}
+    {% if available_tee_times %}
+        <h2>Available Tee Times:</h2>
+        {% for tee_time in available_tee_times %}
+            <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{ tee_time.tee_datetime }}</h5>
+                <p class="card-text">Number of players booked: {{ tee_time.num_booked_players }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    {% else %}
+        <p>No available tee times.</p>
+    {% endif %}
 {% endblock %}
