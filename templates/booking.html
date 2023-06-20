@@ -12,13 +12,14 @@
         <h2>Available Tee Times:</h2>
         {% for tee_time in available_tee_times %}
             <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">{{ tee_time.tee_datetime }}</h5>
-                <p class="card-text">Number of players booked: {{ tee_time.num_booked_players }}</p>
+                <div class="card-body">
+                    <h5 class="card-title">{{ tee_time.tee_datetime }}</h5>
+                    <p class="card-text">Number of Available Slots: {{ tee_time.num_booked_players }}</p>
+                </div>
             </div>
-        </div>
         {% endfor %}
     {% else %}
         <p>No available tee times.</p>
     {% endif %}
 {% endblock %}
+
