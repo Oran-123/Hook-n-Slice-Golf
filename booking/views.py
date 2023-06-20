@@ -12,6 +12,12 @@ def tee_time_booking(request):
     if request.method == 'POST' and form.is_valid():
         available_tee_times = form.get_available_tee_times()
 
+        players = form.cleaned_data.get('players')
+
+        # Filter out tee times that don't have enough available slots
+        available_tee_times = [
+            tee_time for tee_time in available_tee_times if tee_time.available_slots() >= players]
+
     context = {
         'form': form,
         'available_tee_times': available_tee_times
