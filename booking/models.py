@@ -77,7 +77,10 @@ class Booking(models.Model):
         tee_time = TeeTime.objects.get(
             tee_datetime=self.booking_datetime.tee_datetime)
         available_slots = tee_time.available_slots()
-        if available_slots < self.players:
+
+        players = int(self.players)
+
+        if available_slots < players:
             raise ValueError(
                 f"You are trying to make a booking for {self.players} players, but this time only has space for {available_slots} players.")
         super().save(*args, **kwargs)
