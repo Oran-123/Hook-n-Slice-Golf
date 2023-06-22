@@ -18,7 +18,8 @@
     <div class="card-body">
         <h5 class="card-title">{{ tee_time.tee_datetime }}</h5>
         <p class="card-text">Number of Available Slots: {{ tee_time.num_booked_players }}</p>
-        <a href="#" class="btn btn-primary">Book Now</a>
+        <a href="{% url 'booking_form' teetime_id=tee_time.id %}?players={{ form.players.value }}"
+            class="btn btn-primary">Book Now</a>
     </div>
 </div>
 
