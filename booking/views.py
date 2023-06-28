@@ -46,6 +46,8 @@ def booking_submit(request):
         # Convert buggy value to a boolean
         if buggy == 'on':
             buggy = True
+        else:
+            buggy = False 
 
         booking_datetime = parser.parse(datetime_str)
         teetime = TeeTime.objects.get(tee_datetime=booking_datetime)
