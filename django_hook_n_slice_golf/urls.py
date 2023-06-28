@@ -22,6 +22,7 @@ urlpatterns = [
     path('booking/', tee_time_booking, name='tee_time_booking'),
     path('booking/<int:teetime_id>/', booking_form, name='booking_form'),
     path('booking/submit/', booking_submit, name='booking_submit'),
+    path('accounts/', include('allauth.urls')),
 
 
 ]
