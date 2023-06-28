@@ -4,6 +4,8 @@ from django.contrib.auth.decorators import login_required
 from .forms import TeeTimeForm
 from datetime import datetime
 from dateutil import parser
+from django.utils import timezone
+
 
 
 @login_required
@@ -49,7 +51,7 @@ def booking_submit(request):
         else:
             buggy = False 
 
-        booking_datetime = parser.parse(datetime_str)
+        booking_datetime = timezone.make_aware(parser.parse(datetime_str))
         teetime = TeeTime.objects.get(tee_datetime=booking_datetime)
 
 
@@ -58,9 +60,6 @@ def booking_submit(request):
                           booking_datetime=teetime, buggy=buggy).save()
 
         # Redirect the user to the booking success page or any other relevant view
-        return redirect('booking.html')
-        print(Booking)
+        # return redirect('booking.html')
 
     return render(request, 'booking.html')
-
-
