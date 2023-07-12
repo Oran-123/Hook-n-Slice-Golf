@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+    <h1>{{ user.username }}</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit" name="filter_type" value="past"
+            class="{% if filter_type == 'past' %}active{% endif %}">Show Past Bookings</button>
+        <button type="submit" name="filter_type" value="upcoming"
+            class="{% if filter_type == 'upcoming' %}active{% endif %}">Show Upcoming Bookings</button>
+    </form>
+
+    {% if bookings %}
+    <h2>{{ title }}</h2>
+    <ul>
+        {% for booking in bookings %}
+        <li>{{ booking }}</li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <h2>{{ title }}</h2>
+    <p>No bookings. Click Here to Create A Booking.</p>
+    {% endif %}
+</div>
+{%endblock%}

@@ -49,7 +49,7 @@
                 </ul>
                 <span class="navbar-text text-muted">
                     {% if user.is_authenticated %}
-                    Welcome, <a href="{% url 'user_profile' user.username %}">{{ user.username }}</a>!
+                    Welcome, <a href="{% url 'user_profile_bookings' %}">{{ user.username }}</a>!
                     {% endif %}
                 </span>
             </div>
