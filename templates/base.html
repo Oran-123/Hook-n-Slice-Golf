@@ -49,9 +49,9 @@
                 </ul>
                 <span class="navbar-text text-muted">
                     {% if user.is_authenticated %}
-                    Welcome, {{ user.username }}!
+                    Welcome, <a href="{% url 'user_profile' user.username %}">{{ user.username }}</a>!
                     {% endif %}
-                </span>>
+                </span>
             </div>
         </div>
     </nav>
