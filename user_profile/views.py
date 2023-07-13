@@ -1,9 +1,9 @@
 from datetime import datetime
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django.contrib.auth.decorators import login_required
 from booking.models import Booking
 from django.shortcuts import get_object_or_404
-
+from .forms import EditBooking
 
 
 @login_required
@@ -42,3 +42,17 @@ def get_booking_id(request):
 def delete_booking(booking_id):
     booking = get_object_or_404(Booking, id=booking_id)
     booking.delete()
+
+
+def edit_booking(request, booking_id):
+    booking = get_object_or_404(Booking, id=booking_id)
+
+    if request.method == 'POST':
+        form = EditBooking(request.POST, instance=booking)
+        if form.is_valid():
+            form.save()
+            return redirect('user_profile_bookings')
+    else:
+        form = EditBooking(instance=booking)
+
+    return render(request, 'edit_booking.html', {'form': form, 'booking_id': booking_id})
