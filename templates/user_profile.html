@@ -17,7 +17,26 @@
     <h2>{{ title }}</h2>
     <ul>
         {% for booking in bookings %}
-        <li>{{ booking }}</li>
+
+        {% if filter_type == 'upcoming' %}
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{ booking.booking_datetime.tee_datetime }}</h5>
+                <p>Players: {{ booking.players }}</p>
+                <p>Buggy: {% if booking.buggy %}Yes{% else %}No{% endif %}</p>
+                <a href=# class="btn btn-primary">Update</a>
+                <a href=# class="btn btn-primary">Cancel</a>
+            </div>
+        </div>
+        {% else %}
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{ booking.booking_datetime.tee_datetime }}</h5>
+                <p>Players: {{ booking.players }}</p>
+                <p>Buggy: {% if booking.buggy %}Yes{% else %}No{% endif %}</p>
+            </div>
+        </div>
+        {% endif %}
         {% endfor %}
     </ul>
     {% else %}
