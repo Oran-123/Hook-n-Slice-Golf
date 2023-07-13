@@ -2,6 +2,8 @@ from datetime import datetime
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from booking.models import Booking
+from django.shortcuts import get_object_or_404
+
 
 
 @login_required
