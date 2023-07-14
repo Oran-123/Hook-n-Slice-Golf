@@ -2,17 +2,44 @@
 
 {% block content %}
 
-<div class="container-fluid">
-    <div class="row">
-
-        <!-- Blog Entries Column -->
-        <div class="col-12 mt-3 left">
-            <div class="row">
-
+<!-- Section with image -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="path_to_your_image.jpg" class="img-fluid" alt="Image">
             </div>
         </div>
     </div>
+</section>
 
-</div>
+<section>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-12">
+                <a href="{% url 'tee_time_booking' %}" class="btn btn-primary">Book Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <i class="fa fa-icon1"></i>
+                <h5>Icon 1</h5>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fa fa-icon2"></i>
+                <h5>Icon 2</h5>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fa fa-icon3"></i>
+                <h5>Icon 3</h5>
+            </div>
+        </div>
+    </div>
+</section>
 
 {%endblock%}
