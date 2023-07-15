@@ -38,9 +38,14 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <p>Welcome, <a href="{% url 'user_profile_bookings' %}">{{ user.username }}</a>! </p>
                     </li>
+                    {% if user.is_superuser %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'ManageBookingListView' %}">Manage Bookings</a>
+                    </li>
+                    {% endif %}
                     {% else %}
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
