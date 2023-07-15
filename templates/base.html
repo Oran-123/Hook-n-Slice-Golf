@@ -38,6 +38,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
                     </li>
+                    <li>
+                        <p>Welcome, <a href="{% url 'user_profile_bookings' %}">{{ user.username }}</a>! </p>
+                    </li>
                     {% else %}
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
@@ -47,11 +50,6 @@
                     </li>
                     {% endif %}
                 </ul>
-                <span class="navbar-text text-muted">
-                    {% if user.is_authenticated %}
-                    Welcome, <a href="{% url 'user_profile_bookings' %}">{{ user.username }}</a>!
-                    {% endif %}
-                </span>
             </div>
         </div>
     </nav>
