@@ -59,6 +59,7 @@ def edit_booking(request, booking_id):
 
     return render(request, 'edit_booking.html', {'form': form, 'booking_id': booking_id})
 
+
 class ManageBookingListView(LoginRequiredMixin, UserPassesTestMixin, ListView):
 
     model = Booking
@@ -67,3 +68,7 @@ class ManageBookingListView(LoginRequiredMixin, UserPassesTestMixin, ListView):
 
     def test_func(self):
         return self.request.user.is_superuser
+
+    def admin_delete_booking(self):
+        if request.method == 'POST':
+            get_booking_id(request)
