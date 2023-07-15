@@ -1,9 +1,11 @@
 from datetime import datetime
-from django.shortcuts import render,redirect
+from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from booking.models import Booking
 from django.shortcuts import get_object_or_404
 from .forms import EditBooking
+from django.views.generic import ListView
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 
 
 @login_required
@@ -56,3 +58,12 @@ def edit_booking(request, booking_id):
         form = EditBooking(instance=booking)
 
     return render(request, 'edit_booking.html', {'form': form, 'booking_id': booking_id})
+
+class ManageBookingListView(LoginRequiredMixin, UserPassesTestMixin, ListView):
+
+    model = Booking
+    template_name = 'manage_bookings.html'
+    context_object_name = 'bookings'
+
+    def test_func(self):
+        return self.request.user.is_superuser
