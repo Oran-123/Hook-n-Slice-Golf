@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Open+Sans&display=swap');
 
-:root {}
+:root {
+    --primary-green: #006630;
+    --accent-blue: #295899;
+    --primary-white: #ffffff;
+
+}
 
 * {
     margin: 0;
@@ -10,4 +15,14 @@
 
 html {
     font-size: 62.5%;
+}
+
+.navbar {
+    background-color: var(--primary-green);
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    color: var(--primary-white)
 }
