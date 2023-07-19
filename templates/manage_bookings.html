@@ -1,6 +1,20 @@
-{% extends "base.html" %}
+{% extends "base.html" %} {% block content %}
 
-{% block content %}
+<!-- Alerts -->
+{% if messages %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-10">
+            {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}">
+                {{ message }}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
+
 
 <!-- Delete Modal -->
 <div class="modal fade" id="deleteModal" role="dialog">
@@ -13,9 +27,9 @@
             </div>
             <div class="modal-body">
                 <p>Are you sure you want to delete this booking?</p>
-                <form method="POST" action="{% url 'admin_delete_booking' %}">
+                <form method="POST" action="{% url 'delete_booking' %}">
                     {% csrf_token %}
-                    <input type="hidden" name="booking_id" value="{{ booking.id }}">
+                    <input type="hidden" id="bookingIdInput" name="booking_id" value="">
                     <button type="submit" class="btn btn-danger">Delete</button>
                 </form>
             </div>
@@ -29,6 +43,7 @@
             <table class="table table-bordered table-striped">
                 <thead>
                     <tr>
+                        <th>Booking ID</th>
                         <th>User Name</th>
                         <th>Date</th>
                         <th>Time</th>
@@ -40,6 +55,7 @@
                 <tbody>
                     {% for booking in bookings %}
                     <tr>
+                        <td>{{ booking.id }}</td>
                         <td>{{ booking.user_name }}</td>
                         <td>{{ booking.booking_datetime.tee_datetime|date:"Y-m-d" }}</td>
                         <td>{{ booking.booking_datetime.tee_datetime|time:"H:i" }}</td>
@@ -48,7 +64,9 @@
                         <td>
                             <a href="{% url 'edit_booking' booking.id %}" class="btn btn-primary">Edit</a>
                             <button type="button" class="btn btn-danger" data-bs-toggle="modal"
-                                data-bs-target="#deleteModal">Delete</button>
+                                data-bs-target="#deleteModal" onclick="setBookingId({{ booking.id }})">
+                                Delete
+                            </button>
                         </td>
                     </tr>
                     {% empty %}
