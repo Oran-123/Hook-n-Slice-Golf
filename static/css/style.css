@@ -42,3 +42,9 @@ h2 {
 .logo {
     height: 10rem;
 }
+
+#background {
+    background-image: url(../media/background-image.jpg);
+    background-size: cover;
+
+}
