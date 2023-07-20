@@ -17,6 +17,18 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+h1,
+h2 {
+    font-family: "Fredoka", sans-serif;
+    font-weight: 400;
+}
+
 .navbar {
     background-color: var(--primary-green);
 }
@@ -25,4 +37,8 @@ html {
     display: flex;
     align-items: center;
     color: var(--primary-white)
+}
+
+.logo {
+    height: 10rem;
 }
