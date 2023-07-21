@@ -50,8 +50,26 @@ h2 {
     background-color: var(--primary-white);
 }
 
-.hero-img {
-    width: 100%;
-    overflow: hidden;
-    max-height: 100vh;
+#hero-background {
+    height: 88vh;
+    background-image: url(../media/hero-image-hp.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+@media (min-width: 992px) {
+
+    #hero-background {
+        height: 75vh;
+    }
+
+}
+
+
+@media (min-width: 1024px) {
+
+    #hero-background {
+        height: 50vh;
+    }
+
 }
