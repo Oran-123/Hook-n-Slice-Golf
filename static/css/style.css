@@ -29,9 +29,13 @@ h2 {
     font-weight: 400;
 }
 
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--primary-white);
+}
+
 .navbar {
     background-color: var(--primary-green);
-    color: var(--primary-white);
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -39,10 +43,6 @@ h2 {
 .nav-item {
     display: flex;
     align-items: center;
-}
-
-.nav-link {
-    color: var(--primary-white)
 }
 
 .logo {
