@@ -31,20 +31,27 @@ h2 {
 
 .navbar {
     background-color: var(--primary-green);
+    color: var(--primary-white);
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .nav-item {
     display: flex;
     align-items: center;
+}
+
+.nav-link {
     color: var(--primary-white)
 }
 
 .logo {
     height: 10rem;
+    background-color: var(--primary-white);
 }
 
-#background {
-    background-image: url(../media/background-image.jpg);
-    background-size: cover;
-
+.hero-img {
+    width: 100%;
+    overflow: hidden;
+    max-height: 100vh;
 }
