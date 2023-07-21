@@ -2,34 +2,44 @@
 
 {% block content %}
 
-<div class="wrapper flex-column d-flex justify-content-around">
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-md-12">
-                {% if user.is_authenticated %}
-                <a href="{% url 'tee_time_booking' %}" class="btn btn-primary">Book Now</a>
-                {% else %}
-                <a href="{% url 'tee_time_booking' %}" class="btn btn-primary">Sign In to Book</a>
-                {% endif %}
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 text-center">
-                <i class="fa fa-icon1"></i>
-                <h5>Icon 1</h5>
-            </div>
-            <div class="col-md-4 text-center">
-                <i class="fa fa-icon2"></i>
-                <h5>Icon 2</h5>
-            </div>
-            <div class="col-md-4 text-center">
-                <i class="fa fa-icon3"></i>
-                <h5>Icon 3</h5>
-            </div>
-        </div>
+<!-- Hero Image -->
+<div class="container-fluid">
+    <div class="row hero-img">
+        <img src="../static/media/Hero-Image2.jpeg" alt="hero image">
     </div>
 </div>
 
-{%endblock%}
+<div class="wrapper flex-column d-flex justify-content-around">
+    <div class="container">
+        <!-- Booking button -->
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    {% if user.is_authenticated %}
+                    <a href="{% url 'tee_time_booking' %}" class="btn btn-primary">Book Now</a>
+                    {% else %}
+                    <a href="{% url 'tee_time_booking' %}" class="btn btn-primary">Sign In to Book</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <!-- Reasons for joing -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <i class="fa fa-icon1"></i>
+                    <h5>Icon 1</h5>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fa fa-icon2"></i>
+                    <h5>Icon 2</h5>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fa fa-icon3"></i>
+                    <h5>Icon 3</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {%endblock%}
