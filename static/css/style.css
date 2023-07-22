@@ -76,6 +76,15 @@ h2 {
     background-position: center;
 }
 
+
+.footer {
+    background-color: var(--primary-green);
+}
+
+#social-list {
+    margin-bottom: 0;
+}
+
 @media (min-width: 992px) {
 
     #hero-background {
