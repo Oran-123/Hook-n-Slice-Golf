@@ -24,25 +24,50 @@
     <!-- Navigation -->
 
     <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid d-flex justify-content-between">
+        <div class="container d-flex justify-content-between" id="nav-wrapper">
             <div class="row">
                 <img class="logo col-4 img-fluid" src="../static/media/hook-n-slice-logo.svg" alt="brand logo">
                 <div class=" text-center col-8 d-flex align-items-center justify-content-center">
-                    <h2 class="">Hook n' Slice Golf</h1>
+                    <h2 class="">Hook n' Slice Golf</h2>
                 </div>
-
             </div>
-            <button class=" navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarText"
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarText">
+            <ul class="navbar-nav justify-content-end navigation" id="nav-bar-lg">
+                {% if user.is_authenticated %}
+                <li class="nav-item px-2">
+                    Welcome, <a class="nav-link" href="{% url 'user_profile_bookings' %}">{{ user.username}}</a>!
+                </li>
+                {% if user.is_superuser %}
+                <li class="nav-item px-2">
+                    <a class="nav-link" href="{% url 'ManageBookingListView' %}">Manage Bookings</a>
+                </li>
+                {% endif %}
+                <li class="nav-item px-2">
+                    <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+                </li>
+                {% else %}
+                <li class="nav-item px-2">
+                    <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
+                </li>
+                <li class="nav-item px-2">
+                    <a class="nav-link" href="{% url 'account_login' %}">Login</a>
+                </li>
+                {% endif %}
+            </ul>
+            <div class="offcanvas offcanvas-end" id="navbarText">
                 <div class="offcanvas-header">
-                    <h2 class="offcanvas-title" id="logo">Hook n' Slice Golf</h5>
-                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
+                    <div class="row">
+                        <img class="logo col-4 img-fluid" src="../static/media/hook-n-slice-logo.svg" alt="brand logo">
+                        <div class=" text-center col-8 d-flex align-items-center justify-content-center">
+                            <h2 class="">Hook n' Slice Golf</h2>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                <ul class="navbar-nav justify-content-end navigation ">
                     {% if user.is_authenticated %}
                     <li class="nav-item px-2">
                         Welcome, <a class="nav-link" href="{% url 'user_profile_bookings' %}">{{ user.username}}</a>!
