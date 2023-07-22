@@ -29,6 +29,9 @@ h2 {
     font-weight: 400;
 }
 
+#nav-wrapper {
+    margin: 0 0;
+}
 
 .navbar-light .navbar-nav .nav-link {
     color: var(--primary-white);
@@ -38,16 +41,32 @@ h2 {
     background-color: var(--primary-green);
     padding-top: 0;
     padding-bottom: 0;
+    color: var(--primary-white);
+}
+
+.offcanvas {
+    background-color: var(--primary-green);
+    color: var(--primary-white);
+    width: 100%;
+}
+
+.offcanvas-header {
+    padding: 0 0;
 }
 
 .nav-item {
     display: flex;
     align-items: center;
+    color: var(--primary-white);
 }
 
 .logo {
     height: 10rem;
     background-color: var(--primary-white);
+}
+
+#nav-bar-lg {
+    display: none;
 }
 
 #hero-background {
@@ -63,6 +82,13 @@ h2 {
         height: 75vh;
     }
 
+    #nav-bar-lg {
+        display: flex;
+    }
+
+    .offcanvas {
+        display: none;
+    }
 }
 
 
