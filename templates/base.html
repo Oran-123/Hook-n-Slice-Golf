@@ -94,9 +94,11 @@
     </nav>
 
     <main class="flex-shrink-0 main-bg flex-grow-1" id="background">
-        {% block content %}
-        <!-- Content Goes here -->
-        {% endblock content %}
+        <div class="wrapper">
+            {% block content %}
+            <!-- Content Goes here -->
+            {% endblock content %}
+        </div>
     </main>
 
     <!-- Footer -->
