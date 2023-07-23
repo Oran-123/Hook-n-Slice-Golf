@@ -78,8 +78,13 @@ h2 {
     background-image: url(../media/hero-image-hp.jpeg);
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
+#faded-box-wrapper {
+    position: absolute;
+    top: 50%;
+}
 
 .footer {
     background-color: var(--primary-green);
