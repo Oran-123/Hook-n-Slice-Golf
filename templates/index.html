@@ -6,27 +6,24 @@
 
 <!-- Hero Image -->
 <div id="hero-background">
-    <div class="wrapper col-8 flex f-column">
-        <div class="row">
-            <div id="faded-box">
-                <!-- logo -->
-                <div class="row">
-
-                </div>
-                <!-- book now button -->
-                <div class="row">
-                    <div class="col-md-12">
-                        {% if user.is_authenticated %}
-                        <a href="{% url 'tee_time_booking' %}" class="btn btn-primary">Book Now</a>
-                        {% else %}
-                        <a href="{% url 'tee_time_booking' %}" class="btn btn-primary">Sign In to Book</a>
-                        {% endif %}
-                    </div>
-                </div>
+    <div class="col-12 mx-auto flex f-column" id="faded-box">
+        <div class="col-md-4 col-8 mx-auto px-3 py-4">
+            <!-- logo -->
+            <div class=" d-flex justify-content-center">
+                <h1>Hook n' Slice Golf</h1>
+            </div>
+            <!-- book now button -->
+            <div class="d-flex justify-content-center">
+                {% if user.is_authenticated %}
+                <a href="{% url 'tee_time_booking' %}" class="btn btn-primary">Book Now</a>
+                {% else %}
+                <a href="{% url 'tee_time_booking' %}" class="btn btn-primary">Sign In to Book</a>
+                {% endif %}
             </div>
         </div>
     </div>
 </div>
+
 <div class="flex-column d-flex justify-content-around">
     <!-- Reasons for joining section -->
     <div class="container">
