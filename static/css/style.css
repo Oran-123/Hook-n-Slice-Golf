@@ -86,6 +86,11 @@ h2 {
     top: 50%;
 }
 
+#faded-box {
+    background-color: var(--primary-green);
+    opacity: .8;
+}
+
 .footer {
     background-color: var(--primary-green);
 }
