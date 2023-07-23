@@ -73,6 +73,10 @@ h2 {
     display: none;
 }
 
+#hamburger-menu-button {
+    border: none;
+}
+
 .wrapper {
     margin-top: 10rem;
 }
