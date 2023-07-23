@@ -38,9 +38,11 @@
                 id="hamburger-menu-button">
                 <span><i class="fa-solid fa-bars fa-2xl text-white"></i></i></span>
             </button>
+
+            <!-- Nav menu for large screens -->
+
             <ul class="navbar-nav justify-content-end navigation" id="nav-bar-lg">
                 <li class="nav-item px-2">
-
                     {% if user.is_authenticated %}
                     <a href="{% url 'tee_time_booking' %}" class="nav-link"><i
                             class="fa-solid fa-golf-ball-tee fa-xl"></i> Book Now</a>
@@ -49,14 +51,11 @@
                             class="fa-solid fa-golf-ball-tee fa-xl"></i> Book Now</a>
                     {% endif %}
                 </li>
-
                 {% if user.is_authenticated %}
                 <li class="nav-item px-2">
 
                     <a class="nav-link" href="{% url 'user_profile_bookings' %}"><i
                             class="fas fa-user-circle fa-xl"></i> {{user.username}}</a>
-
-
                 </li>
                 {% if user.is_superuser %}
                 <li class="nav-item px-2">
@@ -81,6 +80,9 @@
                 </li>
                 {% endif %}
             </ul>
+
+            <!-- Nav menu for mobile and table devices -->
+
             <div class="offcanvas offcanvas-end" id="navbarText">
                 <div class="offcanvas-header">
                     <div class="row">
@@ -93,7 +95,6 @@
                 </div>
                 <ul class="navbar-nav justify-content-end navigation ">
                     <li class="nav-item px-2">
-
                         {% if user.is_authenticated %}
                         <a href="{% url 'tee_time_booking' %}" class="nav-link"><i
                                 class="fa-solid fa-golf-ball-tee fa-xl"></i> Book Now</a>
@@ -102,26 +103,20 @@
                                 class="fa-solid fa-golf-ball-tee fa-xl"></i> Book Now</a>
                         {% endif %}
                     </li>
-
                     {% if user.is_authenticated %}
                     <li class="nav-item px-2">
-
                         <a class="nav-link" href="{% url 'user_profile_bookings' %}"><i
                                 class="fas fa-user-circle fa-xl"></i>
                             {{user.username}}</a>
-
-
                     </li>
                     {% if user.is_superuser %}
                     <li class="nav-item px-2">
-
                         <a class="nav-link" href="{% url 'ManageBookingListView' %}"><i
                                 class="fa-solid fa-pen-to-square fa-lg"></i> Manage
                             Bookings</a>
                     </li>
                     {% endif %}
                     <li class="nav-item px-2">
-
                         <a class="nav-link" href="{% url 'account_logout' %}"><i
                                 class="fa-solid fa-right-from-bracket fa-lg"></i>
                             Logout</a>
