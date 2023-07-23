@@ -34,28 +34,39 @@
                 </div>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"
+                id="hamburger-menu-button">
+                <span><i class="fa-solid fa-bars fa-2xl text-white"></i></i></span>
             </button>
             <ul class="navbar-nav justify-content-end navigation" id="nav-bar-lg">
                 {% if user.is_authenticated %}
                 <li class="nav-item px-2">
-                    Welcome, <a class="nav-link" href="{% url 'user_profile_bookings' %}">{{ user.username}}</a>!
+
+                    <a class="nav-link" href="{% url 'user_profile_bookings' %}"><i
+                            class="fas fa-user-circle fa-xl"></i> {{user.username}}</a>
+
+
                 </li>
                 {% if user.is_superuser %}
                 <li class="nav-item px-2">
-                    <a class="nav-link" href="{% url 'ManageBookingListView' %}">Manage Bookings</a>
+
+                    <a class="nav-link" href="{% url 'ManageBookingListView' %}"><i
+                            class="fa-solid fa-pen-to-square fa-lg"></i> Manage Bookings</a>
                 </li>
                 {% endif %}
                 <li class="nav-item px-2">
-                    <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+
+                    <a class="nav-link" href="{% url 'account_logout' %}"><i
+                            class="fa-solid fa-right-from-bracket fa-lg"></i> Logout</a>
                 </li>
                 {% else %}
                 <li class="nav-item px-2">
-                    <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
+                    <a class="nav-link" href="{% url 'account_signup' %}"><i class="fa-solid fa-user-plus fa-lg"></i>
+                        Register</a>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="nav-link" href="{% url 'account_login' %}">Login</a>
+                    <a class="nav-link" href="{% url 'account_login' %}"><i
+                            class="fa-solid fa-right-to-bracket fa-lg"></i> Login</a>
                 </li>
                 {% endif %}
             </ul>
@@ -134,6 +145,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+    <script src="https://kit.fontawesome.com/fe350ff5b2.js" crossorigin="anonymous"></script>
     <script src="{% static 'js/script.js' %}"></script>
 </body>
 
