@@ -22,7 +22,7 @@
     <div class="row">
         {% for tee_time in available_tee_times %}
         <div class="col-lg-4 col-md-6 col-12">
-            <div class="card my-3">
+            <div class="card my-3 text-center">
                 <div class="card-body">
                     <h5 class="card-title">{{ tee_time.tee_datetime }}</h5>
                     <p class="card-text">Number of Available Slots: {{ tee_time.num_booked_players }}</p>
