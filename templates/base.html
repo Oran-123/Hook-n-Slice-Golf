@@ -139,7 +139,7 @@
 
     <main class="flex-shrink-0 main-bg flex-grow-1" id="background">
         <div class="wrapper">
-
+            {% load i18n %}
             <!-- Confirm Logout Modal -->
             <div class="modal fade" id="logoutModal" role="dialog">
                 <div class="modal-dialog">
@@ -164,6 +164,8 @@
                     </div>
                 </div>
             </div>
+
+
             {% block content %}
             <!-- Content Goes here -->
             {% endblock content %}
