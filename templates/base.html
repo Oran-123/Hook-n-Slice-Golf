@@ -66,7 +66,7 @@
                 {% endif %}
                 <li class="nav-item px-2">
 
-                    <a class="nav-link" href="{% url 'account_logout' %}"><i
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#logoutModal"><i
                             class="fa-solid fa-right-from-bracket fa-lg"></i> Logout</a>
                 </li>
                 {% else %}
@@ -139,6 +139,31 @@
 
     <main class="flex-shrink-0 main-bg flex-grow-1" id="background">
         <div class="wrapper">
+
+            <!-- Confirm Logout Modal -->
+            <div class="modal fade" id="logoutModal" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Confirm Logout</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i
+                                    class="fa-solid fa-x fa-lg"></i></button>
+
+                        </div>
+                        <div class="modal-body">
+                            <p>Are you sure you want to logout?</p>
+                            <form method="post" action="{% url 'account_logout' %}">
+                                {% csrf_token %}
+                                {% if redirect_field_value %}
+                                <input type="hidden" name="{{ redirect_field_name }}"
+                                    value="{{ redirect_field_value }}" />
+                                {% endif %}
+                                <button type="submit" class="btn btn-danger">Logout</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
             {% block content %}
             <!-- Content Goes here -->
             {% endblock content %}
