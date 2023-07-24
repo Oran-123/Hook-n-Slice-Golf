@@ -81,6 +81,10 @@ h2 {
     margin-top: 10rem;
 }
 
+.messages {
+    right: 2rem;
+}
+
 #hero-background {
     height: 88vh;
     background-image: url(../media/hero-image-hp.jpeg);
