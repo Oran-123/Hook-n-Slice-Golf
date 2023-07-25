@@ -2,10 +2,12 @@ from django import forms
 from django.forms.widgets import CheckboxSelectMultiple
 from .models import Booking, TeeTime
 from django.contrib import messages
-from datetime import date, datetime
+from datetime import date, datetime, time
+from django.utils import timezone
 
 
 class TeeTimeForm(forms.Form):
+
     def __init__(self, *args, user=None, **kwargs):
         self.user = user
         super().__init__(*args, **kwargs)
@@ -15,9 +17,9 @@ class TeeTimeForm(forms.Form):
     date = forms.DateField(widget=forms.DateInput(
         attrs={'class': 'form-control', 'type': 'date', 'min': datetime.today().date()}))
     start_time = forms.TimeField(widget=forms.TimeInput(
-        attrs={'class': 'form-control', 'type': 'time'}))
+        attrs={'class': 'form-control', 'type': 'time', 'min': timezone.now().strftime('%H:%M')}))
     end_time = forms.TimeField(widget=forms.TimeInput(
-        attrs={'class': 'form-control', 'type': 'time'}))
+        attrs={'class': 'form-control', 'type': 'time', 'min': timezone.now().strftime('%H:%M')}))
     players = forms.IntegerField(widget=forms.NumberInput(
         attrs={'class': 'form-control', 'min': '1', 'max': '4'}))
 
