@@ -7,7 +7,7 @@
         <form class="col-6" method="POST" action="{% url 'booking_submit' %}">
             {% csrf_token %}
             <label>Date & Time:</label>
-            <input type="text" name="date & time" value="{{ teetime.tee_datetime }}" readonly>
+            <input type="text" name="date & time" value="{{ teetime.tee_datetime|date:'Y-m-d H:i:s' }}" readonly>
             <label>Number of Players:</label>
             <input type="number" name="players" value="{{ request.GET.players }}" readonly>
             <label>Buggy Required:</label>
