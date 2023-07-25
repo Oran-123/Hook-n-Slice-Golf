@@ -4,6 +4,7 @@
     --primary-green: #006630;
     --accent-blue: #295899;
     --primary-white: #ffffff;
+    --error-list-background: #f8d7da;
 
 }
 
@@ -83,6 +84,15 @@ h2 {
 
 .messages {
     right: 2rem;
+}
+
+.errorlist {
+    color: black;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+    border-radius: 1rem;
+    list-style: none;
+    padding: 1rem;
 }
 
 #hero-background {
