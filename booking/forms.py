@@ -4,6 +4,9 @@ from .models import Booking, TeeTime
 
 
 class TeeTimeForm(forms.Form):
+    def __init__(self, *args, user=None, **kwargs):
+        self.user = user
+        super().__init__(*args, **kwargs)
     date = forms.DateField(widget=forms.DateInput(
         attrs={'class': 'form-control', 'type': 'date'}))
     start_time = forms.TimeField(widget=forms.TimeInput(
@@ -15,6 +18,19 @@ class TeeTimeForm(forms.Form):
 
     def clean(self):
         cleaned_data = super().clean()
+        date = cleaned_data.get('date')
+
+        if date:
+            # Query for any existing bookings for the same date and user
+            existing_booking = Booking.objects.filter(
+                user_name=self.user,
+                booking_datetime__tee_datetime__date=date
+            ).first()
+
+            if existing_booking:
+                self.add_error(
+                    'date', f"You have already booked a tee time on {date}. You are only permitted to make one booking per day.")
+
         start_time = cleaned_data.get('start_time')
         end_time = cleaned_data.get('end_time')
 

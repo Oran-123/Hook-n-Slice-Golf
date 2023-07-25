@@ -5,12 +5,12 @@ from .forms import TeeTimeForm
 from datetime import datetime
 from dateutil import parser
 from django.utils import timezone
-
+from django.contrib import messages
 
 
 @login_required
 def tee_time_booking(request):
-    form = TeeTimeForm(request.POST or None)
+    form = TeeTimeForm(request.POST or None, user=request.user)
     available_tee_times = []
 
     if request.method == 'POST' and form.is_valid():
@@ -40,24 +40,20 @@ def booking_form(request, teetime_id):
 
 @login_required
 def booking_submit(request):
-
     if request.method == 'POST':
         datetime_str = request.POST.get('date & time')
         players = request.POST.get('players')
         buggy = request.POST.get('buggy', False)
-        # Convert buggy value to a boolean
         if buggy == 'on':
             buggy = True
         else:
-            buggy = False 
+            buggy = False
 
         booking_datetime = timezone.make_aware(parser.parse(datetime_str))
         teetime = TeeTime.objects.get(tee_datetime=booking_datetime)
 
-
-        # Process the form data and create the booking
         Booking(user_name=request.user, players=players,
-                          booking_datetime=teetime, buggy=buggy).save()
+                booking_datetime=teetime, buggy=buggy).save()
 
         # Redirect the user to the booking success page or any other relevant view
         # return redirect('booking.html')
