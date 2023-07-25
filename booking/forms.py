@@ -1,6 +1,7 @@
 from django import forms
 from django.forms.widgets import CheckboxSelectMultiple
 from .models import Booking, TeeTime
+from django.contrib import messages
 
 
 class TeeTimeForm(forms.Form):
@@ -29,7 +30,7 @@ class TeeTimeForm(forms.Form):
 
             if existing_booking:
                 self.add_error(
-                    'date', f"You have already booked a tee time on {date}. You are only permitted to make one booking per day.")
+                    None, f"You have already booked a tee time on {date}. You are only permitted to make one booking per day.")
 
         start_time = cleaned_data.get('start_time')
         end_time = cleaned_data.get('end_time')
