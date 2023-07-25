@@ -2,12 +2,16 @@ from django import forms
 from django.forms.widgets import CheckboxSelectMultiple
 from .models import Booking, TeeTime
 from django.contrib import messages
+from datetime import date
+
 
 
 class TeeTimeForm(forms.Form):
     def __init__(self, *args, user=None, **kwargs):
         self.user = user
         super().__init__(*args, **kwargs)
+        self.fields['date'].initial = date.today()
+
     date = forms.DateField(widget=forms.DateInput(
         attrs={'class': 'form-control', 'type': 'date'}))
     start_time = forms.TimeField(widget=forms.TimeInput(
