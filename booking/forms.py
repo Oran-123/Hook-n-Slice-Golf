@@ -5,12 +5,12 @@ from django.contrib import messages
 from datetime import date
 
 
-
 class TeeTimeForm(forms.Form):
     def __init__(self, *args, user=None, **kwargs):
         self.user = user
         super().__init__(*args, **kwargs)
         self.fields['date'].initial = date.today()
+        self.fields['players'].initial = 1
 
     date = forms.DateField(widget=forms.DateInput(
         attrs={'class': 'form-control', 'type': 'date'}))
