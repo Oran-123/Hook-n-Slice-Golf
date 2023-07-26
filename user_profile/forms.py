@@ -1,7 +1,7 @@
 from django import forms
 from booking.models import Booking, TeeTime
 from django.utils import timezone
-from datetime import date
+from datetime import date, datetime, time 
 
 
 class EditBooking(forms.ModelForm):
@@ -16,15 +16,14 @@ class EditBooking(forms.ModelForm):
             'booking_time': forms.TimeInput(attrs={'class': 'form-control', 'type': 'time'}),
         }
 
+    def combine_booking_date_time(self):
+        cleaned_data = super().clean()
+        booking_date = cleaned_data.get('booking_date')
+        booking_time = cleaned_data.get('booking_time')
 
-def combine_booking_date_time(self):
-    cleaned_data = super().clean()
-    booking_date = cleaned_data.get('booking_date')
-    booking_time = cleaned_data.get('booking_time')
+        if booking_date and booking_time:
+            cleaned_data['booking_datetime'] = timezone.make_aware(
+                timezone.datetime.combine(booking_date, booking_time)
+            )
 
-    if booking_date and booking_time:
-        cleaned_data['booking_datetime'] = timezone.make_aware(
-            timezone.datetime.combine(booking_date, booking_time)
-        )
-
-    return cleaned_data
+        return cleaned_data
