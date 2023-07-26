@@ -1,29 +1,31 @@
 from django import forms
 from booking.models import Booking, TeeTime
 from django.utils import timezone
-from datetime import date, datetime, time 
+from datetime import date, datetime, time
 
 
 class EditBooking(forms.ModelForm):
 
+    booking_datetime = forms.ModelChoiceField(
+        queryset=TeeTime.objects.filter(tee_datetime__gte=timezone.now()),
+        widget=forms.Select(attrs={'class': 'form-control'})
+    )
+
     class Meta:
         model = Booking
-        fields = ['booking_date', 'booking_time', 'players', 'buggy']
+        fields = ['booking_datetime', 'players', 'buggy']
         widgets = {
+            'booking_datetime': forms.Select(attrs={'class': 'form-control'}),
             'players': forms.NumberInput(attrs={'class': 'form-control', 'min': '1', 'max': '4'}),
             'buggy': forms.CheckboxInput(attrs={'class': 'form-check-input'}),
-            'booking_date': forms.DateInput(attrs={'class': 'form-control', 'type': 'date', 'min': datetime.today().date()}),
-            'booking_time': forms.TimeInput(attrs={'class': 'form-control', 'type': 'time'}),
+
         }
 
-    def combine_booking_date_time(self):
-        cleaned_data = super().clean()
-        booking_date = cleaned_data.get('booking_date')
-        booking_time = cleaned_data.get('booking_time')
+    # def __init__(self, *args, **kwargs):
+    #     booking_instance = kwargs.get('instance', None)
 
-        if booking_date and booking_time:
-            cleaned_data['booking_datetime'] = timezone.make_aware(
-                timezone.datetime.combine(booking_date, booking_time)
-            )
+    #     super(EditBooking, self).__init__(*args, **kwargs)
 
-        return cleaned_data
+    #     # Set the default value of booking_datetime to the datetime of the booking being edited
+    #     if booking_instance:
+    #         self.fields['booking_datetime'].initial = booking_instance.booking_datetime

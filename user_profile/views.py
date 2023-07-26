@@ -57,6 +57,7 @@ def edit_booking(request, booking_id):
     else:
         form = EditBooking(instance=booking)
 
+
     return render(request, 'edit_booking.html', {'form': form, 'booking_id': booking_id})
 
 
