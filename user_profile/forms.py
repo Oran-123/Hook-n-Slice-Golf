@@ -4,17 +4,15 @@ from django.utils import timezone
 
 
 class EditBooking(forms.ModelForm):
-    booking_datetime = forms.ModelChoiceField(
-        queryset=TeeTime.objects.filter(tee_datetime__gte=timezone.now()),
-        widget=forms.Select(attrs={'class': 'form-control'})
-    )
-
+    
     class Meta:
         model = Booking
         fields = ['booking_datetime', 'players', 'buggy']
         widgets = {
             'players': forms.NumberInput(attrs={'class': 'form-control', 'min': '1', 'max': '4'}),
             'buggy': forms.CheckboxInput(attrs={'class': 'form-check-input'})
+            'booking_date'forms.DateInput(attrs={'class': 'form-control', 'type': 'date'})
+            'booking_time'forms.TimeInput(attrs={'class': 'form-control', 'type': 'time'})
         }
 
     def clean_booking_datetime(self):
