@@ -12,8 +12,8 @@ class EditBooking(forms.ModelForm):
         widgets = {
             'players': forms.NumberInput(attrs={'class': 'form-control', 'min': '1', 'max': '4'}),
             'buggy': forms.CheckboxInput(attrs={'class': 'form-check-input'})
-            'booking_date'forms.DateInput(attrs={'class': 'form-control', 'type': 'date', 'min': datetime.today().date()})
-            'booking_time'forms.TimeInput(attrs={'class': 'form-control', 'type': 'time'})
+            'booking_date': forms.DateInput(attrs={'class': 'form-control', 'type': 'date', 'min': datetime.today().date()})
+            'booking_time': forms.TimeInput(attrs={'class': 'form-control', 'type': 'time'})
         }
 
 
