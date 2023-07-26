@@ -17,15 +17,19 @@ class TeeTimeForm(forms.Form):
     date = forms.DateField(widget=forms.DateInput(
         attrs={'class': 'form-control', 'type': 'date', 'min': datetime.today().date()}))
     start_time = forms.TimeField(widget=forms.TimeInput(
-        attrs={'class': 'form-control', 'type': 'time', 'min': timezone.now().strftime('%H:%M')}))
+        attrs={'class': 'form-control', 'type': 'time', }))
     end_time = forms.TimeField(widget=forms.TimeInput(
-        attrs={'class': 'form-control', 'type': 'time', 'min': timezone.now().strftime('%H:%M')}))
+        attrs={'class': 'form-control', 'type': 'time', }))
     players = forms.IntegerField(widget=forms.NumberInput(
         attrs={'class': 'form-control', 'min': '1', 'max': '4'}))
 
     def clean(self):
         cleaned_data = super().clean()
         date = cleaned_data.get('date')
+        start_time = cleaned_data.get('start_time')
+        end_time = cleaned_data.get('end_time')
+        today = date.today()
+        time_now = datetime.now().time()
 
         if date:
             # Query for any existing bookings for the same date and user
@@ -38,8 +42,11 @@ class TeeTimeForm(forms.Form):
                 self.add_error(
                     None, f"You have already booked a tee time on {date}. You are only permitted to make one booking per day.")
 
-        start_time = cleaned_data.get('start_time')
-        end_time = cleaned_data.get('end_time')
+        if date == today and start_time < time_now:
+            formatted_start_time = start_time.strftime('%H:%M')
+            formatted_time_now = time_now.strftime('%H:%M')
+            self.add_error(
+                None, f"You're selected start time {formatted_start_time} is in the past please try again  and select a start time after {formatted_time_now}.")
 
         if start_time and end_time and start_time >= end_time:
             self.add_error(
