@@ -76,13 +76,28 @@ class Booking(models.Model):
     def save(self, *args, **kwargs):
         tee_time = TeeTime.objects.get(
             tee_datetime=self.booking_datetime.tee_datetime)
+
         available_slots = tee_time.available_slots()
 
         players = int(self.players)
 
-        if available_slots < players:
-            raise ValueError(
-                f"You are trying to make a booking for {self.players} players, but this time only has space for {available_slots} players.")
+        if Booking.objects.filter(
+                booking_datetime=self.booking_datetime,
+                user_name=self.user_name).first():
+
+            existing_booking = Booking.objects.filter(
+                booking_datetime=self.booking_datetime,
+                user_name=self.user_name).first()
+
+            existing_booking_players = int(existing_booking.players)
+
+            if (available_slots + existing_booking_players) < players:
+                raise ValueError(
+                    f"You are trying to make a booking for {self.players} players, but this time only has space for {available_slots} players.")
+        else:
+            if available_slots < players:
+                raise ValueError(
+                    f"You are trying to make a booking for {self.players} players, but this time only has space for {available_slots} players.")
         super().save(*args, **kwargs)
         tee_time.available = available_slots > 0
         tee_time.save()
