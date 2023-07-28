@@ -55,7 +55,6 @@ def edit_booking(request, booking_id):
             form.save()
             messages.success(request, 'Booking editted successfully.')
             return redirect('user_profile_bookings')
-            
 
     else:
         form = EditBooking(instance=booking)
