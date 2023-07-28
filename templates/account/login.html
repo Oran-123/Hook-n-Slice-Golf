@@ -16,7 +16,7 @@
     </div>
 
     <div class="row d-flex justify-content-center">
-        <form class="login " method="POST" action="{% url 'account_login' %}">
+        <form class="login col-xl-8 col-md-10" method="POST" action="{% url 'account_login' %}">
             {% csrf_token %}
             <div class="form-group">
                 <label for="id_login">{% trans "Username:" %}</label>
