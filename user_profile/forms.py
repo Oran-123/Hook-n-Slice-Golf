@@ -6,14 +6,12 @@ from datetime import date, datetime, time
 
 class EditBooking(forms.ModelForm):
 
-    def __init__(self,user=None, *args, **kwargs):
+    def __init__(self, user=None, *args, **kwargs):
         self.user = user
         super().__init__(*args, **kwargs)
 
-        booking_datetime = forms.ModelChoiceField(
-            queryset=TeeTime.objects.filter(tee_datetime__gte=timezone.now()),
-            widget=forms.Select(attrs={'class': 'form-control'})
-        )
+        self.fields['booking_datetime'].queryset = TeeTime.objects.filter(
+            tee_datetime__gte=timezone.now())
 
     class Meta:
         model = Booking
@@ -40,12 +38,3 @@ class EditBooking(forms.ModelForm):
         if existing_booking:
             self.add_error(
                 'booking_datetime', f"You have already booked a tee time on {booking_datetime.tee_datetime.date()}. You are only permitted to make one booking per day.")
-
-    # def __init__(self, *args, **kwargs):
-    #     booking_instance = kwargs.get('instance', None)
-
-    #     super(EditBooking, self).__init__(*args, **kwargs)
-
-    #     # Set the default value of booking_datetime to the datetime of the booking being edited
-    #     if booking_instance:
-    #         self.fields['booking_datetime'].initial = booking_instance.booking_datetime
