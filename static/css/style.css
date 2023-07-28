@@ -148,6 +148,28 @@ h2 {
     padding-bottom: 1rem;
 }
 
+.allauth-forms {
+    color: var(--primary-white);
+    background-color: var(--primary-green);
+    margin-top: 15rem;
+    border: var(--primary-green);
+    border-radius: 2rem;
+}
+
+.allauth-forms-title-seperator {
+    border: solid 1px;
+    border-color: var(--primary-white);
+}
+
+.read-only-field {
+    color: var(--primary-white);
+    background-color: var(--primary-green);
+}
+
+.btn-light {
+    color: var(--primary-green);
+}
+
 .footer {
     background-color: var(--primary-green);
 }
