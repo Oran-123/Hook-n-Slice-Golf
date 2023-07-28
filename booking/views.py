@@ -55,6 +55,9 @@ def booking_submit(request):
         Booking(user_name=request.user, players=players,
                 booking_datetime=teetime, buggy=buggy).save()
 
+        messages.success(request, 'Booking created successfully!')
+
+
         # Redirect the user to the booking success page or any other relevant view
         # return redirect('booking.html')
 
