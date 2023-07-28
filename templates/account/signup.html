@@ -5,17 +5,48 @@
 {% block head_title %}{% trans "Signup" %}{% endblock %}
 
 {% block content %}
-<h1>{% trans "Sign Up" %}</h1>
+<div class="p-5 container col-4 allauth-forms">
+    <div class="row text-center">
+        <h1>{% trans "Sign Up" %}</h1>
+    </div>
+    <div class="row d-flex justify-content-center">
+        <hr class="col-4  mb-5 allauth-forms-title-seperator">
+    </div>
 
-<p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
+    <div class="row d-flex justify-content-center">
+        <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="{{ form.username.id_for_label }}">{{ form.username.label }}</label>
+                {{ form.username }}
+            </div>
+            <div class="form-group">
+                <label for="{{ form.email.id_for_label }}">{{ form.email.label }}</label>
+                {{ form.email }}
+            </div>
+            <div class="form-group">
+                <label for="{{ form.password1.id_for_label }}">{{ form.password1.label }}</label>
+                {{ form.password1 }}
+            </div>
+            <div class="form-group">
+                <label for="{{ form.password2.id_for_label }}">{{ form.password2.label }}</label>
+                {{ form.password2 }}
+            </div>
+            {% if redirect_field_value %}
+            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+            {% endif %}
+            <div class="d-flex justify-content-center form-group">
+                <button type="submit" class="my-4 btn btn-light btn-lg">{% trans "Sign Up" %}</button>
+            </div>
+        </form>
+    </div>
+    <div class="row text-center justify-content-center">
+        <p>{% blocktrans %}Already have an account? Then please <a class="text-white"
+                href="{{ login_url }}"><strong>sign in</strong></a>.{% endblocktrans %}</p>
+        </p>
+    </div>
+</div>
 
-<form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
-    {% csrf_token %}
-    {{ form.as_p }}
-    {% if redirect_field_value %}
-    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-    {% endif %}
-    <button type="submit">{% trans "Sign Up" %} &raquo;</button>
-</form>
+
 
 {% endblock %}
