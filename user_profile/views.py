@@ -50,7 +50,7 @@ def edit_booking(request, booking_id):
     booking = get_object_or_404(Booking, id=booking_id)
 
     if request.method == 'POST':
-        form = EditBooking(request.POST, instance=booking)
+        form = EditBooking(request.user, request.POST, instance=booking)
         if form.is_valid():
             form.save()
             messages.success(request, 'Booking editted successfully.')
