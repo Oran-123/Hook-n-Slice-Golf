@@ -2,18 +2,33 @@
 {% load static %}
 
 {% block content %}
-<div class="container">
-    <div class="row">
-        <form class="col-6" method="POST" action="{% url 'booking_submit' %}">
+<div class="p-5 container col-4 allauth-forms">
+    <div class="row text-center">
+        <h1>Confirm Booking Details</h1>
+    </div>
+    <div class="row d-flex justify-content-center">
+        <hr class="col-4  mb-5 allauth-forms-title-seperator">
+    </div>
+    <div class="row d-flex justify-content-center">
+        <form class="col-xl-8 col-md-10" method="POST" action="{% url 'booking_submit' %}">
             {% csrf_token %}
-            <label>Date & Time:</label>
-            <input type="text" name="date & time" value="{{ teetime.tee_datetime|date:'Y-m-d H:i:s' }}" readonly>
-            <label>Number of Players:</label>
-            <input type="number" name="players" value="{{ request.GET.players }}" readonly>
-            <label>Buggy Required:</label>
-            <input type="checkbox" name="buggy" value="Yes">
+            <div class="form-group my-4">
+                <label><strong>Date & Time:</label>
+                <input class="read-only-field" type="text" name="date & time"
+                    value="{{ teetime.tee_datetime|date:'Y-m-d H:i:s' }}" readonly>
+            </div>
+            <div class="form-group my-4">
+                <label><strong>Number of Players:</strong></label>
+                <input class="read-only-field" type="number" name="players" value="{{ request.GET.players }}" readonly>
+            </div>
+            <div class="form-group my-4">
+                <label><strong></strong>Buggy Required:</strong></label>
+                <input type="checkbox" name="buggy" value="Yes">
+            </div>
+            <div class="d-flex justify-content-center form-group">
+                <button type="submit" class="my-4 btn btn-light btn-lg"><strong>Confirm Booking</strong></button>
+            </div>
 
-            <button type="submit">Confirm Booking</button>
         </form>
     </div>
 </div>
