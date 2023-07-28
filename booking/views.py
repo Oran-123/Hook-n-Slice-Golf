@@ -57,7 +57,6 @@ def booking_submit(request):
 
         messages.success(request, 'Booking created successfully!')
 
-
         # Redirect the user to the booking success page or any other relevant view
         # return redirect('booking.html')
 
