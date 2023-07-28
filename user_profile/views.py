@@ -53,10 +53,12 @@ def edit_booking(request, booking_id):
         form = EditBooking(request.POST, instance=booking)
         if form.is_valid():
             form.save()
+            messages.success(request, 'Booking editted successfully.')
             return redirect('user_profile_bookings')
+            
+
     else:
         form = EditBooking(instance=booking)
-
 
     return render(request, 'edit_booking.html', {'form': form, 'booking_id': booking_id})
 
