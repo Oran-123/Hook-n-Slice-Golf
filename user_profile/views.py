@@ -9,6 +9,7 @@ from django.views.generic.edit import DeleteView
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.urls import reverse_lazy
 from django.contrib import messages
+from django.core.paginator import Paginator, EmptyPage
 
 
 @login_required
@@ -67,6 +68,25 @@ class ManageBookingListView(LoginRequiredMixin, UserPassesTestMixin, ListView):
     model = Booking
     template_name = 'manage_bookings.html'
     context_object_name = 'bookings'
+    paginate_by = 10  # Number of bookings per page
 
+    
     def test_func(self):
         return self.request.user.is_superuser
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        paginator = context['paginator']
+        page = self.request.GET.get('page')
+
+        try:
+            bookings = paginator.get_page(page)
+        except PageNotAnInteger:
+            # If page is not an integer, deliver first page.
+            bookings = paginator.get_page(1)
+        except EmptyPage:
+            # If page is out of range (e.g. 9999), deliver last page of results.
+            bookings = paginator.get_page(paginator.num_pages)
+
+        context['bookings'] = bookings
+        return context
