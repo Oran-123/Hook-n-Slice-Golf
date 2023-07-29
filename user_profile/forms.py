@@ -33,7 +33,7 @@ class EditBooking(forms.ModelForm):
         existing_booking = Booking.objects.filter(
             user_name=self.user,
             booking_datetime__tee_datetime__date=booking_datetime.tee_datetime.date()
-        ).first()
+        ).exclude(id=self.instance.id)
 
         if existing_booking:
             self.add_error(
