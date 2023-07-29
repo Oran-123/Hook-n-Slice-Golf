@@ -14,16 +14,17 @@
             {% csrf_token %}
             <div class="form-group my-4">
                 <label for="date & time"><strong>Date & Time:</label>
-                <input class="read-only-field" type="text" name="date & time"
+                <input class="read-only-field" type="text" name="date & time" id="date & time"
                     value="{{ teetime.tee_datetime|date:'Y-m-d H:i:s' }}" readonly>
             </div>
             <div class="form-group my-4">
                 <label for="players"><strong>Number of Players:</strong></label>
-                <input class="read-only-field" type="number" name="players" value="{{ request.GET.players }}" readonly>
+                <input class="read-only-field" type="number" name="players" id="players"
+                    value="{{ request.GET.players }}" readonly>
             </div>
             <div class="form-group my-4">
                 <label for="buggy"><strong></strong>Buggy Required:</strong></label>
-                <input type="checkbox" name="buggy" value="yes">
+                <input type="checkbox" name="buggy" id="buggy" value="yes">
             </div>
             <div class="d-flex justify-content-center form-group">
                 <button type="submit" class="my-4 btn btn-light btn-lg"><strong>Confirm Booking</strong></button>
