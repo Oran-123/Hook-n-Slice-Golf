@@ -31,7 +31,7 @@ urlpatterns = [
 
 ]
 
-handler404 = custom_404_view
-handler403 = custom_403_view
-handler500 = custom_500_view
+handler404 = 'home.views.custom_404_view'
+handler403 = 'home.views.custom_403_view'
+handler500 = 'home.views.custom_500_view'
 
