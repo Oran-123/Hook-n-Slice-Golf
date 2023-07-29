@@ -16,7 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from booking.views import tee_time_booking, booking_form, booking_submit
-from home.views import custom_404_view
+from home.views import custom_404_view, custom_403_view, custom_500_view
+from django.conf.urls import handler404, handler403, handler500
+
 
 
 urlpatterns = [
@@ -30,3 +32,6 @@ urlpatterns = [
 ]
 
 handler404 = custom_404_view
+handler403 = custom_403_view
+handler500 = custom_500_view
+
