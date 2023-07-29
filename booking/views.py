@@ -3,7 +3,7 @@ from .models import Booking, TeeTime
 from django.contrib.auth.decorators import login_required
 from .forms import TeeTimeForm
 from datetime import datetime
-# from dateutil import parser
+from dateutil import parser
 from django.utils import timezone
 from django.contrib import messages
 from django.urls import reverse
