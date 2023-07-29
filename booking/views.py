@@ -6,6 +6,7 @@ from datetime import datetime
 from dateutil import parser
 from django.utils import timezone
 from django.contrib import messages
+from django.urls import reverse
 
 
 @login_required
@@ -40,24 +41,35 @@ def booking_form(request, teetime_id):
 
 @login_required
 def booking_submit(request):
-    if request.method == 'POST':
-        datetime_str = request.POST.get('date & time')
-        players = request.POST.get('players')
-        buggy = request.POST.get('buggy', False)
-        if buggy == 'on':
-            buggy = True
-        else:
-            buggy = False
+    datetime_str = request.POST.get('date & time')
+    players = request.POST.get('players')
+    buggy = request.POST.get('buggy', False)
+    if buggy == 'on':
+        buggy = True
+    else:
+        buggy = False
 
-        booking_datetime = timezone.make_aware(parser.parse(datetime_str))
-        teetime = TeeTime.objects.get(tee_datetime=booking_datetime)
+    booking_datetime = timezone.make_aware(parser.parse(datetime_str))
+    teetime = TeeTime.objects.get(tee_datetime=booking_datetime)
 
-        Booking(user_name=request.user, players=players,
-                booking_datetime=teetime, buggy=buggy).save()
+    new_booking = Booking(user_name=request.user, players=players,
+                          booking_datetime=teetime, buggy=buggy)
+    new_booking.save()
 
-        messages.success(request, 'Booking created successfully!')
+    messages.success(request, 'Booking created successfully!')
 
-        # Redirect the user to the booking success page or any other relevant view
-        # return redirect('booking.html')
+    # Get the booking ID (assuming your Booking model has an auto-generated primary key 'id')
+    booking_id = new_booking.id
 
-    return render(request, 'booking.html')
+    # Redirect to the booking success page with the booking ID as a parameter
+    return redirect('booking_success', booking_id=booking_id)
+
+
+@ login_required
+def booking_success(request, booking_id):
+
+    context = {
+        'booking_id': booking_id,
+    }
+
+    return render(request, 'booking_success.html', context)
