@@ -97,7 +97,7 @@ h2 {
 
 #hero-background {
     height: 88vh;
-    background-image: url(../media/hero-image-hp.jpeg);
+    background-image: url('https://res.cloudinary.com/dn6gmi5tc/image/upload/v1690627224/static/media/hero-image-hp.21a9bbea7cec.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
