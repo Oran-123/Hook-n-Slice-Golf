@@ -52,7 +52,6 @@ INSTALLED_APPS = [
     'booking',
     'rangefilter',
     'user_profile',
-    'dateutil',
 ]
 
 SITE_ID = 1
