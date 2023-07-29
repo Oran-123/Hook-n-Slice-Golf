@@ -1,5 +1,4 @@
 {% load static %}
-{% load cloudinary %}
 
 <!DOCTYPE html>
 <html class="h-100">
@@ -28,7 +27,9 @@
         <div class="container-fluid d-flex justify-content-between" id="nav-wrapper">
             <a href="{% url 'home' %}" class="text-decoration-none text-white">
                 <div class="row">
-                    <img class="logo col-4 img-fluid" src="{% cloudinary 'hook-n-slice-logo.png' %}" alt="brand logo">
+                    <img class="logo col-4 img-fluid"
+                        src="https://res.cloudinary.com/dn6gmi5tc/image/upload/v1690629871/static/media/hook-n-slice-logo.2185a2b6c5d0.png"
+                        alt="brand logo">
                     <div class=" text-center col-8 d-flex align-items-center justify-content-center">
                         <h2 class="">Hook n' Slice Golf</h2>
                     </div>
