@@ -55,19 +55,19 @@ Developed using Python (Django), HTML, CSS, and JavaScript, with data stored in 
 
 ### User Goals
 
-* To make a booking within a specific teetime 
-* To be able to view both past and future bookings 
-* To be able to delete/cancel future bookings 
-* To be able to update/edit future bookings 
+- To make a booking within a specific teetime
+- To be able to view both past and future bookings
+- To be able to delete/cancel future bookings
+- To be able to update/edit future bookings
 
-### Site Owner Goals 
+### Site Owner Goals
 
-* To provide a solution to allow users to book a teetime online
-* To provide a simple and intuative design 
-* To create a fully responsive website  
-* To attract more business and users to the club 
-* To have an admin area that is only accessible by staff 
-* To manage bookings in the admin area 
+- To provide a solution to allow users to book a teetime online
+- To provide a simple and intuative design
+- To create a fully responsive website
+- To attract more business and users to the club
+- To have an admin area that is only accessible by staff
+- To manage bookings in the admin area
 
 ## UX
 
@@ -110,14 +110,21 @@ My website development approach will prioritize mobile devices, adopting a mobil
 
 ## Database
 
+### Database Overview
+
 The project will use the PostgreSQL database for storing data. Two diagramgs were created to show the difference between the initial schema created during the design iteration prior to any development and the final schema created after development was completed.
 
+### Database Schema
+
 <details>
-  <summary>Initial Schema</summary> 
+  <summary>Planned Schema</summary> 
 <img src="docs/erd/ERD_Hook_n_Slice_Golf.png"></img>
 </details>
 
-### Database Schema<hr>
+<details>
+  <summary>Implemented Schema</summary> 
+<img src="docs/erd/final-erd.png"></img>
+</details>
 
 ## Branding
 
