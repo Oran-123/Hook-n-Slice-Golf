@@ -217,7 +217,7 @@ JSHint JS Validation Service
 
 <details><summary>JS Validation</summary>
 <img src="/docs/validation/js/jslint-1.png">
-<img src="/docs/validation/html/jslint-2.png">
+<img src="/docs/validation/js/jslint-2.png">
 </details>
 
 ### Python Validation
