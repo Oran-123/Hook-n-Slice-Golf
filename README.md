@@ -392,6 +392,7 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 - Users can filter between past and future bookings
 - A CTA to create a new booking is included if there are no future bookings
 - Users can edit or cancel bookings if needed.
+- User can only edit future bookings the buttons will not displayed on past bookings 
 - <strong>Covers User Stories</strong>:
 
 <details><summary>User Profile Future Bookings</summary>
