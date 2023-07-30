@@ -1,3 +1,12 @@
+"""
+Booking App - Models
+---------------------
+Models for booking app
+
+"""
+# Imports
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 from django.db import models
 from django.contrib.auth.models import User
 from django.core.validators import MaxValueValidator, MinValueValidator
@@ -6,17 +15,17 @@ from django.dispatch import receiver
 import datetime
 
 
-# Create your models here.
-
-
 class TeeTime(models.Model):
-    """Model for tee times"""
+    """Models for tee times"""
     objects = models.Manager()
     tee_datetime = models.DateTimeField(unique=True)
     max_players = models.IntegerField(default=4)
     available = models.BooleanField(default=True)
 
     def available_slots(self):
+        """
+        Method that checks if there are available slots on a teetime
+        """
         booked_players = Booking.objects.filter(
             booking_datetime=self.tee_datetime).aggregate(
             total_players=models.Sum('players'))['total_players']
@@ -27,6 +36,10 @@ class TeeTime(models.Model):
     # class method creates tee times for the next 7 days when called by signal
     @classmethod
     def create_tee_times(cls):
+        """
+        When a user makes a booking this method will create a teetime for the
+        next 7 days - prevents admin from manually having to create teetimes
+        """
         start_date = datetime.date.today()
         # Generate tee times for the next 7 days
         end_date = start_date + datetime.timedelta(days=7)
@@ -70,11 +83,12 @@ class Booking(models.Model):
         to_field='tee_datetime', related_name='booking_datetime')
     buggy = models.BooleanField()
 
-    # method only saves the booking if there is enough spaces on the tee time
-    # and if the booking is saved it will check if there any remain spaces on
-    # the tee time and update the availability
-
     def save(self, *args, **kwargs):
+        """
+        method only saves the booking if there is enough spaces on the tee time
+        and if the booking is saved it will check if there any remain spaces on
+        the tee time and update the availability
+        """
         tee_time = TeeTime.objects.get(
             tee_datetime=self.booking_datetime.tee_datetime)
 
@@ -108,8 +122,10 @@ class Booking(models.Model):
         tee_time.save()
 
 
-# signal creates teetimes everytime a booking is made
 @receiver(post_save, sender=Booking)
 def generate_tee_times(sender, instance, created, **kwargs):
+    """
+    signal creates teetimes everytime a booking is made
+    """
     if created:
         TeeTime.create_tee_times()
