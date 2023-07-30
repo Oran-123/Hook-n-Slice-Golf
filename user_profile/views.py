@@ -1,3 +1,11 @@
+"""
+User Profile App - Views
+---------------------
+Views for User Profile App
+
+"""
+# Imports
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 from datetime import datetime
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
@@ -10,21 +18,37 @@ from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.urls import reverse_lazy
 from django.contrib import messages
 from django.core.paginator import Paginator, EmptyPage
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 @login_required
 def user_profile_bookings(request):
+    """
+    Render user profile bookings based on the 'filter_type' parameter.
+    """
     # Default to 'upcoming' if no filter type is selected
     filter_type = request.POST.get('filter_type', 'upcoming')
-
     # Fetch the bookings based on the filter type
     if filter_type == 'past':
-        bookings = Booking.objects.filter(user_name=request.user, booking_datetime__tee_datetime__lt=datetime.now(
-        )).order_by('-booking_datetime__tee_datetime')
+        bookings = (
+            Booking.objects.filter(user_name=request.user,
+                                   booking_datetime__tee_datetime__lt=(
+                                       datetime.now(
+                                       )).order_by(
+                                       '-booking_datetime__tee_datetime'
+                                   ))
+        )
+
         title = 'Past Bookings'
     else:
-        bookings = Booking.objects.filter(user_name=request.user, booking_datetime__tee_datetime__gte=datetime.now(
-        )).order_by('booking_datetime__tee_datetime')
+        bookings = (
+            Booking.objects.filter(user_name=request.user,
+                                   booking_datetime__tee_datetime__gte=(
+                                       datetime.now(
+                                       )).order_by(
+                                       'booking_datetime__tee_datetime'
+                                   ))
+        )
         title = 'Upcoming Bookings'
 
     context = {
@@ -37,6 +61,9 @@ def user_profile_bookings(request):
 
 
 def delete_booking(request):
+    """
+    Delete a booking based on the 'booking_id' passed in POST parameters.
+    """
     booking_id = request.POST.get('booking_id')
     if booking_id:
         booking = get_object_or_404(Booking, id=booking_id)
@@ -48,6 +75,9 @@ def delete_booking(request):
 
 
 def edit_booking(request, booking_id):
+    """
+    Edit a booking with the given 'booking_id' and handle form submission.
+    """
     booking = get_object_or_404(Booking, id=booking_id)
 
     if request.method == 'POST':
@@ -60,17 +90,19 @@ def edit_booking(request, booking_id):
     else:
         form = EditBooking(instance=booking)
 
-    return render(request, 'edit_booking.html', {'form': form, 'booking_id': booking_id})
+    return render(request, 'edit_booking.html',
+                  {'form': form, 'booking_id': booking_id})
 
 
 class ManageBookingListView(LoginRequiredMixin, UserPassesTestMixin, ListView):
-
+    """
+    Edit a booking with the given 'booking_id' and handle form submission.
+    """
     model = Booking
     template_name = 'manage_bookings.html'
     context_object_name = 'bookings'
-    paginate_by = 10  # Number of bookings per page
+    paginate_by = 10
 
-    
     def test_func(self):
         return self.request.user.is_superuser
 
@@ -82,10 +114,8 @@ class ManageBookingListView(LoginRequiredMixin, UserPassesTestMixin, ListView):
         try:
             bookings = paginator.get_page(page)
         except PageNotAnInteger:
-            # If page is not an integer, deliver first page.
             bookings = paginator.get_page(1)
         except EmptyPage:
-            # If page is out of range (e.g. 9999), deliver last page of results.
             bookings = paginator.get_page(paginator.num_pages)
 
         context['bookings'] = bookings

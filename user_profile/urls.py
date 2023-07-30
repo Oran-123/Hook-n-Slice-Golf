@@ -1,5 +1,18 @@
+"""
+User Profile App - URLs
+---------------------
+URLs for User Profile App
+
+"""
+# Imports
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 from django.urls import path
-from user_profile.views import user_profile_bookings, edit_booking, ManageBookingListView, delete_booking
+from user_profile.views import (
+    user_profile_bookings,
+    edit_booking, ManageBookingListView,
+    delete_booking,
+)
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 urlpatterns = [
