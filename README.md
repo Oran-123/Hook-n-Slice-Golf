@@ -47,11 +47,27 @@
 
 ## Overview
 
-Hook 'n' Slice Golf is an engaging website designed to enhance the golfing experience for beginners. It offers convenient booking for users. With a mobile-first approach, the website prioritizes accessibility and responsiveness. 
+Hook 'n' Slice Golf is an engaging website designed to enhance the golfing experience for beginners. It offers convenient booking for users. With a mobile-first approach, the website prioritizes accessibility and responsiveness.
 
 Developed using Python (Django), HTML, CSS, and JavaScript, with data stored in a PostgreSQL database. The brand aims to create a welcoming and supportive space for golfers to learn, progress, and enjoy the game to the fullest.
 
 ## Site Objectives
+
+### User Goals
+
+* To make a booking within a specific teetime 
+* To be able to view both past and future bookings 
+* To be able to delete/cancel future bookings 
+* To be able to update/edit future bookings 
+
+### Site Owner Goals 
+
+* To provide a solution to allow users to book a teetime online
+* To provide a simple and intuative design 
+* To create a fully responsive website  
+* To attract more business and users to the club 
+* To have an admin area that is only accessible by staff 
+* To manage bookings in the admin area 
 
 ## UX
 
