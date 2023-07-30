@@ -224,7 +224,7 @@ JSHint JS Validation Service
 
 PEP8 Validation Service was used to check the code for PEP8 requirements via Pycodestyle
 
-<hr><summary>Booking</summary><hr>
+#### Booking
 
 <details><summary>Admin.py</summary>
 <img src="/docs/validation/python/pycodestyle-booking-admin.png">
@@ -246,7 +246,7 @@ PEP8 Validation Service was used to check the code for PEP8 requirements via Pyc
 <img src="/docs/validation/python/pycodestyle-booking-forms.png">
 </details>
 
-<hr><summary>User Profile</summary><hr>
+#### User Profile
 
 <details><summary>URLs.py</summary>
 <img src="/docs/validation/python/pycodestyle-user-profile-urls.png">
@@ -260,7 +260,7 @@ PEP8 Validation Service was used to check the code for PEP8 requirements via Pyc
 <img src="/docs/validation/python/pycodestyle-user-profile-forms.png">
 </details>
 
-<hr><summary>Home</summary><hr>
+#### Home
 
 <details><summary>URLs.py</summary>
 <img src="/docs/validation/python/pycodestyle-home-urls.png">
