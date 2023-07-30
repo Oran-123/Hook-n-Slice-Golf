@@ -197,9 +197,22 @@ Reasons for choosing the fonts:
 <img src="/docs/validation/html/w3c-markup-booking-success.png">
 </details>
 
-<details><summary>Edit Booking</summary>
+<details><summary>CSS Validation</summary>
 <img src="/docs/validation/html/w3c-markup-edit-booking.png">
 </details>
+
+### JS Validation
+
+<details><summary>JS Validation</summary>
+<img src="/docs/validation/js/jslint-1.png">
+<img src="/docs/validation/html/jslint-2.png">
+</details>
+
+<details><summary>Edit Booking</summary>
+<img src="/docs/validation/css/w3c-css-validation.png">
+</details>
+
+### CSS Validation
 
 ## Testing
 
