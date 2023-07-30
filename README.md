@@ -850,7 +850,7 @@ The following devices were used to test my site:
    - <strong>Evidence:</strong>
 
    <details><summary>Registration Form Bug</summary>
-   <img src="iphone-safarai-register-form.png">
+   <img src="/docs/bugs/iphone-safarai-register-form.png">
    </details>
 
 2. Signup Form Validation Errors
@@ -860,7 +860,7 @@ The following devices were used to test my site:
    - <strong>Evidence:</strong>
 
    <details><summary>Error Message Code</summary>
-   <img src="sign-in-form-validation-bug.png">
+   <img src="/docs/bugs/sign-in-form-validation-bug.png">
    </details>
 
 3. 404 Error Page Not Displayin Content
@@ -870,11 +870,11 @@ The following devices were used to test my site:
    - <strong>Evidence:</strong>
 
    <details><summary>404 Code</summary>
-   <img src="#">
+   <img src="/docs/bugs/404-code.png">
    </details>
 
    <details><summary>404 Page</summary>
-   <img src="#">
+   <img src="/docs/bugs/404-page.png">
    </details>
 
 4. Index Page Lighthouse Performance
@@ -884,7 +884,8 @@ The following devices were used to test my site:
    - <strong>Evidence:</strong>
 
    <details><summary>Performance Score Of Index Page</summary>
-   <img src="#">
+   <img src="/docs/bugs/index-lighthouse-performance-bug.png">
+   <img src="/docs/bugs/index-lighthouse-performance-bug-hero-image.png">
    </details>
 
 ### Closed Bugs
