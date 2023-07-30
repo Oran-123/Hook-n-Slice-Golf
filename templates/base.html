@@ -6,8 +6,10 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="golf course dublin, golf club membership, golf lessons, golf,">
+    <!-- bootsrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         crossorigin="anonymous" async>
+    <!-- local css -->
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
     <title>Hook n' Slice Golf</title>
 </head>
@@ -76,7 +78,7 @@
                 {% endif %}
             </ul>
 
-            <!-- Nav menu for mobile and table devices -->
+            <!-- Nav menu for mobile and table devices hidden on large devices -->
 
             <div class="offcanvas offcanvas-end" id="navbarText">
                 <div class="offcanvas-header">
@@ -133,7 +135,7 @@
             </div>
         </div>
     </nav>
-
+    <!-- main content -->
     <main class="flex-shrink-0 main-bg flex-grow-1" id="background">
         <div class="wrapper">
             {% load i18n %}
@@ -160,7 +162,7 @@
                     </div>
                 </div>
             </div>
-
+            <!-- message -->
             {% if messages %}
             {% for message in messages %}
             <div class="row justify-content-center fixed-top">
@@ -173,7 +175,6 @@
             {% endfor %}
             {% endif %}
             {% block content %}
-            <!-- Content Goes here -->
             {% endblock content %}
 
         </div>
@@ -182,17 +183,20 @@
     <!-- Footer -->
     <footer class="footer py-4 dark-bg  mt-auto">
         <ul class="container column col-md-4 col-6 list-unstyled d-flex f-column" id="social-list">
+            <!-- twitter -->
             <li class="col-4 social-list-item d-flex f-column justify-content-center ">
                 <a class="social-icons-link text-decoration-none text-white" href="https://twitter.com/?lang=en"
                     target="_blank" rel="noopener" aria-label="Click to view our twitter profile (in a new tab)">
                     <i class="fab fa-brands fa-twitter fa-2x"></i></a>
             </li>
+            <!-- facebook -->
             <li class="social-icons-link col-4 social-list-item d-flex f-column justify-content-center "><a
                     class="text-decoration-none text-white" href="https://www.facebook.com/" target="_blank"
                     rel="noopener" aria-label="Click to visit our Facebook profile (in a new tab)">
                     <i class="fab fa-brands fa-facebook fa-2x"></i></a>
 
             </li>
+            <!-- instagram -->
             <li
                 class="social-icons-link col-4 social-list-item text-decoration-none d-flex f-column justify-content-center ">
                 <a class="text-decoration-none text-white" href="https://www.instagram.com/" target="_blank"
@@ -201,12 +205,15 @@
             </li>
         </ul>
     </footer>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/fe350ff5b2.js" crossorigin="anonymous"></script>
+    <!-- bootsrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/fe350ff5b2.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <!-- local js -->
     <script src="{% static 'js/script.js' %}"></script>
 </body>
 
