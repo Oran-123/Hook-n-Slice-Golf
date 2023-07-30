@@ -19,6 +19,22 @@
         </div>
     </div>
 </div>
+<div class="container top-margin">
+    <div class="row text-center">
+        <h1>Create TeeTimes</h1>
+    </div>
+    <div class="row d-flex justify-content-center">
+        <hr class="col-4 col-lg-2 mb-5 title-seperator">
+    </div>
+    <div class="row justify-content-center text-center">
+        <p>Press the button below to create Tee Times for the next 7 days</p>
+        <form method="post" action="{% url 'generate_tee_times' %}">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-success">Generate Tee Times</button>
+        </form>
+    </div>
+</div>
+
 
 <div class="container top-margin">
     <div class="row text-center">
