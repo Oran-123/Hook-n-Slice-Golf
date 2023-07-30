@@ -245,17 +245,35 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 
 ### Future Feature Considerations<hr>
 
-#### Leaderboard 
+#### Leaderboard
+
+* Implement a dynamic leaderboard that displays the top-performing players based on their scores and progress in various golf games, providing healthy competition among users.
+* Allow users to filter the leaderboard based on different criteria, date range, or handicap, to view rankings that are relevant to their preferences.
 
 #### Metrics
 
-#### Manage Booking Filters 
+* Develop a comprehensive metrics system that tracks user performance and golfing statistics, such as average score, fairways hit, greens in regulation, and more.
+* Provide users with personalized insights and analysis of their golfing data, enabling them to identify areas for improvement and track their progress over time.
 
-#### Forgot Email 
+#### Manage Booking Filters
 
-#### Email Confirmation For Bookings 
+* Develop a user-friendly filtering system for managing bookings in the manage booking admin page.
+* Admin users will be able to filter bookings based on various criteria, such as date, tee time slot, user name, and booking status, streamlining the process of managing and organizing tee time reservations.
 
-#### Payments 
+#### Forgot Email
+
+* Implement a "Forgot Email" functionality to assist users in recovering their account email address.
+* Users who forget their registered email address will be able to provide their username or other account information, and the system will send an email containing their account email address, helping them regain access to their account.
+
+#### Email Confirmation For Bookings
+
+* Implement an automated email confirmation system that sends users a confirmation email after they successfully book a tee time.
+* The email will include details of their booking, such as date, time, number of players, and a unique booking reference, ensuring users have all the necessary information for their tee time.
+
+#### Payments
+
+* Integrate a secure payment gateway to facilitate online payments for tee time bookings and other services offered by Hook 'n' Slice Golf.
+* Allow users to securely enter their payment information and process transactions, providing a seamless and convenient booking experience while ensuring the safety of their financial data.
 
 ## Tools Used
 
@@ -552,30 +570,29 @@ WAVE was used to test the websites accessibility.
 
 ## Testing
 
-|Test Case| Steps| Expected Result|	Actual Result|
-|---------|----- |----------------|----------------|
-|View Homepage|	1. Navigate to the homepage of the golf course website.	|The homepage should load with relevant content and a navigation bar.|	-|
-|Navigate to Register Page|	1. Click on the 'Register' link in the navigation bar.|	The user should be redirected to the registration page.|	-|
-|Register a New User|	1. Fill out the registration form with valid user details. 2. Submit the form.|	The user should be successfully registered, and a success message should be displayed.|	-|
-|Navigate to Login Page|	1. Click on the 'Login' link in the navigation bar.|	The user should be redirected to the login page.|	-|
-|Login as a Registered User|	1. Fill out the login form with valid credentials. 2. Submit the form.|	The user should be logged in and redirected to their profile page.|	-|
-|View Available Tee Times|	1. Navigate to the 'Book Tee Time' page.|	The page should display a calendar with available tee times for booking.|	-|
-|Book a Tee Time|	1. Select a date and time from the available tee times. 2. Click the 'Book Now' button.|	The user should be able to book the selected tee time, and a confirmation message should be displayed.|	-|
-|View My Bookings|	1. Navigate to the 'My Bookings' page.|	The page should display a list of the user's booked tee times.|	-|
-|Edit Booking|	1. Navigate to the 'My Bookings' page. 2. Click on the 'Edit' button for a booked tee time. 3. Select a new date and time. 4. Save the changes.	|The booked tee time should be updated with the new date and time, and a success message should be displayed.|	-|
-|Cancel Booking|	1. Navigate to the 'My Bookings' page. 2. Click on the 'Cancel' button for a booked tee time. 3. Confirm the cancellation.|	The booked tee time should be canceled, and a success message should be displayed.|	-|
-|Logout|	1. Click on the 'Logout' link in the navigation bar.|	The user should be logged out and redirected to the homepage.|	-|
-|Access Admin Panel| 1. Log in as an administrator. 2. Navigate to the admin panel.|	The administrator should be able to access the admin panel with administrative privileges.|	-|
-|Manage Bookings in Admin Panel|	1. Log in as an administrator. 2. Navigate to the admin panel. 3. Access the 'Bookings' section.|	The administrator should be able to view and manage all bookings, such as editing or canceling bookings.|	-|
-|Manage Users in Admin Panel|	1. Log in as an administrator. 2. Navigate to the admin panel. 3. Access the 'Users' section.|	The administrator should be able to view and manage all registered users, such as editing user details or deleting user accounts.|	-|
-|Filter Bookings by Date in Admin Panel|	1. Log in as an administrator. 2. Navigate to the admin panel. 3. Access the 'Bookings' section. 4. Apply a date filter.|	The admin should see bookings filtered by the selected date range.|	-|
-|Search Bookings by User in Admin Panel|	1. Log in as an administrator. 2. Navigate to the admin panel. 3. Access the 'Bookings' section. 4. Enter a user's |name in the search box.	The admin should see bookings filtered by the searched user.|	-|
-|View Booking Details in Admin Panel|	1. Log in as an administrator. 2. Navigate to the admin panel. 3. Access the 'Bookings' section. 4. Click on a booking to view details.|	The admin should see the details of the selected booking.|	-|
-|Generate Booking Report in Admin Panel|	1. Log in as an administrator. 2. Navigate to the admin panel. 3. Access the 'Reports' section. 4. Generate a booking report.|	The admin should be able to generate a report containing all bookings within a specified date range.|	-|
-|Handle Invalid Input for Booking Date and Time|	1. Navigate to the 'Book Tee Time' page. 2. Submit the booking form without selecting a date and time.|	The user should see a validation error indicating the need to select a date and time.|	-|
-|Try to Book a Past Date|	1. Navigate to the 'Book Tee Time' page. 2. Select a past date from the available tee times. 3. Click the 'Book Now' button.|	The user should see a validation error indicating that booking a past date is not allowed.|	-|
-|Try to Book a Duplicate Tee Time|	1. Navigate to the 'Book Tee Time' page. 2. Select a date and time that has already been booked. 3. Click the 'Book Now' button.|	The user should see	|-|
-
+| Test Case                                      | Steps                                                                                                                                           | Expected Result                                                                                                                   | Actual Result |
+| ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------- |
+| View Homepage                                  | 1. Navigate to the homepage of the golf course website.                                                                                         | The homepage should load with relevant content and a navigation bar.                                                              | -             |
+| Navigate to Register Page                      | 1. Click on the 'Register' link in the navigation bar.                                                                                          | The user should be redirected to the registration page.                                                                           | -             |
+| Register a New User                            | 1. Fill out the registration form with valid user details. 2. Submit the form.                                                                  | The user should be successfully registered, and a success message should be displayed.                                            | -             |
+| Navigate to Login Page                         | 1. Click on the 'Login' link in the navigation bar.                                                                                             | The user should be redirected to the login page.                                                                                  | -             |
+| Login as a Registered User                     | 1. Fill out the login form with valid credentials. 2. Submit the form.                                                                          | The user should be logged in and redirected to their profile page.                                                                | -             |
+| View Available Tee Times                       | 1. Navigate to the 'Book Tee Time' page.                                                                                                        | The page should display a calendar with available tee times for booking.                                                          | -             |
+| Book a Tee Time                                | 1. Select a date and time from the available tee times. 2. Click the 'Book Now' button.                                                         | The user should be able to book the selected tee time, and a confirmation message should be displayed.                            | -             |
+| View My Bookings                               | 1. Navigate to the 'My Bookings' page.                                                                                                          | The page should display a list of the user's booked tee times.                                                                    | -             |
+| Edit Booking                                   | 1. Navigate to the 'My Bookings' page. 2. Click on the 'Edit' button for a booked tee time. 3. Select a new date and time. 4. Save the changes. | The booked tee time should be updated with the new date and time, and a success message should be displayed.                      | -             |
+| Cancel Booking                                 | 1. Navigate to the 'My Bookings' page. 2. Click on the 'Cancel' button for a booked tee time. 3. Confirm the cancellation.                      | The booked tee time should be canceled, and a success message should be displayed.                                                | -             |
+| Logout                                         | 1. Click on the 'Logout' link in the navigation bar.                                                                                            | The user should be logged out and redirected to the homepage.                                                                     | -             |
+| Access Admin Panel                             | 1. Log in as an administrator. 2. Navigate to the admin panel.                                                                                  | The administrator should be able to access the admin panel with administrative privileges.                                        | -             |
+| Manage Bookings in Admin Panel                 | 1. Log in as an administrator. 2. Navigate to the admin panel. 3. Access the 'Bookings' section.                                                | The administrator should be able to view and manage all bookings, such as editing or canceling bookings.                          | -             |
+| Manage Users in Admin Panel                    | 1. Log in as an administrator. 2. Navigate to the admin panel. 3. Access the 'Users' section.                                                   | The administrator should be able to view and manage all registered users, such as editing user details or deleting user accounts. | -             |
+| Filter Bookings by Date in Admin Panel         | 1. Log in as an administrator. 2. Navigate to the admin panel. 3. Access the 'Bookings' section. 4. Apply a date filter.                        | The admin should see bookings filtered by the selected date range.                                                                | -             |
+| Search Bookings by User in Admin Panel         | 1. Log in as an administrator. 2. Navigate to the admin panel. 3. Access the 'Bookings' section. 4. Enter a user's                              | name in the search box. The admin should see bookings filtered by the searched user.                                              | -             |
+| View Booking Details in Admin Panel            | 1. Log in as an administrator. 2. Navigate to the admin panel. 3. Access the 'Bookings' section. 4. Click on a booking to view details.         | The admin should see the details of the selected booking.                                                                         | -             |
+| Generate Booking Report in Admin Panel         | 1. Log in as an administrator. 2. Navigate to the admin panel. 3. Access the 'Reports' section. 4. Generate a booking report.                   | The admin should be able to generate a report containing all bookings within a specified date range.                              | -             |
+| Handle Invalid Input for Booking Date and Time | 1. Navigate to the 'Book Tee Time' page. 2. Submit the booking form without selecting a date and time.                                          | The user should see a validation error indicating the need to select a date and time.                                             | -             |
+| Try to Book a Past Date                        | 1. Navigate to the 'Book Tee Time' page. 2. Select a past date from the available tee times. 3. Click the 'Book Now' button.                    | The user should see a validation error indicating that booking a past date is not allowed.                                        | -             |
+| Try to Book a Duplicate Tee Time               | 1. Navigate to the 'Book Tee Time' page. 2. Select a date and time that has already been booked. 3. Click the 'Book Now' button.                | The user should see                                                                                                               | -             |
 
 ## Bugs
 
