@@ -519,7 +519,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="/docs/validation/lighthouse/lighthouse-edit-booking-mobile.png">
 </details>
 
-### Wave
+### Accessibility 
 
 WAVE was used to test the websites accessibility.
 
