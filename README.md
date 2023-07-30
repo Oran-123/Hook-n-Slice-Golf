@@ -436,6 +436,10 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 - A footer section that appears at the bottom of every page
 - Include social media links for users' convenience.
 
+<details><summary>Footer</summary>
+<img src="docs/features/footer.png">
+</details>
+
 #### Alerts
 
 - Alerts appear at the top of the view port for users if they create, update or delte any of the bookings
@@ -447,10 +451,6 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 <img src="docs/features/alert-booking-editted.png">
 <img src="docs/features/alert-sign-in.png">
 <img src="docs/features/alert-sign-out.png">
-</details>
-
-<details><summary>Footer</summary>
-<img src="docs/features/footer.png">
 </details>
 
 ### Future Feature Considerations<hr>
