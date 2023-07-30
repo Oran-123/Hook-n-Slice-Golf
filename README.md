@@ -1,6 +1,7 @@
 # Hook 'n' Slice - Golf Course Website
 
 <img src="" ><br>
+
 <hr>
 
 ## Table of contents
@@ -51,6 +52,7 @@
 ## UX
 
 ### Wireframes<hr>
+
 I utilized Balsamic (<https://balsamiq.com/wireframes/>) to design the wireframes for my website. I began by creating the wireframes for the desktop version and subsequently adapted the homepage diagram for tablet and mobile devices to display the concept.
 
 <details>
@@ -86,19 +88,18 @@ My website development approach will prioritize mobile devices, adopting a mobil
 | large       | => 992px   |
 | x-large     | => 1200px  |
 
-## Database 
+## Database
 
-The project will use the PostgreSQL database for storing data. Two diagramgs were created to show the difference between the initial schema created during the design iteration prior to any development and the final schema created after development was completed. 
-
+The project will use the PostgreSQL database for storing data. Two diagramgs were created to show the difference between the initial schema created during the design iteration prior to any development and the final schema created after development was completed.
 
 <details>
   <summary>Initial Schema</summary> 
-<img src="media/erd/ERD_Hook_n_Slice_Golf.png"></img>
+<img src="docs/erd/ERD_Hook_n_Slice_Golf.png"></img>
 </details>
 
 ### Database Schema<hr>
 
-## Branding 
+## Branding
 
 Hook 'n' Slice Goal is a welcoming brand that fosters a friendly environment specifically designed for new golfers. With a commitment to supporting beginners throughout their golfing journey, we provide a supportive and inclusive space where individuals can learn, grow, and enjoy the game of golf to the fullest.
 
@@ -106,11 +107,11 @@ Hook 'n' Slice Goal is a welcoming brand that fosters a friendly environment spe
 
 The logo for Hook 'n' Slice Golf is thoughtfully designed to attract beginner golfers by visually communicating a welcoming and supportive atmosphere, encouraging progression, and evoking a sense of accomplishment in their golfing journey.
 
-  * The two stripes, represent the journey of beginner golfers. The blue represents the initial stages of learning and improvement, while the green symbolizes progress and advancement, this links in with the colour palette of the website. This logo emphasises the purpose of the brand and website which is to inspire beginners by showcasing a path of growth and development in their golfing skills.
+- The two stripes, represent the journey of beginner golfers. The blue represents the initial stages of learning and improvement, while the green symbolizes progress and advancement, this links in with the colour palette of the website. This logo emphasises the purpose of the brand and website which is to inspire beginners by showcasing a path of growth and development in their golfing skills.
 
-  * The golf hole with a flag within the logo emphasizes the feeling of achievement associated with the game of golf. This visual element aims to motivate beginner golfers by showcasing the exciting milestones and accomplishments they can strive for as they progress in their golfing journey.
+- The golf hole with a flag within the logo emphasizes the feeling of achievement associated with the game of golf. This visual element aims to motivate beginner golfers by showcasing the exciting milestones and accomplishments they can strive for as they progress in their golfing journey.
 
-<img src="media/hook-n-slice-logo.svg" style="max-width: 50%;"></img>
+<img src="docs/hook-n-slice-logo.png" style="max-width: 50%;"></img>
 
 ### Colour Scheme<hr>
 
@@ -118,15 +119,15 @@ The colour scheme for the website is focused on simplicity, trust and calmness a
 
 The darker shades of blue and green have a psychological impact of conveying a sense of trust, reliability and calming which we hope will encourage beigning golfers to choose us as their home of golf.
 
-Purpose of each colour: 
+Purpose of each colour:
 
-  * Fun Green - #006630 - Main Brand Colour - A vibrant, full-bodied deep green colour to represent the lush green fairways, rolling hills and well-maintained greens this creates a strong connection between the brand and a positive golfing experience. This is the main colour for the brand and aims to symbolises reliability, continuous improvement and progression that beginner golfers strive for in their game.
-  
-  * St Tropaz - #295899 - Accents - Blue is often associated with calmness, serenity, and tranquility. This shade of blue, conveys a sense of peacefulness and can evoke images of clear skies or water bodies, creating a soothing and relaxing ambiance. It can be particularly appealing to beginner golfers who may seek a tranquil and enjoyable experience on the golf course.
+- Fun Green - #006630 - Main Brand Colour - A vibrant, full-bodied deep green colour to represent the lush green fairways, rolling hills and well-maintained greens this creates a strong connection between the brand and a positive golfing experience. This is the main colour for the brand and aims to symbolises reliability, continuous improvement and progression that beginner golfers strive for in their game.
 
-  * White - #ffffff - Background - Creates a clean and simple canvas which will allow other elements such as the text, images and icons to stand out prominently. The fresh look will be particular appealing to beginner golfers who will appreciate a clear and uncluttered background (they already have enough to handle figuring out how to play golf let alone trying to book a tee time)
+- St Tropaz - #295899 - Accents - Blue is often associated with calmness, serenity, and tranquility. This shade of blue, conveys a sense of peacefulness and can evoke images of clear skies or water bodies, creating a soothing and relaxing ambiance. It can be particularly appealing to beginner golfers who may seek a tranquil and enjoyable experience on the golf course.
 
-<img src="media/colormind-pp4-color-scheme1.png"></img>
+- White - #ffffff - Background - Creates a clean and simple canvas which will allow other elements such as the text, images and icons to stand out prominently. The fresh look will be particular appealing to beginner golfers who will appreciate a clear and uncluttered background (they already have enough to handle figuring out how to play golf let alone trying to book a tee time)
+
+<img src="docs/colormind-pp4-color-scheme1.png"></img>
 
 ### Fonts<hr>
 
@@ -134,11 +135,11 @@ I have used google fonts to select a font type that best supports the goals of t
 
 Reasons for choosing the fonts:
 
-  *  <strong>Open Sans:</strong> is chosen for the body text due to its readability. With a clean and modern appearance, it ensures clear communication of information to beginner golfers, aligning with the brand's focus on simplicity and clarity.
+- <strong>Open Sans:</strong> is chosen for the body text due to its readability. With a clean and modern appearance, it ensures clear communication of information to beginner golfers, aligning with the brand's focus on simplicity and clarity.
 
-  *  <strong>Fredoka:</strong>  is selected as the title font to bring a playful and friendly element to the brand. With its rounded and inviting design, it adds a touch of excitement and light-heartedness to the headings, perfectly capturing the brand's aim to provide a freindly open environment for beginer golfers to play golf.
+- <strong>Fredoka:</strong> is selected as the title font to bring a playful and friendly element to the brand. With its rounded and inviting design, it adds a touch of excitement and light-heartedness to the headings, perfectly capturing the brand's aim to provide a freindly open environment for beginer golfers to play golf.
 
-## Agile Methodology 
+## Agile Methodology
 
 ### Prioritisation<hr>
 
@@ -162,10 +163,10 @@ Reasons for choosing the fonts:
 
 ## Validation
 
-### HTML Validation 
+### HTML Validation
 
 <details><summary>Home</summary>
-<img src="docs/validation/html/w3c-markup-home.png">
+<img src="/docs/validation/html/w3c-markup-home.png">
 </details>
 
 ## Testing
@@ -176,48 +177,47 @@ Reasons for choosing the fonts:
 
 ### Deploy on heroku<hr>
 
-1. Generate pipfile 
+1. Generate pipfile
 
-   * Open the terminal and execute the command "pip3 freeze > requirements.txt" to generate a file containing all the necessary requirements.
+   - Open the terminal and execute the command "pip3 freeze > requirements.txt" to generate a file containing all the necessary requirements.
 
 2. Heroku Setup
 
-   * Access the [Heroku website](https://www.heroku.com/ "Heroku Website").
-   * Log in to your Heroku account and select <strong>Create an App</strong>.
-   * Click on the <strong>New button</strong> and create an <strong>app</strong>.
-   * Select a suitable name and choose your location.
-   * Proceed to the <strong>Resources tab</strong>.
-   * From the list of resources, pick <strong>Heroku Postgres</strong>.
-   * Go to the <strong>Deploy tab</strong>.
-   * Click on <strong>Connect to Github</strong> and find your repository.
-   * Open the <strong>Settings</strong> tab.
-   * Reveal Config Vars and include your Cloudinary, Database URL (from Heroku-Postgres), and Secret Key.
+   - Access the [Heroku website](https://www.heroku.com/ "Heroku Website").
+   - Log in to your Heroku account and select <strong>Create an App</strong>.
+   - Click on the <strong>New button</strong> and create an <strong>app</strong>.
+   - Select a suitable name and choose your location.
+   - Proceed to the <strong>Resources tab</strong>.
+   - From the list of resources, pick <strong>Heroku Postgres</strong>.
+   - Go to the <strong>Deploy tab</strong>.
+   - Click on <strong>Connect to Github</strong> and find your repository.
+   - Open the <strong>Settings</strong> tab.
+   - Reveal Config Vars and include your Cloudinary, Database URL (from Heroku-Postgres), and Secret Key.
 
 3. Heroku Deployment
 
-   * Visit the <strong>Deploy tab</strong>.
-   * Choose the <strong>main branch</strong> for deployment and activate <strong>automatic deployment</strong>.
-   * Opt for <strong>manual deployment</strong> to build the application.
-
+   - Visit the <strong>Deploy tab</strong>.
+   - Choose the <strong>main branch</strong> for deployment and activate <strong>automatic deployment</strong>.
+   - Opt for <strong>manual deployment</strong> to build the application.
 
 ### FORK THE REPOSITORY<hr>
 
 To create a duplicate of the repository on your account and make modifications without impacting the original project, follow these steps using the Fork feature on GitHub:
 
-   * Access the [repository page](https://github.com/Oran-123/Hook-n-Slice-Golf "repository page") on your account.
-   * In the top right corner of the page, click on the Fork button.
-   * A forked version of the project will be created and added to your repository.
+- Access the [repository page](https://github.com/Oran-123/Hook-n-Slice-Golf "repository page") on your account.
+- In the top right corner of the page, click on the Fork button.
+- A forked version of the project will be created and added to your repository.
 
 ### CLONE THE REPOSITORY<hr>
 
 To create a replica of the repository on your local machine, follow these steps using the Clone feature:
 
-   * Access the [repository page](https://github.com/Oran-123/Hook-n-Slice-Golf "repository page") on your account.
-   * Locate the green <strong>Code</strong> button above the code window and click on it.
-   * Choose your preferred format from <strong>HTTPS, SSH</strong>, or <strong>GitClub CLI</strong>, and copy the provided URL (preferably HTTPS).
-   * Open your Integrated Development Environment (IDE) and launch Git Bash.
-   * Enter the command <strong>git clone</strong> followed by the copied URL in the Git Bash terminal.
-   * The repository will be cloned, and a local copy will be created on your machine.
+- Access the [repository page](https://github.com/Oran-123/Hook-n-Slice-Golf "repository page") on your account.
+- Locate the green <strong>Code</strong> button above the code window and click on it.
+- Choose your preferred format from <strong>HTTPS, SSH</strong>, or <strong>GitClub CLI</strong>, and copy the provided URL (preferably HTTPS).
+- Open your Integrated Development Environment (IDE) and launch Git Bash.
+- Enter the command <strong>git clone</strong> followed by the copied URL in the Git Bash terminal.
+- The repository will be cloned, and a local copy will be created on your machine.
 
 ## Credits
 
