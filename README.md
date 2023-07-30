@@ -29,10 +29,11 @@
     - [Existing Features](#existing-features)
       - [Create bookings](#create-bookings)
     - [Future Feature Considerations](#future-feature-considerations)
-  - [Responsive Layout and Design](#responsive-layout-and-design)
   - [Tools Used](#tools-used)
     - [Python packages](#python-packages)
+  - [Validation](#validation)
   - [Testing](#testing)
+  - [Bugs](#bugs)
   - [Deployment](#deployment)
     - [Deploy on heroku](#deploy-on-heroku)
     - [FORK THE REPOSITORY](#fork-the-repository)
@@ -155,13 +156,15 @@ Reasons for choosing the fonts:
 
 ### Future Feature Considerations<hr>
 
-## Responsive Layout and Design
-
 ## Tools Used
 
 ### Python packages<hr>
 
+## Validation
+
 ## Testing
+
+## Bugs
 
 ## Deployment
 
