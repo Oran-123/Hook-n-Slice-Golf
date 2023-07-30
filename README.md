@@ -273,7 +273,7 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 </details>
 
 <details><summary>Logged Out Nav Menu</summary>
-<img src="#">
+<img src="docs/features/nav-menu-signed-out.png">
 </details>
 
 #### Call To Action Button
@@ -285,7 +285,7 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 - <strong>Covers User Stories</strong>:
 
 <details><summary>CTA When User Is Signed-In</summary>
-<img src="#">
+<img src="docs/features/call-to-action-signed-in.png">
 </details>
 
 <details><summary>CTA When User Is Not Signed-In</summary>
@@ -392,7 +392,7 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 - Users can filter between past and future bookings
 - A CTA to create a new booking is included if there are no future bookings
 - Users can edit or cancel bookings if needed.
-- User can only edit future bookings the buttons will not displayed on past bookings 
+- User can only edit future bookings the buttons will not displayed on past bookings
 - <strong>Covers User Stories</strong>:
 
 <details><summary>User Profile Future Bookings</summary>
