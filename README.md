@@ -188,31 +188,36 @@ In my project some of user stories were not completed even if they were marked w
 
 ### Epics & User Stories<hr>
 
-| **Epic**                  | **User Story**                                  | **Acceptance Criteria**|
-| ------------------------- | ----------------------------------------------- |  --------------------- |
-| EPIC 1: Design            | Intuitive design and flow to the website layout | as a User, I want the website to have a intuitive layout and design so that a positive user experience is elicited when navigating the site|
-| EPIC 1: Design            | Logo & Name| as a Logged-In User, I want to log out of my account from any page so that I do not leave the site logged in|
-| EPIC 1: Design            | Typography| as a User, I want to select suitable fonts so that they align with the playful brand theme of Hook n' Slice Golf|
-| EPIC 1: Design            | Database Entity Relationship Diagram| as a developer, I want to design the database schema so that I can create the models to store relevant information|
-| EPIC 1: Design            | Website Wireframes| as a developer, I want to create a set of wireframes for all screens so that I can visualize the website structure and layout|
-| EPIC 1: Design            | Color Scheme| as a a developer, I want to choose a color palete so that the website passes accessibility requirements|
-| EPIC 2: Tee Time Booking  | Find Available Tee Times| as a User, I want to view available tee times for specific dates and group sizes so that I can make a decision on what tee time I want to book|
-| EPIC 2: Tee Time Booking  | Booking Confirmation| as a Logged-In User, I want receive confirmation of the booking and its cost so that I know that it was successful|
-| EPIC 2: Tee Time Booking  | Book A Tee Time| as a Logged-In User, I want receive confirmation of the booking and its cost so that I know that it was successful|
-| EPIC 5: User Profile      | List of Upcoming Tee Times| as a Logged-In User, I want to see a list of the upcoming tee-times I booked so that I don't miss a booking|
-| EPIC 5: User Profile      | Delete Bookings (Tee-Times)| as a Logged-In User, I want to delete/cancel future tee-times I have booked so that I can inform the club if I cannot attend a tee-time|
-| EPIC 5: User Profile      | Edit Booking Details| as a Logged-In User, I want update booking details such as time, date and number of players so that I can inform the club in any changes to my booking |
-| EPIC 5: User Profile      | View a List of Past Tee Times| as a Logged-In User, I want see a list of past tee-times so that I can keep a record of the rounds of golf I have played|
-| EPIC 6: Admin Actions     | View All User Bookings| as a Admin User, I want to view all user bookings so that I can manage bookings for the course|
-| EPIC 6: Admin Actions     | Admin Login| as a site-owner, I want login as an admin so that I can view user bookings, messages and update site content|
-| EPIC 6: Admin Actions     | Cancel user bookings| as a Admin User, I want the ability to cancel users bookings so that I can manually update bookings on behalf of users|
-| EPIC 8: Navigation        | Responsive Navigation| as a User, I want the site to have a responsive navigation bar so that I can clearly see all options on desktop/tablet/mobile devices|
-| EPIC 8: Navigation        | Call To Actions to Book On All Pages| as a User, I want the ability to access the booking app from all web pages so that booking a teet time is intuitive and easy|
-| EPIC 8: Navigation        | Alerts to notify when logged in/logged out| as a User, I want receive alerts when I login and logout so that I see confirmation of my login status|
-| EPIC 9: User Registration | Login using user name and password only| as a User, I want I want to be able to login to my account with email and password only so that accessing my account is intuitive|
-| EPIC 9: User Registration | Register An Account| as a User, I want to register an account so that I can make and amend bookins|
-| EPIC 9: User Registration | logout anytime| as a Logged-In User, I want to log out of my account from any page so that I do not leave the site logged in|
+There was a total of 50 user stories and 11 epic created in my backlog.
 
+Only 22 of the user stories were completed, 28 were moved to descoped as there was not enough time to complete the associated epic. All of the user stories can be found on the following [Git Hub board](https://github.com/users/Oran-123/projects/2/views/1?visibleFields=%5B%22Title%22%2C%22Assignees%22%2C%22Status%22%2C43732427%2C%22Labels%22%2C%22Milestone%22%5D&layout=board&filterQuery=)
+
+The below table includes the Epic, User Stories and the Acceptance Criteria of the User Stories that were completed: 
+
+| **Epic**                  | **User Story**                                  | **Acceptance Criteria**                                                                                                                                |
+| ------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| EPIC 1: Design            | Intuitive design and flow to the website layout | as a User, I want the website to have a intuitive layout and design so that a positive user experience is elicited when navigating the site            |
+| EPIC 1: Design            | Logo & Name                                     | as a Logged-In User, I want to log out of my account from any page so that I do not leave the site logged in                                           |
+| EPIC 1: Design            | Typography                                      | as a User, I want to select suitable fonts so that they align with the playful brand theme of Hook n' Slice Golf                                       |
+| EPIC 1: Design            | Database Entity Relationship Diagram            | as a developer, I want to design the database schema so that I can create the models to store relevant information                                     |
+| EPIC 1: Design            | Website Wireframes                              | as a developer, I want to create a set of wireframes for all screens so that I can visualize the website structure and layout                          |
+| EPIC 1: Design            | Color Scheme                                    | as a a developer, I want to choose a color palete so that the website passes accessibility requirements                                                |
+| EPIC 2: Tee Time Booking  | Find Available Tee Times                        | as a User, I want to view available tee times for specific dates and group sizes so that I can make a decision on what tee time I want to book         |
+| EPIC 2: Tee Time Booking  | Booking Confirmation                            | as a Logged-In User, I want receive confirmation of the booking and its cost so that I know that it was successful                                     |
+| EPIC 2: Tee Time Booking  | Book A Tee Time                                 | as a Logged-In User, I want receive confirmation of the booking and its cost so that I know that it was successful                                     |
+| EPIC 5: User Profile      | List of Upcoming Tee Times                      | as a Logged-In User, I want to see a list of the upcoming tee-times I booked so that I don't miss a booking                                            |
+| EPIC 5: User Profile      | Delete Bookings (Tee-Times)                     | as a Logged-In User, I want to delete/cancel future tee-times I have booked so that I can inform the club if I cannot attend a tee-time                |
+| EPIC 5: User Profile      | Edit Booking Details                            | as a Logged-In User, I want update booking details such as time, date and number of players so that I can inform the club in any changes to my booking |
+| EPIC 5: User Profile      | View a List of Past Tee Times                   | as a Logged-In User, I want see a list of past tee-times so that I can keep a record of the rounds of golf I have played                               |
+| EPIC 6: Admin Actions     | View All User Bookings                          | as a Admin User, I want to view all user bookings so that I can manage bookings for the course                                                         |
+| EPIC 6: Admin Actions     | Admin Login                                     | as a site-owner, I want login as an admin so that I can view user bookings, messages and update site content                                           |
+| EPIC 6: Admin Actions     | Cancel user bookings                            | as a Admin User, I want the ability to cancel users bookings so that I can manually update bookings on behalf of users                                 |
+| EPIC 8: Navigation        | Responsive Navigation                           | as a User, I want the site to have a responsive navigation bar so that I can clearly see all options on desktop/tablet/mobile devices                  |
+| EPIC 8: Navigation        | Call To Actions to Book On All Pages            | as a User, I want the ability to access the booking app from all web pages so that booking a teet time is intuitive and easy                           |
+| EPIC 8: Navigation        | Alerts to notify when logged in/logged out      | as a User, I want receive alerts when I login and logout so that I see confirmation of my login status                                                 |
+| EPIC 9: User Registration | Login using user name and password only         | as a User, I want I want to be able to login to my account with email and password only so that accessing my account is intuitive                      |
+| EPIC 9: User Registration | Register An Account                             | as a User, I want to register an account so that I can make and amend bookins                                                                          |
+| EPIC 9: User Registration | logout anytime                                  | as a Logged-In User, I want to log out of my account from any page so that I do not leave the site logged in                                           |
 
 ## Features
 
