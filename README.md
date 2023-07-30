@@ -162,6 +162,12 @@ Reasons for choosing the fonts:
 
 ## Validation
 
+### HTML Validation 
+
+<details><summary>Home</summary>
+<img src="docs/validation/html/w3c-markup-home.png">
+</details>
+
 ## Testing
 
 ## Bugs
