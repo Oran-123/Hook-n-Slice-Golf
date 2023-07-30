@@ -350,6 +350,55 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="/docs/validation/python/lighthouse-edit-booking-mobile.png">
 </details>
 
+### Wave
+
+WAVE was used to test the websites accessibility.
+
+<details><summary>Index</summary>
+<img src="/docs/validation/accessibility/wave-index-1.png">
+<img src="/docs/validation/accessibility/wave-index-2.png">
+</details>
+
+<details><summary>Register</summary>
+<img src="/docs/validation/accessibility/wave-register-1.png">
+<img src="/docs/validation/accessibility/wave-register-2.png">
+</details>
+
+<details><summary>Login</summary>
+<img src="/docs/validation/accessibility/wave-login-1.png">
+<img src="/docs/validation/accessibility/wave-login-2.png">
+</details>
+
+<details><summary>User Profile</summary>
+<img src="/docs/validation/accessibility/wave-user-profile-1.png">
+<img src="/docs/validation/accessibility/wave-user-profile-2.png">
+</details>
+
+<details><summary>Manage Bookings</summary>
+<img src="/docs/validation/accessibility/wave-manage-bookings-1.png">
+<img src="/docs/validation/accessibility/wave-manage-bookings-2.png">
+</details>
+
+<details><summary>Bookings</summary>
+<img src="/docs/validation/accessibility/wave-booking-1.png">
+<img src="/docs/validation/accessibility/wave-booking-2.png">
+</details>
+
+<details><summary>Booking Confirmation Form</summary>
+<img src="/docs/validation/accessibility/wave-booking-confirmation-form-1.png">
+<img src="/docs/validation/accessibility/wave-booking-confirmation-form-2.png">
+</details>
+
+<details><summary>Bookings Success</summary>
+<img src="/docs/validation/accessibility/wave-booking-confirmation-1.png">
+<img src="/docs/validation/accessibility/wave-booking-confirmation-2.png">
+</details>
+
+<details><summary>Edit Bookings</summary>
+<img src="/docs/validation/accessibility/wave-edit-1.png">
+<img src="/docs/validation/accessibility/wave-edit-2.png">
+</details>
+
 ## Testing
 
 ## Bugs
