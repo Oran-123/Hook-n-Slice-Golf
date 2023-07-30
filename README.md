@@ -4,6 +4,11 @@
 
 <hr>
 
+**Developer: Oran Dillon**
+
+💻 [Visit live website](https://hook-n-slice-golf.herokuapp.com/)  
+(Ctrl + click to open in new tab)
+
 ## Table of contents
 
 - [Hook 'n' Slice - Golf Course Website](#hook-n-slice---golf-course-website)
@@ -519,7 +524,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="/docs/validation/lighthouse/lighthouse-edit-booking-mobile.png">
 </details>
 
-### Accessibility 
+### Accessibility
 
 WAVE was used to test the websites accessibility.
 
