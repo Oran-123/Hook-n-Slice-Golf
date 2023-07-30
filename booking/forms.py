@@ -1,14 +1,32 @@
+"""
+Booking App - form
+---------------------
+Form for booking app
+
+"""
+# Imports
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 from django import forms
 from django.forms.widgets import CheckboxSelectMultiple
 from .models import Booking, TeeTime
 from django.contrib import messages
 from datetime import date, datetime, time
 from django.utils import timezone
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 class TeeTimeForm(forms.Form):
 
+    """
+    Form that enables users to enter their booking criteria and return
+    available teetimes
+    """
+
     def __init__(self, *args, user=None, **kwargs):
+        """
+        Initialize form with optional user data. Set 'user' attribute and
+        field initial values.
+        """
         self.user = user
         super().__init__(*args, **kwargs)
         self.fields['date'].initial = date.today()
@@ -25,6 +43,10 @@ class TeeTimeForm(forms.Form):
         attrs={'class': 'form-control', 'min': '1', 'max': '4'}))
 
     def clean(self):
+        """
+        Clean and validate form data. Check for existing bookings,
+        time constraints, and errors.
+        """
         cleaned_data = super().clean()
         date = cleaned_data.get('date')
         start_time = cleaned_data.get('start_time')
@@ -57,6 +79,11 @@ class TeeTimeForm(forms.Form):
                 'end_time', 'End time must be later than start time.')
 
     def get_available_tee_times(self):
+        """
+        Get available tee times based on cleaned form data.
+        Query and filter TeeTime objects.
+        """
+
         date = self.cleaned_data.get('date')
         start_time = self.cleaned_data.get('start_time')
         end_time = self.cleaned_data.get('end_time')
