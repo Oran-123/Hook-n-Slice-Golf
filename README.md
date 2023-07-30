@@ -454,6 +454,17 @@ WAVE was used to test the websites accessibility.
 
 ## Bugs
 
+| **Bug** | **Fix** |
+| ------- | ------- |
+|         |         |
+|         |         |
+|         |         |
+|         |         |
+|         |         |
+|         |         |
+|         |         |
+|         |         |
+
 ## Deployment
 
 ### Deploy on heroku<hr>
