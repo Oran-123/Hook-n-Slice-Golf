@@ -32,7 +32,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    '8000-oran-123-hook-n-slice-go-vugxwly2mq.us2.codeanyapp.com', 'hook-n-slice-golf.herokuapp.com', 'localhost']
+    '8000-oran-123-hook-n-slice-go-vugxwly2mq.us2.codeanyapp.com',
+    'hook-n-slice-golf.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -142,13 +143,17 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+STATICFILES_STORAGE = (
+    'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+)
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
 MEDIA_URL = '/media/'
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.storage.MediaCloudinaryStorage'
+DEFAULT_FILE_STORAGE = (
+    'cloudinary_storage.storage.storage.MediaCloudinaryStorage'
+    )
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
