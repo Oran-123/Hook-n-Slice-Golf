@@ -31,23 +31,19 @@ def user_profile_bookings(request):
     # Fetch the bookings based on the filter type
     if filter_type == 'past':
         bookings = (
-            Booking.objects.filter(user_name=request.user,
-                                   booking_datetime__tee_datetime__lt=(
-                                       datetime.now(
-                                       )).order_by(
-                                       '-booking_datetime__tee_datetime'
-                                   ))
+            Booking.objects.filter(
+                user_name=request.user,
+                booking_datetime__tee_datetime__lt=datetime.now()
+            ).order_by('-booking_datetime__tee_datetime')
         )
 
         title = 'Past Bookings'
     else:
         bookings = (
-            Booking.objects.filter(user_name=request.user,
-                                   booking_datetime__tee_datetime__gte=(
-                                       datetime.now(
-                                       )).order_by(
-                                       'booking_datetime__tee_datetime'
-                                   ))
+            Booking.objects.filter(
+                user_name=request.user,
+                booking_datetime__tee_datetime__gte=datetime.now()
+            ).order_by('booking_datetime__tee_datetime')
         )
         title = 'Upcoming Bookings'
 
