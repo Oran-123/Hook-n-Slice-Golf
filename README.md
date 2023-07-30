@@ -39,6 +39,8 @@
     - [Python packages](#python-packages)
   - [Validation](#validation)
   - [Testing](#testing)
+    - [Manual Testing](#manualtesting)
+    - [Device & Browser Testing](#device&browsertesting)
   - [Bugs](#bugs)
   - [Deployment](#deployment)
     - [Deploy on heroku](#deploy-on-heroku)
@@ -575,6 +577,8 @@ WAVE was used to test the websites accessibility.
 
 ## Testing
 
+### Manual Testing 
+
 | Test Case                                      | Steps                                                                                                                                           | Expected Result                                                                                                                   | Actual Result |
 | ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------- |
 | View Homepage                                  | 1. Navigate to the homepage of the golf course website.                                                                                         | The homepage should load with relevant content and a navigation bar.                                                              | -             |
@@ -599,11 +603,34 @@ WAVE was used to test the websites accessibility.
 | Try to Book a Past Date                        | 1. Navigate to the 'Book Tee Time' page. 2. Select a past date from the available tee times. 3. Click the 'Book Now' button.                    | The user should see a validation error indicating that booking a past date is not allowed.                                        | -             |
 | Try to Book a Duplicate Tee Time               | 1. Navigate to the 'Book Tee Time' page. 2. Select a date and time that has already been booked. 3. Click the 'Book Now' button.                | The user should see                                                                                                               | -             |
 
+### Device & Browser Testing 
+
+### Device Testing & Browser compatibility
+
+The [BrowserStack](https://live.browserstack.com/dashboard) was used to test the site on real devices 
+
+The following devices were used to test my site:
+
+#### Devices 
+
+* Samsung Galaxy S22 Ultra
+* Apple iPhone 14
+* Apple iPhone 13
+* Apple iPhone 12 Pro 
+* Apple iPhone 12
+* Google Pixel 5
+
+#### Browsers 
+* Mozilla Firefox 
+* Google Chrome 
+* Safari 
+* Microsoft Edge 
+
 ## Bugs
 
 | **Bug** | **Fix** |
 | ------- | ------- |
-|         |         |
+| Register form formatting on Apple Devices        | existing bug        |
 |         |         |
 |         |         |
 |         |         |
