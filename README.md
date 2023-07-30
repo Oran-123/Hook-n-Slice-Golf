@@ -123,7 +123,7 @@ The project will use the PostgreSQL database for storing data. Two diagramgs wer
 
 <details>
   <summary>Implemented Schema</summary> 
-<img src="docs/erd/final-erd.png"></img>
+<img src="docs/erd/final-erd.jpeg"></img>
 </details>
 
 ## Branding
@@ -247,33 +247,33 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 
 #### Leaderboard
 
-* Implement a dynamic leaderboard that displays the top-performing players based on their scores and progress in various golf games, providing healthy competition among users.
-* Allow users to filter the leaderboard based on different criteria, date range, or handicap, to view rankings that are relevant to their preferences.
+- Implement a dynamic leaderboard that displays the top-performing players based on their scores and progress in various golf games, providing healthy competition among users.
+- Allow users to filter the leaderboard based on different criteria, date range, or handicap, to view rankings that are relevant to their preferences.
 
 #### Metrics
 
-* Develop a comprehensive metrics system that tracks user performance and golfing statistics, such as average score, fairways hit, greens in regulation, and more.
-* Provide users with personalized insights and analysis of their golfing data, enabling them to identify areas for improvement and track their progress over time.
+- Develop a comprehensive metrics system that tracks user performance and golfing statistics, such as average score, fairways hit, greens in regulation, and more.
+- Provide users with personalized insights and analysis of their golfing data, enabling them to identify areas for improvement and track their progress over time.
 
 #### Manage Booking Filters
 
-* Develop a user-friendly filtering system for managing bookings in the manage booking admin page.
-* Admin users will be able to filter bookings based on various criteria, such as date, tee time slot, user name, and booking status, streamlining the process of managing and organizing tee time reservations.
+- Develop a user-friendly filtering system for managing bookings in the manage booking admin page.
+- Admin users will be able to filter bookings based on various criteria, such as date, tee time slot, user name, and booking status, streamlining the process of managing and organizing tee time reservations.
 
 #### Forgot Email
 
-* Implement a "Forgot Email" functionality to assist users in recovering their account email address.
-* Users who forget their registered email address will be able to provide their username or other account information, and the system will send an email containing their account email address, helping them regain access to their account.
+- Implement a "Forgot Email" functionality to assist users in recovering their account email address.
+- Users who forget their registered email address will be able to provide their username or other account information, and the system will send an email containing their account email address, helping them regain access to their account.
 
 #### Email Confirmation For Bookings
 
-* Implement an automated email confirmation system that sends users a confirmation email after they successfully book a tee time.
-* The email will include details of their booking, such as date, time, number of players, and a unique booking reference, ensuring users have all the necessary information for their tee time.
+- Implement an automated email confirmation system that sends users a confirmation email after they successfully book a tee time.
+- The email will include details of their booking, such as date, time, number of players, and a unique booking reference, ensuring users have all the necessary information for their tee time.
 
 #### Payments
 
-* Integrate a secure payment gateway to facilitate online payments for tee time bookings and other services offered by Hook 'n' Slice Golf.
-* Allow users to securely enter their payment information and process transactions, providing a seamless and convenient booking experience while ensuring the safety of their financial data.
+- Integrate a secure payment gateway to facilitate online payments for tee time bookings and other services offered by Hook 'n' Slice Golf.
+- Allow users to securely enter their payment information and process transactions, providing a seamless and convenient booking experience while ensuring the safety of their financial data.
 
 ## Tools Used
 
