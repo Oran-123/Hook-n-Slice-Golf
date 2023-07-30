@@ -667,7 +667,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 #### Desktop
 
 <details><summary>Index</summary>
-<img src="/">
+<img src="/docs/validation/lighthouse/lighthouse-index-desktop.png">
 </details>
 
 <details><summary>Register</summary>
@@ -705,7 +705,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 #### Mobile
 
 <details><summary>Index</summary>
-<img src="/">
+<img src="/docs/validation/lighthouse/lighthouse-index-mobile.png">
 </details>
 
 <details><summary>Register</summary>
