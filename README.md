@@ -29,8 +29,7 @@
   - [Agile Methodology](#agile-methodology)
     - [Prioritisation](#prioritisation)
     - [Sprints](#sprints)
-    - [Epics](#epics)
-    - [User Stories](#user-stories)
+    - [Epics & User Stories](#epics&UserStories)
   - [Features](#features)
     - [Existing Features](#existing-features)
       - [Create bookings](#create-bookings)
@@ -203,28 +202,28 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 
 | **Epic**                  | **User Story**                                  | **Acceptance Criteria**                                                                                                                                |
 | ------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| EPIC 1: Design            | Intuitive design and flow to the website layout | as a User, I want the website to have a intuitive layout and design so that a positive user experience is elicited when navigating the site            |
-| EPIC 1: Design            | Logo & Name                                     | as a Logged-In User, I want to log out of my account from any page so that I do not leave the site logged in                                           |
-| EPIC 1: Design            | Typography                                      | as a User, I want to select suitable fonts so that they align with the playful brand theme of Hook n' Slice Golf                                       |
-| EPIC 1: Design            | Database Entity Relationship Diagram            | as a developer, I want to design the database schema so that I can create the models to store relevant information                                     |
-| EPIC 1: Design            | Website Wireframes                              | as a developer, I want to create a set of wireframes for all screens so that I can visualize the website structure and layout                          |
-| EPIC 1: Design            | Color Scheme                                    | as a a developer, I want to choose a color palete so that the website passes accessibility requirements                                                |
-| EPIC 2: Tee Time Booking  | Find Available Tee Times                        | as a User, I want to view available tee times for specific dates and group sizes so that I can make a decision on what tee time I want to book         |
-| EPIC 2: Tee Time Booking  | Booking Confirmation                            | as a Logged-In User, I want receive confirmation of the booking and its cost so that I know that it was successful                                     |
-| EPIC 2: Tee Time Booking  | Book A Tee Time                                 | as a Logged-In User, I want receive confirmation of the booking and its cost so that I know that it was successful                                     |
-| EPIC 5: User Profile      | List of Upcoming Tee Times                      | as a Logged-In User, I want to see a list of the upcoming tee-times I booked so that I don't miss a booking                                            |
-| EPIC 5: User Profile      | Delete Bookings (Tee-Times)                     | as a Logged-In User, I want to delete/cancel future tee-times I have booked so that I can inform the club if I cannot attend a tee-time                |
-| EPIC 5: User Profile      | Edit Booking Details                            | as a Logged-In User, I want update booking details such as time, date and number of players so that I can inform the club in any changes to my booking |
-| EPIC 5: User Profile      | View a List of Past Tee Times                   | as a Logged-In User, I want see a list of past tee-times so that I can keep a record of the rounds of golf I have played                               |
-| EPIC 6: Admin Actions     | View All User Bookings                          | as a Admin User, I want to view all user bookings so that I can manage bookings for the course                                                         |
-| EPIC 6: Admin Actions     | Admin Login                                     | as a site-owner, I want login as an admin so that I can view user bookings, messages and update site content                                           |
-| EPIC 6: Admin Actions     | Cancel user bookings                            | as a Admin User, I want the ability to cancel users bookings so that I can manually update bookings on behalf of users                                 |
-| EPIC 8: Navigation        | Responsive Navigation                           | as a User, I want the site to have a responsive navigation bar so that I can clearly see all options on desktop/tablet/mobile devices                  |
-| EPIC 8: Navigation        | Call To Actions to Book On All Pages            | as a User, I want the ability to access the booking app from all web pages so that booking a teet time is intuitive and easy                           |
-| EPIC 8: Navigation        | Alerts to notify when logged in/logged out      | as a User, I want receive alerts when I login and logout so that I see confirmation of my login status                                                 |
-| EPIC 9: User Registration | Login using user name and password only         | as a User, I want I want to be able to login to my account with email and password only so that accessing my account is intuitive                      |
-| EPIC 9: User Registration | Register An Account                             | as a User, I want to register an account so that I can make and amend bookins                                                                          |
-| EPIC 9: User Registration | logout anytime                                  | as a Logged-In User, I want to log out of my account from any page so that I do not leave the site logged in                                           |
+| EPIC 1: Design            | 1. Intuitive design and flow to the website layout | as a User, I want the website to have a intuitive layout and design so that a positive user experience is elicited when navigating the site            |
+| EPIC 1: Design            | 2. Logo & Name                                     | as a Logged-In User, I want to log out of my account from any page so that I do not leave the site logged in                                           |
+| EPIC 1: Design            | 3. Typography                                      | as a User, I want to select suitable fonts so that they align with the playful brand theme of Hook n' Slice Golf                                       |
+| EPIC 1: Design            | 4. Database Entity Relationship Diagram            | as a developer, I want to design the database schema so that I can create the models to store relevant information                                     |
+| EPIC 1: Design            | 5. Website Wireframes                              | as a developer, I want to create a set of wireframes for all screens so that I can visualize the website structure and layout                          |
+| EPIC 1: Design            | 6. Color Scheme                                    | as a a developer, I want to choose a color palete so that the website passes accessibility requirements                                                |
+| EPIC 2: Tee Time Booking  | 7. Find Available Tee Times                        | as a User, I want to view available tee times for specific dates and group sizes so that I can make a decision on what tee time I want to book         |
+| EPIC 2: Tee Time Booking  | 8. Booking Confirmation                            | as a Logged-In User, I want receive confirmation of the booking and its cost so that I know that it was successful                                     |
+| EPIC 2: Tee Time Booking  | 9. Book A Tee Time                                 | as a Logged-In User, I want receive confirmation of the booking and its cost so that I know that it was successful                                     |
+| EPIC 5: User Profile      | 10. List of Upcoming Tee Times                      | as a Logged-In User, I want to see a list of the upcoming tee-times I booked so that I don't miss a booking                                            |
+| EPIC 5: User Profile      | 11. Delete Bookings (Tee-Times)                     | as a Logged-In User, I want to delete/cancel future tee-times I have booked so that I can inform the club if I cannot attend a tee-time                |
+| EPIC 5: User Profile      | 12. Edit Booking Details                            | as a Logged-In User, I want update booking details such as time, date and number of players so that I can inform the club in any changes to my booking |
+| EPIC 5: User Profile      | 13. View a List of Past Tee Times                   | as a Logged-In User, I want see a list of past tee-times so that I can keep a record of the rounds of golf I have played                               |
+| EPIC 6: Admin Actions     | 14. View All User Bookings                          | as a Admin User, I want to view all user bookings so that I can manage bookings for the course                                                         |
+| EPIC 6: Admin Actions     | 15. Admin Login                                     | as a site-owner, I want login as an admin so that I can view user bookings, messages and update site content                                           |
+| EPIC 6: Admin Actions     | 16. Cancel user bookings                            | as a Admin User, I want the ability to cancel users bookings so that I can manually update bookings on behalf of users                                 |
+| EPIC 8: Navigation        | 17. Responsive Navigation                           | as a User, I want the site to have a responsive navigation bar so that I can clearly see all options on desktop/tablet/mobile devices                  |
+| EPIC 8: Navigation        | 18. Call To Actions to Book On All Pages            | as a User, I want the ability to access the booking app from all web pages so that booking a teet time is intuitive and easy                           |
+| EPIC 8: Navigation        | 19. Alerts to notify when logged in/logged out      | as a User, I want receive alerts when I login and logout so that I see confirmation of my login status                                                 |
+| EPIC 9: User Registration | 20. Login using user name and password only         | as a User, I want I want to be able to login to my account with email and password only so that accessing my account is intuitive                      |
+| EPIC 9: User Registration | 21. Register An Account                             | as a User, I want to register an account so that I can make and amend bookins                                                                          |
+| EPIC 9: User Registration | 22. logout anytime                                  | as a Logged-In User, I want to log out of my account from any page so that I do not leave the site logged in                                           |
 
 ## Features
 
@@ -577,7 +576,7 @@ WAVE was used to test the websites accessibility.
 
 ## Testing
 
-### Manual Testing 
+### Manual Testing
 
 | Test Case                                      | Steps                                                                                                                                           | Expected Result                                                                                                                   | Actual Result |
 | ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------- |
@@ -603,41 +602,40 @@ WAVE was used to test the websites accessibility.
 | Try to Book a Past Date                        | 1. Navigate to the 'Book Tee Time' page. 2. Select a past date from the available tee times. 3. Click the 'Book Now' button.                    | The user should see a validation error indicating that booking a past date is not allowed.                                        | -             |
 | Try to Book a Duplicate Tee Time               | 1. Navigate to the 'Book Tee Time' page. 2. Select a date and time that has already been booked. 3. Click the 'Book Now' button.                | The user should see                                                                                                               | -             |
 
-### Device & Browser Testing 
-
 ### Device Testing & Browser compatibility
 
-The [BrowserStack](https://live.browserstack.com/dashboard) was used to test the site on real devices 
+The [BrowserStack](https://live.browserstack.com/dashboard) was used to test the site on real devices
 
 The following devices were used to test my site:
 
-#### Devices 
+#### Devices
 
-* Samsung Galaxy S22 Ultra
-* Apple iPhone 14
-* Apple iPhone 13
-* Apple iPhone 12 Pro 
-* Apple iPhone 12
-* Google Pixel 5
+- Samsung Galaxy S22 Ultra
+- Apple iPhone 14
+- Apple iPhone 13
+- Apple iPhone 12 Pro
+- Apple iPhone 12
+- Google Pixel 5
 
-#### Browsers 
-* Mozilla Firefox 
-* Google Chrome 
-* Safari 
-* Microsoft Edge 
+#### Browsers
+
+- Mozilla Firefox
+- Google Chrome
+- Safari
+- Microsoft Edge
 
 ## Bugs
 
-| **Bug** | **Fix** |
-| ------- | ------- |
-| Register form formatting on Apple Devices        | existing bug        |
-|         |         |
-|         |         |
-|         |         |
-|         |         |
-|         |         |
-|         |         |
-|         |         |
+| **Bug**                                   | **Fix**      |
+| ----------------------------------------- | ------------ |
+| Register form formatting on Apple Devices | existing bug |
+|                                           |              |
+|                                           |              |
+|                                           |              |
+|                                           |              |
+|                                           |              |
+|                                           |              |
+|                                           |              |
 
 ## Deployment
 
