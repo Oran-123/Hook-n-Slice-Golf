@@ -270,6 +270,86 @@ PEP8 Validation Service was used to check the code for PEP8 requirements via Pyc
 <img src="/docs/validation/python/pycodestyle-home-views.png">
 </details>
 
+### Lighthouse
+
+Performance, best practices and SEO was tested using Lighthouse.
+
+#### Desktop
+
+<details><summary>Index</summary>
+<img src="/">
+</details>
+
+<details><summary>Register</summary>
+<img src="/docs/validation/python/lighthouse-register-desktop.png">
+</details>
+
+<details><summary>Login</summary>
+<img src="/docs/validation/python/lighthouse-login-desktop.png">
+</details>
+
+<details><summary>User Profile</summary>
+<img src="/docs/validation/python/lighthouse-user-profile-desktop.png">
+</details>
+
+<details><summary>Manage Bookings</summary>
+<img src="/docs/validation/python/lighthouse-manage-bookings-desktop.png">
+</details>
+
+<details><summary>Bookings</summary>
+<img src="/docs/validation/python/lighthouse-booking-desktop.png">
+</details>
+
+<details><summary>Booking Confirmation Form</summary>
+<img src="/docs/validation/python/lighthouse-booking-form-desktop.png">
+</details>
+
+<details><summary>Bookings Success</summary>
+<img src="/docs/validation/python/lighthouse-booking-success-desktop.png">
+</details>
+
+<details><summary>Edit Bookings</summary>
+<img src="/docs/validation/python/lighthouse-edit-booking-desktop.png">
+</details>
+
+#### Mobile
+
+<details><summary>Index</summary>
+<img src="/">
+</details>
+
+<details><summary>Register</summary>
+<img src="/docs/validation/python/lighthouse-register-mobile.png">
+</details>
+
+<details><summary>Login</summary>
+<img src="/docs/validation/python/lighthouse-login-mobile.png">
+</details>
+
+<details><summary>User Profile</summary>
+<img src="/docs/validation/python/lighthouse-user-profile-mobile.png">
+</details>
+
+<details><summary>Manage Bookings</summary>
+<img src="/docs/validation/python/lighthouse-manage-bookings-mobile.png">
+</details>
+
+<details><summary>Bookings</summary>
+<img src="/docs/validation/python/lighthouse-booking-mobile.png">
+</details>
+
+<details><summary>Booking Confirmation Form</summary>
+<img src="/docs/validation/python/lighthouse-booking-form-mobile.png">
+</details>
+
+<details><summary>Bookings Success</summary>
+<img src="/docs/validation/python/lighthouse-booking-success-mobile.png">
+</details>
+
+<details><summary>Edit Bookings</summary>
+<img src="/docs/validation/python/lighthouse-edit-booking-mobile.png">
+</details>
+
 ## Testing
 
 ## Bugs
