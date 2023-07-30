@@ -841,56 +841,59 @@ The following devices were used to test my site:
 
 ## Bugs
 
-### Open Bugs 
+### Open Bugs
 
-1. Register for not formatting correctly on Apple Devices 
-    - <strong>To Produce Issue:</strong> Open the website on any apple device on browerstack on either safari or chrome and navigate to the registration form 
-    - <strong>Resolution:</strong> Unknown - does not occur on actual devices 
-    - <strong>Evidence:</strong>
+1. Register for not formatting correctly on Apple Devices
 
-    <details><summary>Registration Form Bug</summary>
-    <img src="#">
-    </details>
+   - <strong>To Produce Issue:</strong> Open the website on any apple device on browerstack on either safari or chrome and navigate to the registration form
+   - <strong>Resolution:</strong> Unknown - does not occur on actual devices
+   - <strong>Evidence:</strong>
 
-2. Signup Form Validation Errors 
-    - <strong>To Produce Issue:</strong> Navigate to the sign in form and enter an incorrect username or password and the form reloads without an error message
-    - <strong>Resolution:</strong> Unknown - error messages added to the form but they are not displayed on form submission 
-    - <strong>Evidence:</strong>
+   <details><summary>Registration Form Bug</summary>
+   <img src="iphone-safarai-register-form.png">
+   </details>
 
-    <details><summary>Error Message Code</summary>
-    <img src="#">
-    </details>
+2. Signup Form Validation Errors
 
-3. 404 Error Page Not Displayin Content  
-    - <strong>To Produce Issue:</strong> If you add /404 to the end of the home page url the page will load without any content 
-    - <strong>Resolution:</strong> Unknown - html page created and loads but no content is displayed between the base content
-    - <strong>Evidence:</strong>
+   - <strong>To Produce Issue:</strong> Navigate to the sign in form and enter an incorrect username or password and the form reloads without an error message
+   - <strong>Resolution:</strong> Unknown - error messages added to the form but they are not displayed on form submission
+   - <strong>Evidence:</strong>
 
-    <details><summary>404 Code</summary>
-    <img src="#">
-    </details>
-    
-    <details><summary>404 Page</summary>
-    <img src="#">
-    </details>
+   <details><summary>Error Message Code</summary>
+   <img src="sign-in-form-validation-bug.png">
+   </details>
+
+3. 404 Error Page Not Displayin Content
+
+   - <strong>To Produce Issue:</strong> If you add /404 to the end of the home page url the page will load without any content
+   - <strong>Resolution:</strong> Unknown - html page created and loads but no content is displayed between the base content
+   - <strong>Evidence:</strong>
+
+   <details><summary>404 Code</summary>
+   <img src="#">
+   </details>
+
+   <details><summary>404 Page</summary>
+   <img src="#">
+   </details>
 
 4. Index Page Lighthouse Performance
-    - <strong>To Produce Issue:</strong> Open the home page and run a lighthouse test the performance score will be very low due to the size of the background image
-    - <strong>Resolution:</strong> Unknown - I have attempted to compress the image multiple times but the quality of the image will be impacted if it is compressed furhter 
-    - <strong>Evidence:</strong>
 
-    <details><summary>Performance Score Of Index Page</summary>
-    <img src="#">
-    </details>    
+   - <strong>To Produce Issue:</strong> Open the home page and run a lighthouse test the performance score will be very low due to the size of the background image
+   - <strong>Resolution:</strong> Unknown - I have attempted to compress the image multiple times but the quality of the image will be impacted if it is compressed furhter
+   - <strong>Evidence:</strong>
 
-### Closed Bugs 
+   <details><summary>Performance Score Of Index Page</summary>
+   <img src="#">
+   </details>
 
-| **Bug** | **Fix** |
-| ------- | ------- |
-| If a user attempted to increate the number of players on one of their existing booking they would encounter an error message even if there was no other booking on this teetime | The users existing booking was excluded from the calculation of available slots on a teetime |
-| Deployment failed due to the error "" | Cloudinary was not expecting svg files in the media folder and this caused an error - replacing the svg with a jpeg file resolved the issue |
-| Registering models in admin site | Attempted to register two models within the parenthesis of a single line of code "admin.site.register(booking,TeeTine") - simply broke this into a seperate line for each model |
+### Closed Bugs
 
+| **Bug**                                                                                                                                                                         | **Fix**                                                                                                                                                                         |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| If a user attempted to increate the number of players on one of their existing booking they would encounter an error message even if there was no other booking on this teetime | The users existing booking was excluded from the calculation of available slots on a teetime                                                                                    |
+| Heroku failed to deploy and showing Keyerror: 'etag' on Build Log.                                                                                                              | Cloudinary was not expecting svg files in the media folder and this caused an error - replacing the svg with a jpeg file resolved the issue                                     |
+| Registering models in admin site                                                                                                                                                | Attempted to register two models within the parenthesis of a single line of code "admin.site.register(booking,TeeTine") - simply broke this into a seperate line for each model |
 
 ## Deployment
 
