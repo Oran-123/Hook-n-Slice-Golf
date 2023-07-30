@@ -203,14 +203,14 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 | **Epic**                  | **User Story**                                     | **Acceptance Criteria**                                                                                                                                |
 | ------------------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | EPIC 1: Design            | 1. Intuitive design and flow to the website layout | as a User, I want the website to have a intuitive layout and design so that a positive user experience is elicited when navigating the site            |
-| EPIC 1: Design            | 2. Logo & Name                                     | as a Logged-In User, I want to log out of my account from any page so that I do not leave the site logged in                                           |
+| EPIC 1: Design            | 2. Logo & Name                                     | as a site owner, I want unique logo and name so that I can set the theme of the brand                                                                  |
 | EPIC 1: Design            | 3. Typography                                      | as a User, I want to select suitable fonts so that they align with the playful brand theme of Hook n' Slice Golf                                       |
 | EPIC 1: Design            | 4. Database Entity Relationship Diagram            | as a developer, I want to design the database schema so that I can create the models to store relevant information                                     |
 | EPIC 1: Design            | 5. Website Wireframes                              | as a developer, I want to create a set of wireframes for all screens so that I can visualize the website structure and layout                          |
 | EPIC 1: Design            | 6. Color Scheme                                    | as a a developer, I want to choose a color palete so that the website passes accessibility requirements                                                |
 | EPIC 2: Tee Time Booking  | 7. Find Available Tee Times                        | as a User, I want to view available tee times for specific dates and group sizes so that I can make a decision on what tee time I want to book         |
 | EPIC 2: Tee Time Booking  | 8. Booking Confirmation                            | as a Logged-In User, I want receive confirmation of the booking and its cost so that I know that it was successful                                     |
-| EPIC 2: Tee Time Booking  | 9. Book A Tee Time                                 | as a Logged-In User, I want receive confirmation of the booking and its cost so that I know that it was successful                                     |
+| EPIC 2: Tee Time Booking  | 9. Book A Tee Time                                 | as a Logged-In User, I want to select available tee times so that I can create a booking                                     |
 | EPIC 5: User Profile      | 10. List of Upcoming Tee Times                     | as a Logged-In User, I want to see a list of the upcoming tee-times I booked so that I don't miss a booking                                            |
 | EPIC 5: User Profile      | 11. Delete Bookings (Tee-Times)                    | as a Logged-In User, I want to delete/cancel future tee-times I have booked so that I can inform the club if I cannot attend a tee-time                |
 | EPIC 5: User Profile      | 12. Edit Booking Details                           | as a Logged-In User, I want update booking details such as time, date and number of players so that I can inform the club in any changes to my booking |
@@ -234,7 +234,7 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 - An inviting and visually appealing home page that introduces users to Hook 'n' Slice Golf's unique offerings.
 - Includes call outs on why users should join the club
 - Call to action included to make a booking
-- <strong>Covers User Stories</strong>:
+- <strong>Covers User Stories</strong>: 1. Intuitive design and flow to the website layout
 
 <details><summary>See Feature Image</summary>
 <img src="docs/features/home-page.png">
@@ -246,7 +246,7 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 - Includes clear and intuitive menu items for easy navigation, ensuring users can access different sections of the website effortlessly.
 - Fixed to the top of the view port so that users can always access the nav bar regardless of which page they are on
 - Logo and site name includes a link back to the home page
-- <strong>Covers User Stories</strong>:
+- <strong>Covers User Stories</strong>: 2. Logo & Name & 17. Responsive Navigation
 
 <details><summary>Desktop Nav Bar</summary>
 <img src="docs/features/navbar-desktop.png">
@@ -263,6 +263,7 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 - The menu is user-friendly, and collapsible on smaller screens (e.g., mobile devices) to ensure a seamless browsing experience.
 - Depedning on whether the user is a super user or a standard user different menu items will appear
 - The menu items will change depeding on whether the user is signed-in or logged out
+- <strong>Covers User Stories</strong>: 22. logout anytime
 
 <details><summary>Super User Nav Menu</summary>
 <img src="docs/features/nav-menu-admin.png">
@@ -282,7 +283,7 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 - The button will direct users to the booking section, enticing them to take action and make a reservation.
 - If the user is not signed in the booking will state different text and first direct the user to the sign-in form before the find a teetime form
 - The CTA has a fade animation to attract the user
-- <strong>Covers User Stories</strong>:
+- <strong>Covers User Stories</strong>: 18. Call To Actions to Book On All Pages
 
 <details><summary>CTA When User Is Signed-In</summary>
 <img src="docs/features/call-to-action-signed-in.png">
@@ -297,6 +298,7 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 - A set of eye-catching icons are included on the website's landing page to highlight the key benefits and reasons why users should join Hook 'n' Slice Golf.
 - Each icon represents a specific advantage, such as state-of-the-art facilities, and a vibrant golfing community and the intuative booking system.
 - The icons will help attract and engage potential users by visually conveying the unique selling points of the golfing experience offered by Hook 'n' Slice Golf.
+- <strong>Covers User Stories</strong>:
 
 <details><summary>Why Joing Us Icons</summary>
 <img src="docs/features/why-join-us.png">
@@ -307,7 +309,7 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 - A user-friendly login page where users can sign in to their accounts.
 - Fields included for logging in with username and password or a link to create an account if the user does not have an account.
 - Both the username and password fields are mandatory and validation is applied so the user must enter a value before they can submit the form
-- <strong>Covers User Stories</strong>:
+- <strong>Covers User Stories</strong>: 15. Admin Login & 20. Login using user name and password only
 
 <details><summary>Sign-In Form</summary>
 <img src="docs/features/sign-in-form.png">
@@ -322,7 +324,7 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 - A registration page with a form for new users to create accounts.
 - Captures essential user information, such as name, email, and password, to facilitate future bookings and user profile management.
 - Validation applie to mandatory fields
-- <strong>Covers User Stories</strong>:
+- <strong>Covers User Stories</strong>: 21. Register An Account
 
 <details><summary>Register Form</summary>
 <img src="docs/features/sign-up-form.png">
@@ -335,6 +337,7 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 #### Logout Modal
 
 - If a user clicks on the logout button they will be presetned with a logout modal to confirm they wish to logout
+- <strong>Covers User Stories</strong>: 22. logout anytime
 
 <details><summary>Logout Modal</summary>
 <img src="docs/features/logout-modal.png">
@@ -345,6 +348,7 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 - A user-friendly form where users can search for available tee times based on specific criteria.
 - Include fields for date, time, and number of players.
 - Validation on the form prevents users from searching for TeeTimes in the past, for Tee Times that do not have sufficent space for the number of players and it prevents the user from entering a start time that is later then the end time
+- <strong>Covers User Stories</strong>: 7. Find Available Tee Times
 
 <details><summary>Find A Tee Time Form</summary>
 <img src="docs/features/find-a-tee-time-form.png">
@@ -359,6 +363,7 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 - Visually appealing and informative cards to display the available tee times matching the user's search criteria.
 - Each card presents essential details, such as date, time, and available slots, to help users make an informed decision.
 - Each card includes a button to book the tee time
+- <strong>Covers User Stories</strong>: 7. Find Available Tee Times
 
 <details><summary>Available Tee Time Cards</summary>
 <img src="docs/features/available-teetimes.png">
@@ -369,7 +374,7 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 - A booking confirmation form that displays all relevant details before finalizing a tee time reservation.
 - Fields are all read only except for the buggy which is a check box that can be populated by the user
 - Users can review the date, time, number of players before confirming the booking.
-- <strong>Covers User Stories</strong>:
+- <strong>Covers User Stories</strong>: 8. Booking Confirmation
 
 <details><summary>Booking Confirmation Form</summary>
 <img src="docs/features/confirm-booking-details.png">
@@ -380,7 +385,7 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 - A booking success page that appears after users successfully complete a reservation.
 - Display a confirmation message and provide booking details for users to keep as reference including the booking id.
 - A call to action to make another booking is included
-- <strong>Covers User Stories</strong>:
+- <strong>Covers User Stories</strong>: 9. Book A Tee Time
 
 <details><summary>Booking Success Page</summary>
 <img src="docs/features/booking-success-page.png">
@@ -393,7 +398,7 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 - A CTA to create a new booking is included if there are no future bookings
 - Users can edit or cancel bookings if needed.
 - User can only edit future bookings the buttons will not displayed on past bookings
-- <strong>Covers User Stories</strong>:
+- <strong>Covers User Stories</strong>: 10. List of Upcoming Tee Times & 11. Delete Bookings & 13. View a List of Past Tee Times
 
 <details><summary>User Profile Future Bookings</summary>
 <img src="docs/features/user-profile-future-bookings.png">
@@ -409,6 +414,7 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 - Users can update booking details, such as date, time, number of players and if they require a buggy, based on their preferences.
 - The form will default to the users current selection for date time, players and if a buggy is required
 - The user will be prevented from chaning the date of their current booking to a date on which they have a seperate booking
+- <strong>Covers User Stories</strong>: 12. Edit Booking Details
 
 <details><summary>Edit Booking Form</summary>
 <img src="docs/features/edit-booking-form.png">
@@ -417,6 +423,7 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 #### Delete Modal
 
 - If a user attempts to delte a booking they will be presented with a delete modal asking them if they wish to confirm the deletion of the booking
+- <strong>Covers User Stories</strong>: 11. Delete Bookings
 
 <details><summary>Delete Modal</summary>
 <img src="docs/features/delete-modal.png">
@@ -427,6 +434,7 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 - Implement an admin page that allows staff members to view and manage all user bookings.
 - Admin users can view update and delete bookings to efficiently handle course reservations.
 - Pagination included on the table so that only 10 results will be displayed on each page and the user can navigate through the page using the controls under the table
+- <strong>Covers User Stories</strong>: 14. View All User Bookings & 16. Cancel user bookings
 
 <details><summary>Manage Bookings</summary>
 <img src="docs/features/manage-bookings.png">
@@ -436,6 +444,7 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 
 - A footer section that appears at the bottom of every page
 - Include social media links for users' convenience.
+- <strong>Covers User Stories</strong>: 1. Intuitive design and flow to the website layout
 
 <details><summary>Footer</summary>
 <img src="docs/features/footer.png">
@@ -445,6 +454,7 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 
 - Alerts appear at the top of the view port for users if they create, update or delte any of the bookings
 - Alerts appear at the top of the view port for users when they login and logout of the site
+- <strong>Covers User Stories</strong>: 19. Alerts to notify when logged in/logged out
 
 <details><summary>Alerts</summary>
 <img src="docs/features/alert-booking-created.png">
