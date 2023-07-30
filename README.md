@@ -165,6 +165,8 @@ Reasons for choosing the fonts:
 
 ### HTML Validation
 
+The W3C Markup Validation Service
+
 <details><summary>Home</summary>
 <img src="/docs/validation/html/w3c-markup-home.png">
 </details>
@@ -197,22 +199,76 @@ Reasons for choosing the fonts:
 <img src="/docs/validation/html/w3c-markup-booking-success.png">
 </details>
 
-<details><summary>CSS Validation</summary>
+<details><summary>Edit Booking</summary>
 <img src="/docs/validation/html/w3c-markup-edit-booking.png">
 </details>
 
+### CSS Validation
+
+The W3C Jigsaw CSS Validation Service
+
+<details><summary>CSS Validation</summary>
+<img src="/docs/validation/css/w3c-css-validation.png">
+</details>
+
 ### JS Validation
+
+JSHint JS Validation Service
 
 <details><summary>JS Validation</summary>
 <img src="/docs/validation/js/jslint-1.png">
 <img src="/docs/validation/html/jslint-2.png">
 </details>
 
-<details><summary>Edit Booking</summary>
-<img src="/docs/validation/css/w3c-css-validation.png">
+### Python Validation
+
+PEP8 Validation Service was used to check the code for PEP8 requirements via Pycodestyle
+
+<hr><summary>Booking</summary><hr>
+
+<details><summary>Admin.py</summary>
+<img src="/docs/validation/python/pycodestyle-booking-admin.png">
 </details>
 
-### CSS Validation
+<details><summary>Models.py</summary>
+<img src="/docs/validation/python/pycodestyle-booking-models.png">
+</details>
+
+<details><summary>URLs.py</summary>
+<img src="/docs/validation/python/pycodestyle-booking-urls.png">
+</details>
+
+<details><summary>Views.py</summary>
+<img src="/docs/validation/python/pycodestyle-booking-views.png">
+</details>
+
+<details><summary>Forms.py</summary>
+<img src="/docs/validation/python/pycodestyle-booking-forms.png">
+</details>
+
+<hr><summary>User Profile</summary><hr>
+
+<details><summary>URLs.py</summary>
+<img src="/docs/validation/python/pycodestyle-user-profile-urls.png">
+</details>
+
+<details><summary>Views.py</summary>
+<img src="/docs/validation/python/pycodestyle-user-profile-views.png">
+</details>
+
+<details><summary>Forms.py</summary>
+<img src="/docs/validation/python/pycodestyle-user-profile-forms.png">
+</details>
+
+<hr><summary>Home</summary><hr>
+
+<details><summary>URLs.py</summary>
+<img src="/docs/validation/python/pycodestyle-home-urls.png">
+</details>
+
+<details><summary>Views.py</summary>
+<img src="/docs/validation/python/pycodestyle-home-views.png">
+</details>
 
 ## Testing
 
