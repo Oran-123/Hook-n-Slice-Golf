@@ -188,6 +188,34 @@ In my project some of user stories were not completed even if they were marked w
 
 ### Epics<hr>
 
+| **Epic** | **User Story** |**Acceptance Criteria** |
+| -------  | -------------  | ---------------------  |
+|          |Intuitive design and flow to the website layout|                        |   
+|          |Logo & Name|                        |
+|          |Typography|
+|          |Database Entity Relationship Diagram|
+|          | Website Wireframes
+|          |Color Scheme|          |
+|          |Find Available Tee Times|          |
+|          |Booking Confirmation|          |
+|          |Book A Tee Time|          |
+|          |List of Upcoming Tee Times|          |
+|          |Delete Bookings (Tee-Times)|          |
+|          |Edit Booking Details|          |
+|          |View a List of Past Tee Times|          |
+|          |View All User Bookings|          |
+|          |Create Bookings For Users|          |
+|          |Admin Login|          |
+|          |Cancel user bookings|          |
+|          |Responsive Navigation|          | 
+|          |Call To Actions to Book On All Pages|          |
+|          |Alerts to notify when logged in/logged out|          |
+|          |Login using user name and password only|          |
+|          |Register An Account|          |
+|          |logout anytime|          |
+ 
+
+
 ### User Stories<hr>
 
 ## Features
