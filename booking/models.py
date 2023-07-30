@@ -66,7 +66,8 @@ class Booking(models.Model):
         ]
     )
     booking_datetime = models.ForeignKey(
-        TeeTime, on_delete=models.CASCADE, to_field='tee_datetime', related_name='booking_datetime')
+        TeeTime, on_delete=models.CASCADE,
+        to_field='tee_datetime', related_name='booking_datetime')
     buggy = models.BooleanField()
 
     # method only saves the booking if there is enough spaces on the tee time
@@ -93,11 +94,15 @@ class Booking(models.Model):
 
             if (available_slots + existing_booking_players) < players:
                 raise ValueError(
-                    f"You are trying to make a booking for {self.players} players, but this time only has space for {available_slots} players.")
+                    f"""You are trying to make a booking for {self.players}
+                    players, but this time only has space for {available_slots}
+                    players.""")
         else:
             if available_slots < players:
                 raise ValueError(
-                    f"You are trying to make a booking for {self.players} players, but this time only has space for {available_slots} players.")
+                    f"""You are trying to make a booking for {self.players}
+                    players, but this time only has space for {available_slots}
+                    players.""")
         super().save(*args, **kwargs)
         tee_time.available = available_slots > 0
         tee_time.save()
