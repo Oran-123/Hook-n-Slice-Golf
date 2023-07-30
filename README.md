@@ -169,6 +169,38 @@ Reasons for choosing the fonts:
 <img src="/docs/validation/html/w3c-markup-home.png">
 </details>
 
+<details><summary>Register</summary>
+<img src="/docs/validation/html/w3c-markup-signup.png">
+</details>
+
+<details><summary>Login</summary>
+<img src="/docs/validation/html/w3c-markup-login.png">
+</details>
+
+<details><summary>User Profile</summary>
+<img src="/docs/validation/html/w3c-markup-user-profile.png">
+</details>
+
+<details><summary>Admin Manage Bookings</summary>
+<img src="/docs/validation/html/w3c-markup-manage-bookings.png">
+</details>
+
+<details><summary>Booking Form</summary>
+<img src="/docs/validation/html/w3c-markup-booking.png">
+</details>
+
+<details><summary>Booking Confirmation Form</summary>
+<img src="/docs/validation/html/w3c-markup-booking-confirmation-form.png">
+</details>
+
+<details><summary>Booking Success</summary>
+<img src="/docs/validation/html/w3c-markup-booking-success.png">
+</details>
+
+<details><summary>Edit Booking</summary>
+<img src="/docs/validation/html/w3c-markup-edit-booking.png">
+</details>
+
 ## Testing
 
 ## Bugs
