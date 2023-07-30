@@ -17,31 +17,25 @@ def home(request):
     return render(request, 'index.html')
 
 
-def custom_404_view(request, *args, **argv):
+def custom_404_view(request, *args, **kwargs):
     """
     Custom 404 view.
     """
-    response = render_to_response(
-        '404.html', {}, context_instance=RequestContext(request))
-    response.status_code = 404
+    response = render(request, '404.html', status=404)
     return response
 
 
-def custom_403_view(request, *args, **argv):
+def custom_403_view(request, *args, **kwargs):
     """
     Custom 403 view.
     """
-    response = render_to_response(
-        '403.html', {}, context_instance=RequestContext(request))
-    response.status_code = 403
+    response = render(request, '403.html', status=403)
     return response
 
 
-def custom_500_view(request, *args, **argv):
+def custom_500_view(request, *args, **kwargs):
     """
     Custom 404 view.
     """
-    response = render_to_response(
-        '500.html', {}, context_instance=RequestContext(request))
-    response.status_code = 403
+    response = render(request, '500.html', status=500)
     return response
