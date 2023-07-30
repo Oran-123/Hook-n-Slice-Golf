@@ -387,7 +387,7 @@ The W3C Jigsaw CSS Validation Service
 
 ### JS Validation
 
-JSHint JS Validation Service
+JSLint JS Validation Service
 
 <details><summary>JS Validation</summary>
 <img src="/docs/validation/js/jslint-1.png">
