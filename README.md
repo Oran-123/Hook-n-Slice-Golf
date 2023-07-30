@@ -225,25 +225,37 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 
 #### Nav Bar
 
-#### Call To Action Button 
+#### Call To Action Button
 
-#### Login 
+#### Login
 
-#### Register 
+#### Register
 
 #### Confirm booking Details
 
-#### Booking Success page 
+#### Booking Success page
 
-#### User Profile 
+#### User Profile
 
-#### Edit bookings 
+#### Edit bookings
 
-#### Admin Manage Booking Page 
+#### Admin Manage Booking Page
 
-#### Footer 
+#### Footer
 
 ### Future Feature Considerations<hr>
+
+#### Leaderboard 
+
+#### Metrics
+
+#### Manage Booking Filters 
+
+#### Forgot Email 
+
+#### Email Confirmation For Bookings 
+
+#### Payments 
 
 ## Tools Used
 
