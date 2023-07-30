@@ -11,6 +11,7 @@ from user_profile.views import (
     user_profile_bookings,
     edit_booking, ManageBookingListView,
     delete_booking,
+    generate_tee_times,
 )
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -22,8 +23,6 @@ urlpatterns = [
     path('delete_booking/', delete_booking, name='delete_booking'),
     path('manage-bookings/', ManageBookingListView.as_view(),
          name='ManageBookingListView'),
-
-
-
-
+    path('generate-tee-times/', generate_tee_times,
+         name='generate_tee_times'),
 ]

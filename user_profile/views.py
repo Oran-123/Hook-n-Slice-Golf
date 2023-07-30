@@ -18,6 +18,8 @@ from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.urls import reverse_lazy
 from django.contrib import messages
 from django.core.paginator import Paginator, EmptyPage
+from django.contrib.auth.decorators import user_passes_test
+from booking.models import TeeTime
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
@@ -88,6 +90,16 @@ def edit_booking(request, booking_id):
 
     return render(request, 'edit_booking.html',
                   {'form': form, 'booking_id': booking_id})
+
+
+@user_passes_test(lambda u: u.is_superuser)
+def generate_tee_times(request):
+    """
+    View to trigger the creation of tee times by the superuser.
+    """
+    TeeTime.create_tee_times()
+    messages.success(request, 'Tee times have been successfully generated!')
+    return redirect(request.META.get('HTTP_REFERER'))
 
 
 class ManageBookingListView(LoginRequiredMixin, UserPassesTestMixin, ListView):
