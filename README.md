@@ -231,34 +231,228 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 
 #### Home Page
 
-* An inviting and visually appealing home page that introduces users to Hook 'n' Slice Golf's unique offerings.
-* Includes call outs on why users should join the club 
-* Call to action included to make a booking 
+- An inviting and visually appealing home page that introduces users to Hook 'n' Slice Golf's unique offerings.
+- Includes call outs on why users should join the club
+- Call to action included to make a booking
+- <strong>Covers User Stories</strong>:
 
 <details><summary>See Feature Image</summary>
-<img src="/">
+<img src="home-page.png">
 </details>
-
 
 #### Nav Bar
 
+- A responsive navigation bar that adapts seamlessly to various screen sizes.
+- Includes clear and intuitive menu items for easy navigation, ensuring users can access different sections of the website effortlessly.
+- Fixed to the top of the view port so that users can always access the nav bar regardless of which page they are on
+- Logo and site name includes a link back to the home page
+- <strong>Covers User Stories</strong>:
+
+<details><summary>Desktop Nav Bar</summary>
+<img src="navbar-desktop.png">
+</details>
+
+<details><summary>Mobile Nav Bar</summary>
+<img src="navbar-mobile.png">
+<img src="navbar-mobile-2.png">
+</details>
+
+#### Nav Menu
+
+- A responsive navigation menu that provides easy access to all essential sections of the website, such as Home, Book Now, User Profile, and Admin Manage Bookings.
+- The menu is user-friendly, and collapsible on smaller screens (e.g., mobile devices) to ensure a seamless browsing experience.
+- Depedning on whether the user is a super user or a standard user different menu items will appear
+- The menu items will change depeding on whether the user is signed-in or logged out
+
+<details><summary>Super User Nav Menu</summary>
+<img src="nav-menu-admin.png">
+</details>
+
+<details><summary>Standard User Nav Menu</summary>
+<img src="nav-menu-standard.png">
+</details>
+
+<details><summary>Logged Out Nav Menu</summary>
+<img src="#">
+</details>
+
 #### Call To Action Button
 
-#### Login
+- A prominent and eye-catching call-to-action button on the home page to encourage users to book tee times.
+- The button will direct users to the booking section, enticing them to take action and make a reservation.
+- If the user is not signed in the booking will state different text and first direct the user to the sign-in form before the find a teetime form
+- The CTA has a fade animation to attract the user
+- <strong>Covers User Stories</strong>:
+
+<details><summary>CTA When User Is Signed-In</summary>
+<img src="#">
+</details>
+
+<details><summary>CTA When User Is Not Signed-In</summary>
+<img src="call-to-action-not-signed-in.png">
+</details>
+
+#### Why Join Us Icons
+
+- A set of eye-catching icons are included on the website's landing page to highlight the key benefits and reasons why users should join Hook 'n' Slice Golf.
+- Each icon represents a specific advantage, such as state-of-the-art facilities, and a vibrant golfing community and the intuative booking system.
+- The icons will help attract and engage potential users by visually conveying the unique selling points of the golfing experience offered by Hook 'n' Slice Golf.
+
+<details><summary>Why Joing Us Icons</summary>
+<img src="why-join-us.png">
+</details>
+
+#### Login Form
+
+- A user-friendly login page where users can sign in to their accounts.
+- Fields included for logging in with username and password or a link to create an account if the user does not have an account.
+- Both the username and password fields are mandatory and validation is applied so the user must enter a value before they can submit the form
+- <strong>Covers User Stories</strong>:
+
+<details><summary>Sign-In Form</summary>
+<img src="sign-in-form.png">
+</details>
+
+<details><summary>Sign-In Form Validation</summary>
+<img src="sign-in-form-validation-password.png">
+</details>
 
 #### Register
 
+- A registration page with a form for new users to create accounts.
+- Captures essential user information, such as name, email, and password, to facilitate future bookings and user profile management.
+- Validation applie to mandatory fields
+- <strong>Covers User Stories</strong>:
+
+<details><summary>Register Form</summary>
+<img src="sign-up-form.png">
+</details>
+
+<details><summary>Register Form Validation</summary>
+<img src="sign-up-form-validation-password.png">
+<img src="sign-up-form-validation-password-2.png">
+</details>
+
+#### Logout Modal
+
+- If a user clicks on the logout button they will be presetned with a logout modal to confirm they wish to logout 
+
+<details><summary>Logout Modal</summary>
+<img src="logout-modal.png">
+</details>
+
+#### Find A Tee Time Form
+
+- A user-friendly form where users can search for available tee times based on specific criteria.
+- Include fields for date, time, and number of players.
+- Validation on the form prevents users from searching for TeeTimes in the past, for Tee Times that do not have sufficent space for the number of players and it prevents the user from entering a start time that is later then the end time
+
+<details><summary>Find A Tee Time Form</summary>
+<img src="find-a-tee-time-form.png">
+</details>
+
+<details><summary>Find A Tee Time Form  Validation</summary>
+<img src="find-a-tee-time-form-validation.png">
+</details>
+
+#### Available Tee Time Cards
+
+- Visually appealing and informative cards to display the available tee times matching the user's search criteria.
+- Each card presents essential details, such as date, time, and available slots, to help users make an informed decision.
+- Each card includes a button to book the tee time
+
+<details><summary>Available Tee Time Cards</summary>
+<img src="available-teetimes.png">
+</details>
+
 #### Confirm Booking Details Form
+
+- A booking confirmation form that displays all relevant details before finalizing a tee time reservation.
+- Fields are all read only except for the buggy which is a check box that can be populated by the user
+- Users can review the date, time, number of players before confirming the booking.
+- <strong>Covers User Stories</strong>:
+
+<details><summary>Booking Confirmation Form</summary>
+<img src="confirm-booking-details.png">
+</details>
 
 #### Booking Success page
 
+- A booking success page that appears after users successfully complete a reservation.
+- Display a confirmation message and provide booking details for users to keep as reference including the booking id.
+- A call to action to make another booking is included
+- <strong>Covers User Stories</strong>:
+
+<details><summary>Booking Success Page</summary>
+<img src="booking-success-page.png">
+</details>
+
 #### User Profile
 
-#### Edit bookings
+- A dedicated user profile section where users can manage their bookings.
+- Users can filter between past and future bookings
+- A CTA to create a new booking is included if there are no future bookings
+- Users can edit or cancel bookings if needed.
+- <strong>Covers User Stories</strong>:
+
+<details><summary>User Profile Future Bookings</summary>
+<img src="user-profile-future-bookings.png">
+</details>
+
+<details><summary>User Profile Past Bookings</summary>
+<img src="user-profile-past-bookings.png">
+</details>
+
+#### Edit Bookings Forms
+
+- Enable users to modify their existing tee time bookings through the user profile section.
+- Users can update booking details, such as date, time, number of players and if they require a buggy, based on their preferences.
+- The form will default to the users current selection for date time, players and if a buggy is required
+- The user will be prevented from chaning the date of their current booking to a date on which they have a seperate booking
+
+<details><summary>Edit Booking Form</summary>
+<img src="edit-booking-form.png">
+</details>
+
+#### Delete Modal
+
+- If a user attempts to delte a booking they will be presented with a delete modal asking them if they wish to confirm the deletion of the booking 
+
+<details><summary>Delete Modal</summary>
+<img src="delete-modal.png">
+</details>
 
 #### Admin Manage Booking Page
 
+- Implement an admin page that allows staff members to view and manage all user bookings.
+- Admin users can view update and delete bookings to efficiently handle course reservations.
+- Pagination included on the table so that only 10 results will be displayed on each page and the user can navigate through the page using the controls under the table
+
+<details><summary>Manage Bookings</summary>
+<img src="manage-bookings.png">
+</details>
+
 #### Footer
+
+- A footer section that appears at the bottom of every page
+- Include social media links for users' convenience.
+
+#### Alerts
+
+- Alerts appear at the top of the view port for users if they create, update or delte any of the bookings 
+- Alerts appear at the top of the view port for users when they login and logout of the site 
+
+<details><summary>Alerts</summary>
+<img src="alert-booking-created.png">
+<img src="alert-booking-deleted.png">
+<img src="alert-booking-editted.png">
+<img src="alert-sign-in.png">
+<img src="alert-sign-out.png">
+</details>
+
+<details><summary>Footer</summary>
+<img src="footer.png">
+</details>
 
 ### Future Feature Considerations<hr>
 
