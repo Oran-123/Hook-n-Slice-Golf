@@ -192,7 +192,7 @@ There was a total of 50 user stories and 11 epic created in my backlog.
 
 Only 22 of the user stories were completed, 28 were moved to descoped as there was not enough time to complete the associated epic. All of the user stories can be found on the following [Git Hub board](https://github.com/users/Oran-123/projects/2/views/1?visibleFields=%5B%22Title%22%2C%22Assignees%22%2C%22Status%22%2C43732427%2C%22Labels%22%2C%22Milestone%22%5D&layout=board&filterQuery=)
 
-The below table includes the Epic, User Stories and the Acceptance Criteria of the User Stories that were completed: 
+The below table includes the Epic, User Stories and the Acceptance Criteria of the User Stories that were completed:
 
 | **Epic**                  | **User Story**                                  | **Acceptance Criteria**                                                                                                                                |
 | ------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -223,7 +223,25 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 
 ### Existing Features<hr>
 
-#### Create bookings
+#### Nav Bar
+
+#### Call To Action Button 
+
+#### Login 
+
+#### Register 
+
+#### Confirm booking Details
+
+#### Booking Success page 
+
+#### User Profile 
+
+#### Edit bookings 
+
+#### Admin Manage Booking Page 
+
+#### Footer 
 
 ### Future Feature Considerations<hr>
 
