@@ -450,35 +450,35 @@ Performance, best practices and SEO was tested using Lighthouse.
 </details>
 
 <details><summary>Register</summary>
-<img src="/docs/validation/python/lighthouse-register-desktop.png">
+<img src="/docs/validation/lighthouse/lighthouse-register-desktop.png">
 </details>
 
 <details><summary>Login</summary>
-<img src="/docs/validation/python/lighthouse-login-desktop.png">
+<img src="/docs/validation/lighthouse/lighthouse-login-desktop.png">
 </details>
 
 <details><summary>User Profile</summary>
-<img src="/docs/validation/python/lighthouse-user-profile-desktop.png">
+<img src="/docs/validation/lighthouse/lighthouse-user-profile-desktop.png">
 </details>
 
 <details><summary>Manage Bookings</summary>
-<img src="/docs/validation/python/lighthouse-manage-bookings-desktop.png">
+<img src="/docs/validation/lighthouse/lighthouse-manage-bookings-desktop.png">
 </details>
 
 <details><summary>Bookings</summary>
-<img src="/docs/validation/python/lighthouse-booking-desktop.png">
+<img src="/docs/validation/lighthouse/lighthouse-booking-desktop.png">
 </details>
 
 <details><summary>Booking Confirmation Form</summary>
-<img src="/docs/validation/python/lighthouse-booking-form-desktop.png">
+<img src="/docs/validation/lighthouse/lighthouse-booking-form-desktop.png">
 </details>
 
 <details><summary>Bookings Success</summary>
-<img src="/docs/validation/python/lighthouse-booking-success-desktop.png">
+<img src="/docs/validation/lighthouse/lighthouse-booking-success-desktop.png">
 </details>
 
 <details><summary>Edit Bookings</summary>
-<img src="/docs/validation/python/lighthouse-edit-booking-desktop.png">
+<img src="/docs/validation/lighthouse/lighthouse-edit-booking-desktop.png">
 </details>
 
 #### Mobile
@@ -488,35 +488,35 @@ Performance, best practices and SEO was tested using Lighthouse.
 </details>
 
 <details><summary>Register</summary>
-<img src="/docs/validation/python/lighthouse-register-mobile.png">
+<img src="/docs/validation/lighthouse/lighthouse-register-mobile.png">
 </details>
 
 <details><summary>Login</summary>
-<img src="/docs/validation/python/lighthouse-login-mobile.png">
+<img src="/docs/validation/lighthouse/lighthouse-login-mobile.png">
 </details>
 
 <details><summary>User Profile</summary>
-<img src="/docs/validation/python/lighthouse-user-profile-mobile.png">
+<img src="/docs/validation/lighthouse/lighthouse-user-profile-mobile.png">
 </details>
 
 <details><summary>Manage Bookings</summary>
-<img src="/docs/validation/python/lighthouse-manage-bookings-mobile.png">
+<img src="/docs/validation/lighthouse/lighthouse-manage-bookings-mobile.png">
 </details>
 
 <details><summary>Bookings</summary>
-<img src="/docs/validation/python/lighthouse-booking-mobile.png">
+<img src="/docs/validation/lighthouse/lighthouse-booking-mobile.png">
 </details>
 
 <details><summary>Booking Confirmation Form</summary>
-<img src="/docs/validation/python/lighthouse-booking-form-mobile.png">
+<img src="/docs/validation/lighthouse/lighthouse-booking-form-mobile.png">
 </details>
 
 <details><summary>Bookings Success</summary>
-<img src="/docs/validation/python/lighthouse-booking-success-mobile.png">
+<img src="/docs/validation/lighthouse/lighthouse-booking-success-mobile.png">
 </details>
 
 <details><summary>Edit Bookings</summary>
-<img src="/docs/validation/python/lighthouse-edit-booking-mobile.png">
+<img src="/docs/validation/lighthouse/lighthouse-edit-booking-mobile.png">
 </details>
 
 ### Wave
