@@ -210,7 +210,7 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 | EPIC 1: Design            | 6. Color Scheme                                    | as a a developer, I want to choose a color palete so that the website passes accessibility requirements                                                |
 | EPIC 2: Tee Time Booking  | 7. Find Available Tee Times                        | as a User, I want to view available tee times for specific dates and group sizes so that I can make a decision on what tee time I want to book         |
 | EPIC 2: Tee Time Booking  | 8. Booking Confirmation                            | as a Logged-In User, I want receive confirmation of the booking and its cost so that I know that it was successful                                     |
-| EPIC 2: Tee Time Booking  | 9. Book A Tee Time                                 | as a Logged-In User, I want to select available tee times so that I can create a booking                                     |
+| EPIC 2: Tee Time Booking  | 9. Book A Tee Time                                 | as a Logged-In User, I want to select available tee times so that I can create a booking                                                               |
 | EPIC 5: User Profile      | 10. List of Upcoming Tee Times                     | as a Logged-In User, I want to see a list of the upcoming tee-times I booked so that I don't miss a booking                                            |
 | EPIC 5: User Profile      | 11. Delete Bookings (Tee-Times)                    | as a Logged-In User, I want to delete/cancel future tee-times I have booked so that I can inform the club if I cannot attend a tee-time                |
 | EPIC 5: User Profile      | 12. Edit Booking Details                           | as a Logged-In User, I want update booking details such as time, date and number of players so that I can inform the club in any changes to my booking |
@@ -298,7 +298,7 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 - A set of eye-catching icons are included on the website's landing page to highlight the key benefits and reasons why users should join Hook 'n' Slice Golf.
 - Each icon represents a specific advantage, such as state-of-the-art facilities, and a vibrant golfing community and the intuative booking system.
 - The icons will help attract and engage potential users by visually conveying the unique selling points of the golfing experience offered by Hook 'n' Slice Golf.
-- <strong>Covers User Stories</strong>:
+- <strong>Covers User Stories</strong>:1. Intuitive design and flow to the website layout
 
 <details><summary>Why Joing Us Icons</summary>
 <img src="docs/features/why-join-us.png">
