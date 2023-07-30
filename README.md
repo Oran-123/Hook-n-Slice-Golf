@@ -193,7 +193,7 @@ Reasons for choosing the fonts:
 
 ### Python packages<hr>
 
-- asgiref: ASGI (Asynchronous Server Gateway Interface) reference implementation. It provides utility functions for working with ASGI applications and servers.
+- <strong>asgiref</strong>: ASGI (Asynchronous Server Gateway Interface) reference implementation. It provides utility functions for working with ASGI applications and servers.
 - cloudinary: A Python SDK for the Cloudinary service, which is used for managing media files, such as images and videos, in the cloud.
 - dj-database-url: A utility to configure Django database settings using URLs. It allows you to specify the database connection parameters in a single URL string.
 - dj3-cloudinary-storage: A Django storage backend for Cloudinary, allowing you to use Cloudinary as a storage backend for your Django media files.
