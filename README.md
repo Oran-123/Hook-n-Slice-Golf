@@ -329,8 +329,7 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 </details>
 
 <details><summary>Register Form Validation</summary>
-<img src="docs/features/sign-up-form-validation-password.png">
-<img src="docs/features/sign-up-form-validation-password-2.png">
+<img src="docs/features/sign-in-form-validation-password.png">
 </details>
 
 #### Logout Modal
