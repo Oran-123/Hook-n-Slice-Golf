@@ -36,6 +36,7 @@ h2 {
 
 #nav-wrapper {
     margin: 0 0;
+    padding-left: 0;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -66,7 +67,7 @@ h2 {
 }
 
 .logo {
-    height: 10rem;
+    width: 10rem;
     background-color: var(--primary-white);
 }
 
