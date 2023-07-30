@@ -552,8 +552,8 @@ WAVE was used to test the websites accessibility.
 
 ## Testing
 
-|Description| Steps| Expected Result|	Actual Result|
-|---------- |----- |----------------|----------------|
+|Test Case| Steps| Expected Result|	Actual Result|
+|---------|----- |----------------|----------------|
 |View Homepage|	1. Navigate to the homepage of the golf course website.	|The homepage should load with relevant content and a navigation bar.|	-|
 |Navigate to Register Page|	1. Click on the 'Register' link in the navigation bar.|	The user should be redirected to the registration page.|	-|
 |Register a New User|	1. Fill out the registration form with valid user details. 2. Submit the form.|	The user should be successfully registered, and a success message should be displayed.|	-|
