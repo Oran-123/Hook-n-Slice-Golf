@@ -182,6 +182,7 @@ Reasons for choosing the fonts:
 - [Heroku Platform](https://id.heroku.com/login)
 - [jQuery](https://jquery.com)
 - [Postgres](https://www.postgresql.org/)
+- [LucidChart](https://www.lucidchart.com/)
 - Validation:
   - [WC3 Validator](https://validator.w3.org/)
   - [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/)
@@ -191,6 +192,25 @@ Reasons for choosing the fonts:
   - [Wave Validator](https://wave.webaim.org/)
 
 ### Python packages<hr>
+
+- asgiref: ASGI (Asynchronous Server Gateway Interface) reference implementation. It provides utility functions for working with ASGI applications and servers.
+- cloudinary: A Python SDK for the Cloudinary service, which is used for managing media files, such as images and videos, in the cloud.
+- dj-database-url: A utility to configure Django database settings using URLs. It allows you to specify the database connection parameters in a single URL string.
+- dj3-cloudinary-storage: A Django storage backend for Cloudinary, allowing you to use Cloudinary as a storage backend for your Django media files.
+- Django: The web framework for Python. Django provides a high-level development environment for building web applications quickly and efficiently.
+- django-admin-rangefilter: A Django admin application that adds the ability to filter by date ranges.
+- django-allauth: A Django package for handling user authentication, registration, and account management.
+- gunicorn: A Python WSGI HTTP server that is commonly used for deploying Django applications in production.
+- oauthlib: A Python library for working with OAuth 1.0 and 2.0 service providers.
+- pip-check: A tool to check for outdated, missing, or unused Python package dependencies.
+- psycopg2: A PostgreSQL adapter for Python, used for connecting Django to a PostgreSQL database.
+- PyJWT: A Python library for encoding and decoding JSON Web Tokens (JWT).
+- python3-openid: A library for working with OpenID authentication, an older standard for user authentication.
+- pytz: A Python library for working with timezone information.
+- requests-oauthlib: A library that provides OAuth support for Python Requests.
+- sqlparse: A non-validating SQL parser for Python.
+- terminaltables: A library for rendering simple tables in the terminal.
+- urllib3: A powerful HTTP client for Python, used by many Python libraries for making HTTP requests.
 
 ## Validation
 
