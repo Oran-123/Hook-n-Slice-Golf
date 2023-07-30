@@ -17,8 +17,6 @@
   - [Site Objectives](#site-objectives)
   - [UX](#ux)
     - [Wireframes](#wireframes)
-    - [Site Map](#site-map)
-    - [User Journey](#user-journey)
     - [Structure](#structure)
   - [Database](#database)
     - [Database Schema](#database-schema)
@@ -97,10 +95,6 @@ I utilized Balsamic (<https://balsamiq.com/wireframes/>) to design the wireframe
 * [Phone Wireframe](docs/wireframes/mobile-concept-home-page.pdf "Mobile Concept")
 * [Tablet Wireframe](docs/wireframes/tablet-concept-home-page.pdf "Tablet Concept")
 </details>
-
-### Site Map<hr>
-
-### User Journey<hr>
 
 ### Structure<hr>
 
@@ -442,11 +436,11 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 
 #### Create TeeTimes
 
-- TeeTimes have been created until the end of the year 
-- TeeTimes are automatically created for the next 7 days everytime a booking created 
-- The button on the manage booking page can be used to manually create teetimes for the next 7 days 
+- TeeTimes have been created until the end of the year
+- TeeTimes are automatically created for the next 7 days everytime a booking created
+- The button on the manage booking page can be used to manually create teetimes for the next 7 days
 
-- <strong>Covers User Stories</strong>: 
+- <strong>Covers User Stories</strong>:
 
 <details><summary>Manage Bookings</summary>
 <img src="docs/features/create-tee-times.png">
