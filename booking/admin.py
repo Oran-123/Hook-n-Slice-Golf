@@ -1,5 +1,9 @@
 from django.contrib import admin
-from rangefilter.filters import DateRangeFilterBuilder, DateTimeRangeFilterBuilder, NumericRangeFilterBuilder
+from rangefilter.filters import (
+    DateRangeFilterBuilder,
+    DateTimeRangeFilterBuilder,
+    NumericRangeFilterBuilder,
+)
 from .models import Booking, TeeTime
 from django.contrib.auth.models import User
 
