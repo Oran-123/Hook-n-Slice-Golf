@@ -237,7 +237,7 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 - <strong>Covers User Stories</strong>:
 
 <details><summary>See Feature Image</summary>
-<img src="home-page.png">
+<img src="docs/features/home-page.png">
 </details>
 
 #### Nav Bar
@@ -249,12 +249,12 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 - <strong>Covers User Stories</strong>:
 
 <details><summary>Desktop Nav Bar</summary>
-<img src="navbar-desktop.png">
+<img src="docs/features/navbar-desktop.png">
 </details>
 
 <details><summary>Mobile Nav Bar</summary>
-<img src="navbar-mobile.png">
-<img src="navbar-mobile-2.png">
+<img src="docs/features/navbar-mobile.png">
+<img src="docs/features/navbar-mobile-2.png">
 </details>
 
 #### Nav Menu
@@ -265,11 +265,11 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 - The menu items will change depeding on whether the user is signed-in or logged out
 
 <details><summary>Super User Nav Menu</summary>
-<img src="nav-menu-admin.png">
+<img src="docs/features/nav-menu-admin.png">
 </details>
 
 <details><summary>Standard User Nav Menu</summary>
-<img src="nav-menu-standard.png">
+<img src="docs/features/nav-menu-standard.png">
 </details>
 
 <details><summary>Logged Out Nav Menu</summary>
@@ -289,7 +289,7 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 </details>
 
 <details><summary>CTA When User Is Not Signed-In</summary>
-<img src="call-to-action-not-signed-in.png">
+<img src="docs/features/call-to-action-not-signed-in.png">
 </details>
 
 #### Why Join Us Icons
@@ -299,7 +299,7 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 - The icons will help attract and engage potential users by visually conveying the unique selling points of the golfing experience offered by Hook 'n' Slice Golf.
 
 <details><summary>Why Joing Us Icons</summary>
-<img src="why-join-us.png">
+<img src="docs/features/why-join-us.png">
 </details>
 
 #### Login Form
@@ -310,11 +310,11 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 - <strong>Covers User Stories</strong>:
 
 <details><summary>Sign-In Form</summary>
-<img src="sign-in-form.png">
+<img src="docs/features/sign-in-form.png">
 </details>
 
 <details><summary>Sign-In Form Validation</summary>
-<img src="sign-in-form-validation-password.png">
+<img src="docs/features/sign-in-form-validation-password.png">
 </details>
 
 #### Register
@@ -325,20 +325,20 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 - <strong>Covers User Stories</strong>:
 
 <details><summary>Register Form</summary>
-<img src="sign-up-form.png">
+<img src="docs/features/sign-up-form.png">
 </details>
 
 <details><summary>Register Form Validation</summary>
-<img src="sign-up-form-validation-password.png">
-<img src="sign-up-form-validation-password-2.png">
+<img src="docs/features/sign-up-form-validation-password.png">
+<img src="docs/features/sign-up-form-validation-password-2.png">
 </details>
 
 #### Logout Modal
 
-- If a user clicks on the logout button they will be presetned with a logout modal to confirm they wish to logout 
+- If a user clicks on the logout button they will be presetned with a logout modal to confirm they wish to logout
 
 <details><summary>Logout Modal</summary>
-<img src="logout-modal.png">
+<img src="docs/features/logout-modal.png">
 </details>
 
 #### Find A Tee Time Form
@@ -348,11 +348,11 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 - Validation on the form prevents users from searching for TeeTimes in the past, for Tee Times that do not have sufficent space for the number of players and it prevents the user from entering a start time that is later then the end time
 
 <details><summary>Find A Tee Time Form</summary>
-<img src="find-a-tee-time-form.png">
+<img src="docs/features/find-a-tee-time-form.png">
 </details>
 
 <details><summary>Find A Tee Time Form  Validation</summary>
-<img src="find-a-tee-time-form-validation.png">
+<img src="docs/features/find-a-tee-time-form-validation.png">
 </details>
 
 #### Available Tee Time Cards
@@ -362,7 +362,7 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 - Each card includes a button to book the tee time
 
 <details><summary>Available Tee Time Cards</summary>
-<img src="available-teetimes.png">
+<img src="docs/features/available-teetimes.png">
 </details>
 
 #### Confirm Booking Details Form
@@ -373,7 +373,7 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 - <strong>Covers User Stories</strong>:
 
 <details><summary>Booking Confirmation Form</summary>
-<img src="confirm-booking-details.png">
+<img src="docs/features/confirm-booking-details.png">
 </details>
 
 #### Booking Success page
@@ -384,7 +384,7 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 - <strong>Covers User Stories</strong>:
 
 <details><summary>Booking Success Page</summary>
-<img src="booking-success-page.png">
+<img src="docs/features/booking-success-page.png">
 </details>
 
 #### User Profile
@@ -396,11 +396,11 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 - <strong>Covers User Stories</strong>:
 
 <details><summary>User Profile Future Bookings</summary>
-<img src="user-profile-future-bookings.png">
+<img src="docs/features/user-profile-future-bookings.png">
 </details>
 
 <details><summary>User Profile Past Bookings</summary>
-<img src="user-profile-past-bookings.png">
+<img src="docs/features/user-profile-past-bookings.png">
 </details>
 
 #### Edit Bookings Forms
@@ -411,15 +411,15 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 - The user will be prevented from chaning the date of their current booking to a date on which they have a seperate booking
 
 <details><summary>Edit Booking Form</summary>
-<img src="edit-booking-form.png">
+<img src="docs/features/edit-booking-form.png">
 </details>
 
 #### Delete Modal
 
-- If a user attempts to delte a booking they will be presented with a delete modal asking them if they wish to confirm the deletion of the booking 
+- If a user attempts to delte a booking they will be presented with a delete modal asking them if they wish to confirm the deletion of the booking
 
 <details><summary>Delete Modal</summary>
-<img src="delete-modal.png">
+<img src="docs/features/delete-modal.png">
 </details>
 
 #### Admin Manage Booking Page
@@ -429,7 +429,7 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 - Pagination included on the table so that only 10 results will be displayed on each page and the user can navigate through the page using the controls under the table
 
 <details><summary>Manage Bookings</summary>
-<img src="manage-bookings.png">
+<img src="docs/features/manage-bookings.png">
 </details>
 
 #### Footer
@@ -439,19 +439,19 @@ The below table includes the Epic, User Stories and the Acceptance Criteria of t
 
 #### Alerts
 
-- Alerts appear at the top of the view port for users if they create, update or delte any of the bookings 
-- Alerts appear at the top of the view port for users when they login and logout of the site 
+- Alerts appear at the top of the view port for users if they create, update or delte any of the bookings
+- Alerts appear at the top of the view port for users when they login and logout of the site
 
 <details><summary>Alerts</summary>
-<img src="alert-booking-created.png">
-<img src="alert-booking-deleted.png">
-<img src="alert-booking-editted.png">
-<img src="alert-sign-in.png">
-<img src="alert-sign-out.png">
+<img src="docs/features/alert-booking-created.png">
+<img src="docs/features/alert-booking-deleted.png">
+<img src="docs/features/alert-booking-editted.png">
+<img src="docs/features/alert-sign-in.png">
+<img src="docs/features/alert-sign-out.png">
 </details>
 
 <details><summary>Footer</summary>
-<img src="footer.png">
+<img src="docs/features/footer.png">
 </details>
 
 ### Future Feature Considerations<hr>
