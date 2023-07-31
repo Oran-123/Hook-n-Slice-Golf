@@ -1100,7 +1100,7 @@ as a User, I want I want to be able to login to my account with email and passwo
 ##### Result & Evidence
 
 <details>
-<summary>PASSED Alert displayed for sign-in and sign-out</summary>
+<summary>PASSED Alert displayed for sign-in </summary>
 <img src="/docs/features/sign-in-form.png">
 <img src="/docs/features/alert-sign-in.png">
 </details>
@@ -1122,7 +1122,7 @@ as a User, I want to register an account so that I can make and amend bookins
 ##### Result & Evidence
 
 <details>
-<summary>PASSED Alert displayed for sign-in and sign-out</summary>
+<summary>PASSED Alert displayed for sign-in</summary>
 <img src="/docs/features/sign-up-form.png">
 <img src="/docs/features/alert-sign-in.png">
 <img src="/docs/features/nav-menu-standard.png">
@@ -1299,10 +1299,13 @@ To create a replica of the repository on your local machine, follow these steps 
 
 ## Credits
 
-### Content<hr>
-
 ### Media<hr>
+Images used were sourced from [adobe stock photos](https://stock.adobe.com/ie/ "adobe stock photos") 
 
 ### Code<hr>
+Bootstrap navigation theme was used alongside boostrap classes 
 
 ## Acknowledgements
+
+- Code Institute
+- My Mentor Mo Shami
