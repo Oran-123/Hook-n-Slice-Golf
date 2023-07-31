@@ -1143,8 +1143,8 @@ as a Logged-In User, I want to log out of my account from any page so that I do 
 
 <details>
 <summary>PASSED Alert displayed for sign-in and sign-out</summary>
-<img src="/docs/features/alert-sign-out">
-<img src="/docs/features/nav-menu-signed-out">
+<img src="/docs/features/alert-sign-out.png">
+<img src="/docs/features/nav-menu-signed-out.png">
 </details>
 
 #### Test Case 17
@@ -1166,8 +1166,8 @@ as a admin I want to create teetimes for the next 7 days so users can make booki
 
 <details>
 <summary>PASSED Alert displayed for teetimes created</summary>
-<img src="/docs/features/create-teetimes">
-<img src="/docs/features/alert-teetimes-created">
+<img src="/docs/features/create-teetimes.png">
+<img src="/docs/features/alert-teetimes-created.png">
 </details>
 
 ### Device Testing & Browser compatibility
