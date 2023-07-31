@@ -1,3 +1,4 @@
+/* root css */
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Open+Sans&display=swap');
 
 :root {
@@ -5,7 +6,6 @@
     --accent-blue: #295899;
     --primary-white: #ffffff;
     --error-list-background: #f8d7da;
-
 }
 
 * {
@@ -13,6 +13,8 @@
     padding: 0;
     border: none;
 }
+
+/* high level html and headings  */
 
 html {
     font-size: 62.5%;
@@ -33,6 +35,8 @@ h2 {
     font-family: "Fredoka", sans-serif;
     font-weight: 400;
 }
+
+/* nav bar */
 
 #nav-wrapper {
     margin: 0 0;
@@ -83,6 +87,8 @@ h2 {
     margin-top: 10rem;
 }
 
+/* alerts and form validation */
+
 .alert {
     margin-top: 12rem;
 }
@@ -95,6 +101,8 @@ h2 {
     list-style: none;
     padding: 1rem;
 }
+
+/* hero image  */
 
 #hero-background {
     height: 88vh;
@@ -114,6 +122,8 @@ h2 {
     opacity: .9;
 }
 
+/* call to action button  */
+
 .btn-lg {
     font-size: 1.5rem;
 }
@@ -123,19 +133,27 @@ h2 {
     animation-duration: var(--fa-animation-duration, 2s) !important;
 }
 
+/* why join us seciont   */
+
 .why-join-us-icons {
     font-size: 6rem;
     color: var(--primary-green);
 }
 
+/* horizontal line used under titles */
+
 .title-seperator {
     border: solid 1px var(--primary-green);
 }
+
+/* additional margin */
 
 .extra-margin {
     margin-left: 4rem;
     margin-right: 4rem;
 }
+
+/* cards for teetimes and user bookings */
 
 .card-title {
     background-color: var(--primary-green);
@@ -148,6 +166,8 @@ h2 {
     padding-right: 0;
     padding-bottom: 1rem;
 }
+
+/* style for all forms */
 
 .allauth-forms {
     color: var(--primary-white);
@@ -162,18 +182,26 @@ h2 {
     border-color: var(--primary-white);
 }
 
+/* read only values in forms  */
+
 .read-only-field {
     color: var(--primary-white);
     background-color: var(--primary-green);
 }
 
+/* btn light overide */
+
 .btn-light {
     color: var(--primary-green);
 }
 
+/* additional top margin */
+
 .top-margin {
     margin-top: 15rem;
 }
+
+/* footer style */
 
 .footer {
     background-color: var(--primary-green);
@@ -182,6 +210,8 @@ h2 {
 #social-list {
     margin-bottom: 0;
 }
+
+/* media queries */
 
 @media (min-width: 992px) {
 
