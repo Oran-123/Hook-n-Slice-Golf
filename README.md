@@ -26,7 +26,6 @@
     - [Fonts](#fonts)
   - [Agile Methodology](#agile-methodology)
     - [Prioritisation](#prioritisation)
-    - [Sprints](#sprints)
     - [Epics & User Stories](#epics&UserStories)
   - [Features](#features)
     - [Existing Features](#existing-features)
@@ -183,8 +182,6 @@ To deterimine the priority I use the MoSCoW prioritization technique which is wi
 4. Won't Have (W): These are features deemed unnecessary for the current project scope. They are intentionally excluded from the development process, either due to time constraints, technical limitations, or low business value. In my project no label was used to represent the won't have user stories. Instead during each sprint if a user story could not be completed then the story was moved to the status descoped to represent it wouldn't be included in the scope of the project.
 
 In my project some of user stories were not completed even if they were marked with the label Must Have. This is becasue the overall Epic the User Story relates to was descoped due to capacity restraints.
-
-### Sprints<hr>
 
 ### Epics & User Stories<hr>
 
@@ -1151,18 +1148,19 @@ as a Logged-In User, I want to log out of my account from any page so that I do 
 </details>
 
 #### Test Case 17
-as a admin I want to create teetimes for the next 7 days so users can make bookings 
+
+as a admin I want to create teetimes for the next 7 days so users can make bookings
 
 ##### Steps
 
-1. On the navbar click signin 
+1. On the navbar click signin
 2. Signin as a superuser
 3. Click manage bookigns on the nav menu
-4. Within the section create teetimes press the button 
+4. Within the section create teetimes press the button
 
 ##### Expected Result
 
-- Alert confirms that the tee time were created for the next 7 days 
+- Alert confirms that the tee time were created for the next 7 days
 
 ##### Result & Evidence
 
@@ -1300,10 +1298,12 @@ To create a replica of the repository on your local machine, follow these steps 
 ## Credits
 
 ### Media<hr>
-Images used were sourced from [adobe stock photos](https://stock.adobe.com/ie/ "adobe stock photos") 
+
+Images used were sourced from [adobe stock photos](https://stock.adobe.com/ie/ "adobe stock photos")
 
 ### Code<hr>
-Bootstrap navigation theme was used alongside boostrap classes 
+
+Bootstrap navigation theme was used alongside boostrap classes
 
 ## Acknowledgements
 
