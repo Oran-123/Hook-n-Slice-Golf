@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block content %}
+<!-- form title -->
 <div class="p-5 container col-lg-4 col-md-6 col-8 allauth-forms">
     <div class="row text-center">
         <h1>Confirm Booking Details</h1>
@@ -9,6 +10,7 @@
     <div class="row d-flex justify-content-center">
         <hr class="col-4  mb-5 allauth-forms-title-seperator">
     </div>
+    <!-- booking confirmation form -->
     <div class=" f-column d-flex justify-content-center">
         <form class="" method="POST" action="{% url 'booking_submit' %}">
             {% csrf_token %}
