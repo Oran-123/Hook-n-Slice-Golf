@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block content %}
+<!-- Find A Tee Form Title -->
 <div class="container pt-5">
     <div class="row text-center">
         <h1>Find A Tee-Time</h1>
@@ -9,6 +10,7 @@
     <div class="row d-flex justify-content-center">
         <hr class="col-4 col-lg-2 mb-5 title-seperator">
     </div>
+    <!-- Find A Tee Form -->
     <div class="row d-flex justify-content-center">
         <form class="col-lg-4 col-md-6 col-8" method="POST">
             {% csrf_token %}
@@ -19,15 +21,15 @@
         </form>
     </div>
 </div>
-
+<!-- Available or Not Available Header -->
 <div class="container pb-5">
     <div class="row">
         {% if form.is_bound and not available_tee_times %}
         <h1 class="text-center mt-5 ">No available tee times.</h1>
         {% elif available_tee_times %}
         <h1 class="text-center mt-5 ">Available Tee Times:</h1>
-
     </div>
+    <!-- Available TeeTime Cards -->
     <div class="row d-flex justify-content-center">
         <hr class="col-4 col-lg-2 mb-5 title-seperator">
     </div>
