@@ -5,7 +5,7 @@
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
 {% block content %}
-
+<!-- sign-in title -->
 <div class="p-5 container col-lg-4 col-md-6 col-8 allauth-forms">
     <div class="row text-center">
         <h1>{% trans "Sign In" %}</h1>
@@ -13,7 +13,7 @@
     <div class="row d-flex justify-content-center">
         <hr class="col-4  mb-5 allauth-forms-title-seperator">
     </div>
-
+    <!-- sign-in form -->
     <div class="row d-flex justify-content-center">
         <form class="login" method="POST" action="{% url 'account_login' %}">
             {% csrf_token %}
@@ -47,6 +47,7 @@
             </div>
         </form>
     </div>
+    <!-- create an account link -->
     <div class="row text-center justify-content-center">
         <p>{% blocktrans %}If you have not created an account yet, then please
             <a class="text-white" href="{{ signup_url }}"><strong>sign up</strong></a> first.{% endblocktrans %}
