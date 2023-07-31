@@ -1,7 +1,5 @@
 # Hook 'n' Slice - Golf Course Website
 
-<img src="" ><br>
-
 <hr>
 
 **Developer: Oran Dillon**
