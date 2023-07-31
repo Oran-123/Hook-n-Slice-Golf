@@ -3,12 +3,14 @@
 {% block content %}
 
 <div class="container text-center">
+    <!-- User Welcome Message -->
     <div class="row">
         <h1 class="my-5">Welcome {{ user.username }}!</h1>
     </div>
     <div class="row d-flex justify-content-center">
         <hr class="col-4 col-lg-2 mb-5 title-seperator">
     </div>
+    <!-- Form to display past or future bookings -->
     <div class="row">
         <form class="my-5" method="POST">
             {% csrf_token %}
@@ -19,7 +21,7 @@
         </form>
     </div>
 </div>
-
+<!-- Bookings section heading -->
 <div class="container pb-5">
     {% if bookings %}
     <div class="row text-center">
@@ -28,9 +30,8 @@
     <div class="row d-flex justify-content-center">
         <hr class="col-4 col-lg-2 mb-5 title-seperator">
     </div>
-
+    <!-- Future Bookings cards -->
     <div class="row extra-margin">
-
         {% for booking in bookings %}
         {% if filter_type == 'upcoming' %}
         <div class="col-lg-4 col-md-6 col-12">
@@ -66,7 +67,7 @@
                 </div>
             </div>
         </div>
-
+        <!-- Past Bookings cards -->
         {% else %}
         <div class="col-lg-4 col-md-6 col-12">
             <div class="card my-3 text-center">
@@ -80,6 +81,7 @@
         {% endif %}
         {% endfor %}
         {% else %}
+        <!-- Results if no booking cards -->
         <div class="row text-center">
             <h1 class=" my-5">{{ title }}</h1>
         </div>
