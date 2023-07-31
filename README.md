@@ -805,13 +805,13 @@ as a User, I want to view available tee times for specific dates and group sizes
 
 ##### Steps
 
-1. Login to the site or create an account if you have not already done so 
+1. Login to the site or create an account if you have not already done so
 2. Pres the book now button in either the hero image on the home page or in the navbar
-3. On the find a teetime enter either today's date or a date in the future 
-4. Enter times between 9am and 5pm 
-5. Enter the number of players you wish to make the booking for betwee 1-4 
-6. Press the submit button 
-7. If you receive any errors with regards to the selected date or time adjust as required  
+3. On the find a teetime enter either today's date or a date in the future
+4. Enter times between 9am and 5pm
+5. Enter the number of players you wish to make the booking for betwee 1-4
+6. Press the submit button
+7. If you receive any errors with regards to the selected date or time adjust as required
 
 ##### Expected Result
 
@@ -825,45 +825,49 @@ as a User, I want to view available tee times for specific dates and group sizes
 </details>
 
 #### Test Case 2
+
 as a Logged-In User, I want to select available tee times so that I can create a booking
+
 ##### Steps
 
-1. Login to the site or create an account if you have not already done so 
+1. Login to the site or create an account if you have not already done so
 2. Pres the book now button in either the hero image on the home page or in the navbar
-3. On the find a teetime enter either today's date or a date in the future 
-4. Enter times between 9am and 5pm 
-5. Enter the number of players you wish to make the booking for betwee 1-4 
-6. Press the submit button 
-7. Select one of the available Teetimes by pressing the booknow 
+3. On the find a teetime enter either today's date or a date in the future
+4. Enter times between 9am and 5pm
+5. Enter the number of players you wish to make the booking for betwee 1-4
+6. Press the submit button
+7. Select one of the available Teetimes by pressing the booknow
 
 ##### Expected Result
-- A form with the details of your booking will be displayeed these fields will be readonly apart from the option to select a buggy 
+
+- A form with the details of your booking will be displayeed these fields will be readonly apart from the option to select a buggy
 
 ##### Result & Evidence
 
 <details>
 <summary>PASSED Booking Confirmation Form Displayed With Booking Details</summary>
-<img src="/docs/features/confirmation-booking-details.png">
+<img src="/docs/features/confirm-booking-details.png">
 </details>
 
-
 #### Test Case 3
+
 as a Logged-In User, I want receive confirmation of the booking so that I know that it was successful
 
 ##### Steps
 
-1. Login to the site or create an account if you have not already done so 
+1. Login to the site or create an account if you have not already done so
 2. Pres the book now button in either the hero image on the home page or in the navbar
-3. On the find a teetime enter either today's date or a date in the future 
-4. Enter times between 9am and 5pm 
-5. Enter the number of players you wish to make the booking for betwee 1-4 
-6. Press the submit button 
-7. Select one of the available Teetimes by pressing the booknow 
-8. Confirm your details by pressing book now on the booking details form 
+3. On the find a teetime enter either today's date or a date in the future
+4. Enter times between 9am and 5pm
+5. Enter the number of players you wish to make the booking for betwee 1-4
+6. Press the submit button
+7. Select one of the available Teetimes by pressing the booknow
+8. Confirm your details by pressing book now on the booking details form
 
 ##### Expected Result
-- A page with a success message will be displayed this will include your booking ID 
-- An alert will be displayed 
+
+- A page with a success message will be displayed this will include your booking ID
+- An alert will be displayed
 
 ##### Result & Evidence
 
@@ -878,17 +882,19 @@ as a Logged-In User, I want receive confirmation of the booking so that I know t
 </details>
 
 #### Test Case 4
+
 as a Logged-In User, I want to see a list of the upcoming tee-times I booked so that I don't miss a booking
 
 ##### Steps
 
-1. Login to the site or create an account if you have not already done so 
-2. Press the user profile in the nav menu this will menu item will be labeled as your username 
-3. By default the option to show future bookings will be selected 
+1. Login to the site or create an account if you have not already done so
+2. Press the user profile in the nav menu this will menu item will be labeled as your username
+3. By default the option to show future bookings will be selected
 
 ##### Expected Result
+
 - Cards with your future bookings will be displayed
-- If there are no future bookings then a book now button will be displayed 
+- If there are no future bookings then a book now button will be displayed
 
 ##### Result & Evidence
 
@@ -898,16 +904,18 @@ as a Logged-In User, I want to see a list of the upcoming tee-times I booked so 
 </details>
 
 #### Test Case 5
+
 as a Logged-In User, I want to see a list of the past tee-times I booked so that I don't miss a booking
 
 ##### Steps
 
-1. Login to the site or create an account if you have not already done so 
-2. Press the user profile in the nav menu this will menu item will be labeled as your username 
-3. By default the option to show future bookings will be selected 
-4. Press the button Past Bookings 
+1. Login to the site or create an account if you have not already done so
+2. Press the user profile in the nav menu this will menu item will be labeled as your username
+3. By default the option to show future bookings will be selected
+4. Press the button Past Bookings
 
 ##### Expected Result
+
 - Cards with your past bookings will be displayed
 
 ##### Result & Evidence
@@ -917,19 +925,21 @@ as a Logged-In User, I want to see a list of the past tee-times I booked so that
 <img src="/docs/features/user-profile-past-bookings.png">
 </details>
 
-#### Test Case 6 
+#### Test Case 6
+
 as a Logged-In User, I want to delete/cancel future tee-times I have booked so that I can inform the club if I cannot attend a tee-time
 
 ##### Steps
 
-1. Login to the site or create an account if you have not already done so 
-2. Press the user profile in the nav menu this will menu item will be labeled as your username 
-3. By default the option to show future bookings will be selected 
+1. Login to the site or create an account if you have not already done so
+2. Press the user profile in the nav menu this will menu item will be labeled as your username
+3. By default the option to show future bookings will be selected
 4. On one of the the cards press the delete button
 5. On the delte modal press the delete button
 
 ##### Expected Result
-- Alert message confirms the booking was deleted and this card will no longer be displayed in the future bookings 
+
+- Alert message confirms the booking was deleted and this card will no longer be displayed in the future bookings
 
 ##### Result & Evidence
 
@@ -939,18 +949,20 @@ as a Logged-In User, I want to delete/cancel future tee-times I have booked so t
 </details>
 
 #### Test Case 7
+
 as a Logged-In User, I want update booking details such as time, date and number of players so that I can inform the club in any changes to my booking
 
 ##### Steps
 
-1. Login to the site or create an account if you have not already done so 
-2. Press the user profile in the nav menu this will menu item will be labeled as your username 
-3. By default the option to show future bookings will be selected 
+1. Login to the site or create an account if you have not already done so
+2. Press the user profile in the nav menu this will menu item will be labeled as your username
+3. By default the option to show future bookings will be selected
 4. On one of the the cards press the edit button
-5. On the edit form update the fields you wish to change 
+5. On the edit form update the fields you wish to change
 
 ##### Expected Result
-- Alert message confirms the booking was editted and this card will reflect the new booking details 
+
+- Alert message confirms the booking was editted and this card will reflect the new booking details
 
 ##### Result & Evidence
 
@@ -960,27 +972,205 @@ as a Logged-In User, I want update booking details such as time, date and number
 </details>
 
 #### Test Case 8
-as a Logged-In User, I want update booking details such as time, date and number of players so that I can inform the club in any changes to my booking
+
+as a Admin User, I want to view all user bookings so that I can manage bookings for the course
 
 ##### Steps
 
-1. Login to the site or create an account if you have not already done so 
-2. Press the user profile in the nav menu this will menu item will be labeled as your username 
-3. By default the option to show future bookings will be selected 
-4. On one of the the cards press the edit button
-5. On the edit form update the fields you wish to change 
+1. Login as a superuser
+2. Press the manage booking option in the nav menu
 
 ##### Expected Result
-- Alert message confirms the booking was editted and this card will reflect the new booking details 
+
+- Logging in as superuser will display the additional menu item manage bookings in the navbar
+- The Manage bookings page will include a table with all users bookings
 
 ##### Result & Evidence
 
 <details>
-<summary>PASSED Alert message confirms booking was editted</summary>
-<img src="/docs/features/alert-booking-editted.png">
+<summary>PASSED Manage booking table includes all user bookings</summary>
+<img src="/docs/features/nav-menu-admin.png">
+<img src="/docs/features/manage-bookings.png">
 </details>
 
+### Device Testing & Browser compatibility
 
+#### Test Case 9
+
+as a Admin User, I want the ability to cancel users bookings so that I can manually update bookings on behalf of users
+
+##### Steps
+
+1. Login as a superuser
+2. Press the manage booking option in the nav menu
+3. In the table select one of the booking and press delete
+4. On the delete modal press delete
+
+##### Expected Result
+
+- An alert will confirm that the booking was deleted
+- The booking will now longer be in the table
+
+##### Result & Evidence
+
+<details>
+<summary>PASSED Alert message confirms booking deletion</summary>
+<img src="/docs/features/alert-booking-deleted.png">
+</details>
+
+#### Test Case 10
+
+as a User, I want the site to have a responsive navigation bar so that I can clearly see all options on desktop/tablet/mobile devices
+
+##### Steps
+
+1. Access the site on any page
+2. Right click the page
+3. Select Inspect
+4. Adjust the size of the screen
+
+##### Expected Result
+
+- Nav nar will change from displaying nav menu items as a list to showing a ham burger menu
+
+##### Result & Evidence
+
+<details>
+<summary>PASSED Responsive Nav Bar</summary>
+<img src="/docs/features/navbar-desktop.png">
+<img src="/docs/features/navbar-mobile.png">
+</details>
+
+#### Test Case 11
+
+as a User, I want the ability to access the booking app from all web pages so that booking a teet time is intuitive and easy
+
+##### Steps
+
+1. Access the site on any page
+
+##### Expected Result
+
+- The booking app is included in the navbar which is fixed to the top of the viewport
+- The Booking app CTA is included on the home page, the booking confirmaition page nad the user profile page when no future booking are displayed
+
+##### Result & Evidence
+
+<details>
+<summary>PASSED Book Now CTA Accessible from All Pages</summary>
+<img src="/docs/features/navbar-desktop.png">
+</details>
+
+#### Test Case 13
+
+as a User, I want receive alerts when I login and logout so that I see confirmation of my login status
+
+##### Steps
+
+1. Click on the login button in the nav bar
+2. fill in the signin form
+3. click the logout button in the navbar
+
+##### Expected Result
+
+- An alert will be dispalyed when the user first logs in and then logs out
+
+##### Result & Evidence
+
+<details>
+<summary>PASSED Alert displayed for sign-in and sign-out</summary>
+<img src="/docs/features/alert-sign-in.png">
+<img src="/docs/features/alert-sign-out.png">
+</details>
+
+#### Test Case 14
+
+as a User, I want I want to be able to login to my account with email and password only so that accessing my account is intuitive
+
+##### Steps
+
+1. Click on the login button in the nav bar
+2. Fill in the username and password fields
+3. press submit
+
+##### Expected Result
+
+- User receives sign-in alert and can see their user name in the navbar
+
+##### Result & Evidence
+
+<details>
+<summary>PASSED Alert displayed for sign-in and sign-out</summary>
+<img src="/docs/features/sign-in-form.png">
+<img src="/docs/features/alert-sign-in.png">
+</details>
+
+#### Test Case 15
+
+as a User, I want to register an account so that I can make and amend bookins
+
+##### Steps
+
+1. Click on the register button in the nav bar
+2. Fill in the fields
+3. press submit
+
+##### Expected Result
+
+- User receives sign-in alert and can see their user name in the navbar
+
+##### Result & Evidence
+
+<details>
+<summary>PASSED Alert displayed for sign-in and sign-out</summary>
+<img src="/docs/features/sign-up-form.png">
+<img src="/docs/features/alert-sign-in.png">
+<img src="/docs/features/nav-menu-standard.png">
+</details>
+
+#### Test Case 16
+
+as a Logged-In User, I want to log out of my account from any page so that I do not leave the site logged i
+
+##### Steps
+
+1. Access any page on the site
+2. click on the logout button
+3. Click confirm on the logout modal
+
+##### Expected Result
+
+- User receives sign-out alert and cannot see their user name in the navbar
+
+##### Result & Evidence
+
+<details>
+<summary>PASSED Alert displayed for sign-in and sign-out</summary>
+<img src="/docs/features/alert-sign-out">
+<img src="/docs/features/nav-menu-signed-out">
+</details>
+
+#### Test Case 17
+as a admin I want to create teetimes for the next 7 days so users can make bookings 
+
+##### Steps
+
+1. On the navbar click signin 
+2. Signin as a superuser
+3. Click manage bookigns on the nav menu
+4. Within the section create teetimes press the button 
+
+##### Expected Result
+
+- Alert confirms that the tee time were created for the next 7 days 
+
+##### Result & Evidence
+
+<details>
+<summary>PASSED Alert displayed for teetimes created</summary>
+<img src="/docs/features/create-teetimes">
+<img src="/docs/features/alert-teetimes-created">
+</details>
 
 ### Device Testing & Browser compatibility
 
