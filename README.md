@@ -1164,8 +1164,8 @@ as a admin I want to create teetimes for the next 7 days so users can make booki
 
 <details>
 <summary>PASSED Alert displayed for teetimes created</summary>
-<img src="/docs/features/create-tee-times.png">
 <img src="/docs/features/alert-teetimes-created.png">
+<img src="/docs/features/create-tee-times.png">
 </details>
 
 ### Device Testing & Browser compatibility
