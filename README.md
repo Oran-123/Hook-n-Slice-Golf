@@ -801,39 +801,186 @@ WAVE was used to test the websites accessibility.
 
 #### Test Case 1
 
-View Homepage
+as a User, I want to view available tee times for specific dates and group sizes so that I can make a decision on what tee time I want to book
 
 ##### Steps
 
-1. Navigate to the homepage of the golf course
+1. Login to the site or create an account if you have not already done so 
+2. Pres the book now button in either the hero image on the home page or in the navbar
+3. On the find a teetime enter either today's date or a date in the future 
+4. Enter times between 9am and 5pm 
+5. Enter the number of players you wish to make the booking for betwee 1-4 
+6. Press the submit button 
+7. If you receive any errors with regards to the selected date or time adjust as required  
 
 ##### Expected Result
 
-- The homepage should load with relevant content and a navigation bar.
+- Available tee times will be presented below the find a tee time form
 
 ##### Result & Evidence
 
 <details>
-<summary>Home page renders successfully with all content</summary>
-<img src="/docs/features/home-page.png">
+<summary>PASSED - TeeTime Cards Displayed</summary>
+<img src="/docs/features/available-teetimes.png">
 </details>
 
 #### Test Case 2
-
+as a Logged-In User, I want to select available tee times so that I can create a booking
 ##### Steps
 
-1.
+1. Login to the site or create an account if you have not already done so 
+2. Pres the book now button in either the hero image on the home page or in the navbar
+3. On the find a teetime enter either today's date or a date in the future 
+4. Enter times between 9am and 5pm 
+5. Enter the number of players you wish to make the booking for betwee 1-4 
+6. Press the submit button 
+7. Select one of the available Teetimes by pressing the booknow 
 
 ##### Expected Result
-
--
+- A form with the details of your booking will be displayeed these fields will be readonly apart from the option to select a buggy 
 
 ##### Result & Evidence
 
 <details>
-<summary>Home page renders successfully with all content</summary>
-<img src="/">
+<summary>PASSED Booking Confirmation Form Displayed With Booking Details</summary>
+<img src="/docs/features/confirmation-booking-details.png">
 </details>
+
+
+#### Test Case 3
+as a Logged-In User, I want receive confirmation of the booking so that I know that it was successful
+
+##### Steps
+
+1. Login to the site or create an account if you have not already done so 
+2. Pres the book now button in either the hero image on the home page or in the navbar
+3. On the find a teetime enter either today's date or a date in the future 
+4. Enter times between 9am and 5pm 
+5. Enter the number of players you wish to make the booking for betwee 1-4 
+6. Press the submit button 
+7. Select one of the available Teetimes by pressing the booknow 
+8. Confirm your details by pressing book now on the booking details form 
+
+##### Expected Result
+- A page with a success message will be displayed this will include your booking ID 
+- An alert will be displayed 
+
+##### Result & Evidence
+
+<details>
+<summary>PASSED Booking Success Page Displayed</summary>
+<img src="/docs/features/booking-success-page.png">
+</details>
+
+<details>
+<summary>PASSED Booking Created Alert</summary>
+<img src="/docs/features/alert-booking-created.png">
+</details>
+
+#### Test Case 4
+as a Logged-In User, I want to see a list of the upcoming tee-times I booked so that I don't miss a booking
+
+##### Steps
+
+1. Login to the site or create an account if you have not already done so 
+2. Press the user profile in the nav menu this will menu item will be labeled as your username 
+3. By default the option to show future bookings will be selected 
+
+##### Expected Result
+- Cards with your future bookings will be displayed
+- If there are no future bookings then a book now button will be displayed 
+
+##### Result & Evidence
+
+<details>
+<summary>PASSED Future Bookings Displayed</summary>
+<img src="/docs/features/user-profile-future-bookings.png">
+</details>
+
+#### Test Case 5
+as a Logged-In User, I want to see a list of the past tee-times I booked so that I don't miss a booking
+
+##### Steps
+
+1. Login to the site or create an account if you have not already done so 
+2. Press the user profile in the nav menu this will menu item will be labeled as your username 
+3. By default the option to show future bookings will be selected 
+4. Press the button Past Bookings 
+
+##### Expected Result
+- Cards with your past bookings will be displayed
+
+##### Result & Evidence
+
+<details>
+<summary>PASSED Past Bookings Displayed</summary>
+<img src="/docs/features/user-profile-past-bookings.png">
+</details>
+
+#### Test Case 6 
+as a Logged-In User, I want to delete/cancel future tee-times I have booked so that I can inform the club if I cannot attend a tee-time
+
+##### Steps
+
+1. Login to the site or create an account if you have not already done so 
+2. Press the user profile in the nav menu this will menu item will be labeled as your username 
+3. By default the option to show future bookings will be selected 
+4. On one of the the cards press the delete button
+5. On the delte modal press the delete button
+
+##### Expected Result
+- Alert message confirms the booking was deleted and this card will no longer be displayed in the future bookings 
+
+##### Result & Evidence
+
+<details>
+<summary>PASSED Alert message confirms booking was deleted</summary>
+<img src="/docs/features/alert-booking-deleted.png">
+</details>
+
+#### Test Case 7
+as a Logged-In User, I want update booking details such as time, date and number of players so that I can inform the club in any changes to my booking
+
+##### Steps
+
+1. Login to the site or create an account if you have not already done so 
+2. Press the user profile in the nav menu this will menu item will be labeled as your username 
+3. By default the option to show future bookings will be selected 
+4. On one of the the cards press the edit button
+5. On the edit form update the fields you wish to change 
+
+##### Expected Result
+- Alert message confirms the booking was editted and this card will reflect the new booking details 
+
+##### Result & Evidence
+
+<details>
+<summary>PASSED Alert message confirms booking was editted</summary>
+<img src="/docs/features/alert-booking-editted.png">
+</details>
+
+#### Test Case 8
+as a Logged-In User, I want update booking details such as time, date and number of players so that I can inform the club in any changes to my booking
+
+##### Steps
+
+1. Login to the site or create an account if you have not already done so 
+2. Press the user profile in the nav menu this will menu item will be labeled as your username 
+3. By default the option to show future bookings will be selected 
+4. On one of the the cards press the edit button
+5. On the edit form update the fields you wish to change 
+
+##### Expected Result
+- Alert message confirms the booking was editted and this card will reflect the new booking details 
+
+##### Result & Evidence
+
+<details>
+<summary>PASSED Alert message confirms booking was editted</summary>
+<img src="/docs/features/alert-booking-editted.png">
+</details>
+
+
 
 ### Device Testing & Browser compatibility
 
